@@ -257,7 +257,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5878083145787704617, guid: b63f3416dfe2a414ebde01d06c8abf09, type: 3}
   m_PrefabInstance: {fileID: 2654592829495911826}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1480714595}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9fed6198a44ba604194ea4c17809694d, type: 3}
@@ -641,6 +641,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slider: {fileID: 801549390}
+--- !u!1 &1480714595 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7070054544952153519, guid: b63f3416dfe2a414ebde01d06c8abf09, type: 3}
+  m_PrefabInstance: {fileID: 2654592829495911826}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &1480714599
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1480714595}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1484121808
 GameObject:
   m_ObjectHideFlags: 0
@@ -780,6 +812,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5878083145787704617, guid: b63f3416dfe2a414ebde01d06c8abf09, type: 3}
+      propertyPath: buttonHint
+      value: 
+      objectReference: {fileID: 7926937915018441554, guid: 95c972f3ae8bfbb47a52876489284b3e, type: 3}
     - target: {fileID: 7070054544952153519, guid: b63f3416dfe2a414ebde01d06c8abf09, type: 3}
       propertyPath: m_Name
       value: Tank
@@ -787,7 +823,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7070054544952153519, guid: b63f3416dfe2a414ebde01d06c8abf09, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1480714599}
   m_SourcePrefab: {fileID: 100100000, guid: b63f3416dfe2a414ebde01d06c8abf09, type: 3}
 --- !u!1001 &4295037512785200738
 PrefabInstance:
@@ -923,6 +962,10 @@ PrefabInstance:
       propertyPath: tank
       value: 
       objectReference: {fileID: 43296484}
+    - target: {fileID: 2019492711339721273, guid: 8a849ee25b359704782ad691db8df91f, type: 3}
+      propertyPath: buttonHint
+      value: 
+      objectReference: {fileID: 7926937915018441554, guid: 95c972f3ae8bfbb47a52876489284b3e, type: 3}
     - target: {fileID: 4079988206414552077, guid: 8a849ee25b359704782ad691db8df91f, type: 3}
       propertyPath: m_Name
       value: Player

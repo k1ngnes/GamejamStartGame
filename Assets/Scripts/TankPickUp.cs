@@ -5,6 +5,7 @@ using UnityEngine;
 public class TankPickUp : MonoBehaviour
 {
     [SerializeField] private PlayerController playerController;
+    [SerializeField] private GameObject buttonHint;
     [SerializeField] private LayerMask pickUpMask;
     [SerializeField] private float pickUpRadius = 0.4f;
     [SerializeField] private Tank tank;
@@ -21,5 +22,19 @@ public class TankPickUp : MonoBehaviour
             }
         }
     }
-    
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Tank tank = collision.GetComponent<Tank>();
+        if (tank != null)
+        {
+            Instantiate(buttonHint, transform.position + new Vector3(0f, 2f, 0f), Quaternion.identity);
+        } 
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        Destroy(buttonHint);
+    }
+
 }
