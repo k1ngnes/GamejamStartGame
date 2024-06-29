@@ -31,7 +31,6 @@ public class Weapon : MonoBehaviour
         Vector3 rotation = mousePos - transform.position;
 
         float rotZ = Mathf.Atan2(rotation.y, rotation.x) * Mathf.Rad2Deg;
-        Debug.Log(rotZ);
         if (playerController.GetIsFacingRight())
         {
             if (rotZ > 80)

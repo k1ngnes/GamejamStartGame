@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,11 +11,18 @@ public class PlayerController : MonoBehaviour
     private bool isFacingRight = true;
     [SerializeField] private bool isTankOn = false;
     [SerializeField] private bool isCostumeOn = false;
+    private bool isGrounded;
 
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private Weapon weapon;
+    private Animator animator;
+
+    private void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
 
 
     private void Update()
@@ -23,16 +31,19 @@ public class PlayerController : MonoBehaviour
 
         Flip();
 
-        if (Input.GetKeyDown(KeyCode.Space) && IsGrounded() && isCostumeOn)
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
+            isGrounded = false;
             rb.velocity = new Vector2(rb.velocity.x, jumpPower);
+            animator.SetBool("isJumping", !isGrounded);
         }
     }
 
     private void FixedUpdate()
     {
         rb.velocity = new Vector2(horizontal * maxSpeed, rb.velocity.y);
-
+        animator.SetFloat("xVelocity", Math.Abs(rb.velocity.x));
+        animator.SetFloat("yVelocity", rb.velocity.y);
     }
 
     public bool GetIsFacingRight()
@@ -60,9 +71,10 @@ public class PlayerController : MonoBehaviour
         return isCostumeOn;
     }
 
-    private bool IsGrounded()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
+        isGrounded = true;
+        animator.SetBool("isJumping", false);
     }
 
     private void Flip()

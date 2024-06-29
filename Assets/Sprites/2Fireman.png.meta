@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -111,8 +111,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fb30cb4949af4fc45b01ab8ae42284c2
-      internalID: 1818533304
+      spriteID: 731b07ec1b4b720499cfa785818bebb4
+      internalID: 1213666231
       vertices: []
       indices: 
       edges: []
@@ -132,8 +132,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce9b572e53618ae4b9b994b04e030b77
-      internalID: -156727374
+      spriteID: 76c7139255b85df4cb05b7317919cc98
+      internalID: -1708194507
       vertices: []
       indices: 
       edges: []
@@ -149,8 +149,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      2Fireman_0: 1818533304
-      2Fireman_1: -156727374
+      2Fireman_0: 1213666231
+      2Fireman_1: -1708194507
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
