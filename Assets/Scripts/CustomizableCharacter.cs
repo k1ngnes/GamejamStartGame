@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class CustomizableCharacter : MonoBehaviour
 {
-    SpriteRenderer spriteRenderer;
     [SerializeField] private PlayerController playerController;
 
     private Animator animator;

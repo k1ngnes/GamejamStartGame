@@ -8,7 +8,8 @@ public class CameraFollow : MonoBehaviour
     private float smoothTime = 0.1f;
     private Vector3 velocity = Vector3.zero;
 
-    [SerializeField] private Transform target; 
+    [SerializeField] private Transform target;
+    [SerializeField] private Canvas canvasUI;
 
     void Update()
     {

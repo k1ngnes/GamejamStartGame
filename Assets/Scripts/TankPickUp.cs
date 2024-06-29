@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,17 +6,24 @@ using UnityEngine;
 public class TankPickUp : MonoBehaviour
 {
     [SerializeField] private PlayerController playerController;
-    [SerializeField] private GameObject buttonHint;
     [SerializeField] private LayerMask pickUpMask;
     [SerializeField] private float pickUpRadius = 0.4f;
     [SerializeField] private Tank tank;
+    [SerializeField] GameObject hint;
+    private Animator animator;
+    
+
+    private void Start()
+    {
+        animator = hint.GetComponent<Animator>();
+    }
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
             Collider2D pickedUpItem = Physics2D.OverlapCircle(transform.position, pickUpRadius, pickUpMask);
-            if (pickedUpItem != null)
+            if (pickedUpItem != null && playerController.GetIsCostumeOn())
             {
                 playerController.SetIsTankOn(true);
                 tank.TankPickUp();
@@ -28,13 +36,17 @@ public class TankPickUp : MonoBehaviour
         Tank tank = collision.GetComponent<Tank>();
         if (tank != null)
         {
-            Instantiate(buttonHint, transform.position + new Vector3(0f, 2f, 0f), Quaternion.identity);
-        } 
+            animator.SetInteger("state", 1);
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        Destroy(buttonHint);
+        Tank tank = collision.GetComponent<Tank>();
+        if (tank != null)
+        {
+            animator.SetInteger("state", 0);
+        }
     }
 
 }
