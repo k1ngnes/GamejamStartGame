@@ -13,8 +13,6 @@ public class Weapon : MonoBehaviour
     private int currentWaterAmmo;
     [SerializeField] private AmmoText ammoBar;
 
-
-
     private void Start()
     {
         mainCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
@@ -61,7 +59,7 @@ public class Weapon : MonoBehaviour
         {
             transform.rotation = Quaternion.Euler(180, 0, -rotZ);
         }
-        if (Input.GetKey(KeyCode.Mouse0) && currentWaterAmmo > 0)
+        if (Input.GetKey(KeyCode.Mouse0) && playerController.GetIsTankOn() && currentWaterAmmo > 0)
         {
             Shoot();
             currentWaterAmmo -= 1;

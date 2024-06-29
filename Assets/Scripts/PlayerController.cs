@@ -6,7 +6,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float maxSpeed = 5f;
-    [SerializeField] private float jumpPower = 1f;
+    [SerializeField] private float jumpPower = 0.2f;
     private float horizontal;
     private bool isFacingRight = true;
     [SerializeField] private bool isTankOn = false;
@@ -17,15 +17,25 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private Weapon weapon;
+    [SerializeField] private GameObject weaponObject;
     private Animator animator;
+    [SerializeField] private GameObject player;
 
     private void Start()
     {
         animator = GetComponent<Animator>();
+        if (weaponObject.activeInHierarchy == true)
+        {
+            weaponObject.SetActive(false);
+        }
     }
 
     private void Update()
     {
+        if (isTankOn)
+        {
+            weaponObject.SetActive(true);
+        }
         horizontal = Input.GetAxisRaw("Horizontal");
 
         Flip();
