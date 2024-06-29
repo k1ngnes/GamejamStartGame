@@ -20,7 +20,7 @@ public class Water : MonoBehaviour
     {
         if (timeToLive > 0)
         {
-            timeToLive -= 0.05f;
+            timeToLive -= 0.01f;
         }
         else
         {

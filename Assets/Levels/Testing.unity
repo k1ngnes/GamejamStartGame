@@ -954,6 +954,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 988543463432701340, guid: 8a849ee25b359704782ad691db8df91f, type: 3}
+      propertyPath: m_GravityScale
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1854472822546804628, guid: 8a849ee25b359704782ad691db8df91f, type: 3}
       propertyPath: costume
       value: 
