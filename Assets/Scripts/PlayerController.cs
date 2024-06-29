@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private Weapon weapon;
 
+
     private void Update()
     {
         horizontal = Input.GetAxisRaw("Horizontal");
