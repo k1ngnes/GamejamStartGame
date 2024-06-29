@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8fd220dc86d875b488eedb985bf8d14b
+guid: e0d5e34081497044299c97d8804a1203
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -44,7 +44,7 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-  spriteExtrude: 1
+  spriteExtrude: 5
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 2Fireman_0
+      name: FallFireman1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -111,14 +111,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 731b07ec1b4b720499cfa785818bebb4
-      internalID: 1213666231
+      spriteID: df9710fbb7864cc48977ba58e6c1077e
+      internalID: -1533504812
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 2Fireman_1
+      name: FallFireman1_1
       rect:
         serializedVersion: 2
         x: 32
@@ -132,8 +132,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 76c7139255b85df4cb05b7317919cc98
-      internalID: -1708194507
+      spriteID: 3a5f7382e3d9eca44b63d1a717667e23
+      internalID: 1410036396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallFireman1_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc503ebeaca16724b878fb0791bf785b
+      internalID: -1998954939
       vertices: []
       indices: 
       edges: []
@@ -149,8 +170,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      2Fireman_0: 1213666231
-      2Fireman_1: -1708194507
+      FallFireman1_0: -1533504812
+      FallFireman1_1: 1410036396
+      FallFireman1_2: -1998954939
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

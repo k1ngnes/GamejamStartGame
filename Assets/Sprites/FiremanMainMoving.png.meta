@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8fd220dc86d875b488eedb985bf8d14b
+guid: 6cf41a3fb2ff9ab4ab0e54481f1cc38e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 2Fireman_0
+      name: FiremanMainMoving_0
       rect:
         serializedVersion: 2
         x: 0
@@ -111,14 +111,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 731b07ec1b4b720499cfa785818bebb4
-      internalID: 1213666231
+      spriteID: 10aa9c424528bc845ad3637170f67ea2
+      internalID: 2034179751
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 2Fireman_1
+      name: FiremanMainMoving_1
       rect:
         serializedVersion: 2
         x: 32
@@ -132,8 +132,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 76c7139255b85df4cb05b7317919cc98
-      internalID: -1708194507
+      spriteID: a67fab1bd257d8247aa2f23173cca0f9
+      internalID: 1718905315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FiremanMainMoving_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 627964175631e2142ad5f82c40f26ac6
+      internalID: 1443037901
       vertices: []
       indices: 
       edges: []
@@ -149,8 +170,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      2Fireman_0: 1213666231
-      2Fireman_1: -1708194507
+      FiremanMainMoving_0: 2034179751
+      FiremanMainMoving_1: 1718905315
+      FiremanMainMoving_2: 1443037901
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8fd220dc86d875b488eedb985bf8d14b
+guid: 2145ff2b3b810b94c9cbce1f1eeef8db
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 2Fireman_0
+      name: 1FiremanMoving_0
       rect:
         serializedVersion: 2
         x: 0
@@ -111,14 +111,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 731b07ec1b4b720499cfa785818bebb4
-      internalID: 1213666231
+      spriteID: 97357af5829b50143ba0097df7027099
+      internalID: 128700205
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 2Fireman_1
+      name: 1FiremanMoving_1
       rect:
         serializedVersion: 2
         x: 32
@@ -132,8 +132,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 76c7139255b85df4cb05b7317919cc98
-      internalID: -1708194507
+      spriteID: ca90abf419d854642aad714ca44fc086
+      internalID: 229048997
       vertices: []
       indices: 
       edges: []
@@ -149,8 +149,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      2Fireman_0: 1213666231
-      2Fireman_1: -1708194507
+      1FiremanMoving_0: 128700205
+      1FiremanMoving_1: 229048997
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

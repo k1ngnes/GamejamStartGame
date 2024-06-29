@@ -5,43 +5,30 @@ using UnityEngine;
 public class CustomizableCharacter : MonoBehaviour
 {
     [SerializeField] private int skinNumber = 0;
-    [SerializeField] private Skins[] skins;
     SpriteRenderer spriteRenderer;
     [SerializeField] private PlayerController playerController;
 
+    private Animator animator;
+
     private void Start()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>();
     }
 
-    private void LateUpdate()
+    private void FixedUpdate()
     {
         SkinChoice();
     }
 
     private void SkinChoice() 
     {
-        if (spriteRenderer.sprite.name.Contains("FiremanMain"))
+        if (playerController.GetIsCostumeOn() && !playerController.GetIsTankOn())
         {
-            if (playerController.GetIsCostumeOn() && !playerController.GetIsTankOn())
-            {
-                skinNumber = 1;
-            }
-            if (playerController.GetIsTankOn() && playerController.GetIsCostumeOn())
-            {
-                skinNumber = 2;
-            }
-            string spriteName = spriteRenderer.sprite.name;
-            spriteName = spriteName.Replace("FiremanMain_", "");
-            int spriteNumber = int.Parse(spriteName);
-
-            spriteRenderer.sprite = skins[skinNumber].sprites[spriteNumber];
+            animator.SetInteger("skinNumber", 1);
         }
-    }
-
-    [System.Serializable]
-    public struct Skins
-    {
-        public Sprite[] sprites;
+        if (playerController.GetIsTankOn() && playerController.GetIsCostumeOn())
+        {
+            animator.SetInteger("skinNumber", 2);
+        }
     }
 }
