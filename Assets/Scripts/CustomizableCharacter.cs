@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class CustomizableCharacter : MonoBehaviour
 {
-    [SerializeField] private int skinNumber = 0;
     SpriteRenderer spriteRenderer;
     [SerializeField] private PlayerController playerController;
 
