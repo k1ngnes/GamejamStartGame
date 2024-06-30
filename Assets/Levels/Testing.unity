@@ -138,12 +138,17 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7317225356503873826, guid: 9f56a02f893d19744a29e0f04746f4ae, type: 3}
   m_PrefabInstance: {fileID: 559148723}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 145989330}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a3c683ff4a731804b9c49030a2d55c0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &145989330 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2537682255826696792, guid: 9f56a02f893d19744a29e0f04746f4ae, type: 3}
+  m_PrefabInstance: {fileID: 559148723}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &559148723
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -197,6 +202,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7317225356503873826, guid: 9f56a02f893d19744a29e0f04746f4ae, type: 3}
+      propertyPath: wood
+      value: 
+      objectReference: {fileID: 751810945}
+    - target: {fileID: 7317225356503873826, guid: 9f56a02f893d19744a29e0f04746f4ae, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 7356729807829149935}
@@ -233,6 +242,33 @@ PrefabInstance:
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5229406233803923204, guid: d164abf07f339f84db058d113a6c9048, type: 3}
   m_PrefabInstance: {fileID: 6919636637203884380}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &705972313 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8705705802745962152, guid: bd7a39e6ef7a4334cbca4550c25cfa6f, type: 3}
+  m_PrefabInstance: {fileID: 1552310683}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &705972320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 705972313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 461291041, guid: df2ec02f61e861546b9427c26ccacb8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reference:
+    instanceId: 0
+    referencingMode: 0
+    lowId: 1260
+    highId: 16777216
+--- !u!1 &751810945 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8824930116599281127, guid: 9914d42958cc6924e93dc0a36921f7fb, type: 3}
+  m_PrefabInstance: {fileID: 6731133688620332872}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &853950967 stripped
 GameObject:
@@ -471,14 +507,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8161940775126741454, guid: bd7a39e6ef7a4334cbca4550c25cfa6f, type: 3}
+      propertyPath: reference.lowId
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8161940775126741454, guid: bd7a39e6ef7a4334cbca4550c25cfa6f, type: 3}
+      propertyPath: reference.highId
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8705705802745962152, guid: bd7a39e6ef7a4334cbca4550c25cfa6f, type: 3}
       propertyPath: m_Name
       value: FirstNPC1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8161940775126741454, guid: bd7a39e6ef7a4334cbca4550c25cfa6f, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8705705802745962152, guid: bd7a39e6ef7a4334cbca4550c25cfa6f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 705972320}
   m_SourcePrefab: {fileID: 100100000, guid: bd7a39e6ef7a4334cbca4550c25cfa6f, type: 3}
 --- !u!114 &1606330157 stripped
 MonoBehaviour:
@@ -959,6 +1007,10 @@ PrefabInstance:
       propertyPath: weaponObject
       value: 
       objectReference: {fileID: 1820983074755094676}
+    - target: {fileID: 205884642880391884, guid: 8a849ee25b359704782ad691db8df91f, type: 3}
+      propertyPath: dialogManager
+      value: 
+      objectReference: {fileID: 145989330}
     - target: {fileID: 222977164197075017, guid: 8a849ee25b359704782ad691db8df91f, type: 3}
       propertyPath: m_GravityScale
       value: 2
@@ -1039,6 +1091,10 @@ PrefabInstance:
       propertyPath: waterPrefab
       value: 
       objectReference: {fileID: 6998540775501742404, guid: 456c3635ab2c04641a3db453a2e56c73, type: 3}
+    - target: {fileID: 4493892929143033104, guid: 8a849ee25b359704782ad691db8df91f, type: 3}
+      propertyPath: dialogManager
+      value: 
+      objectReference: {fileID: 145989330}
     - target: {fileID: 4493892929143033104, guid: 8a849ee25b359704782ad691db8df91f, type: 3}
       propertyPath: waterParticle
       value: 
@@ -1402,6 +1458,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7628463018858314034, guid: e6ce57b8e0954c94f86e5f69e1c84c12, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 864b0b1426353cf4287a1a15bd549504, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

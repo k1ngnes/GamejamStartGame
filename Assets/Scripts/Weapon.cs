@@ -15,12 +15,14 @@ public class Weapon : MonoBehaviour
     [SerializeField] private GameObject ammoBar;
     [SerializeField] private GameObject waterParticle;
     [SerializeField] private GameObject dialogManager;
+    private DialogueManager dm;
 
     private void Start()
     {
         mainCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
         currentWaterAmmo = maxWaterAmmo;
         animator = ammoBar.GetComponent<Animator>();
+        dm = dialogManager.GetComponent<DialogueManager>();
     }
 
     void Update()
@@ -83,8 +85,6 @@ public class Weapon : MonoBehaviour
             animator.SetInteger("state", 13);
         }
 
-        Debug.Log(currentWaterAmmo);
-
         float rotZ = Mathf.Atan2(rotation.y, rotation.x) * Mathf.Rad2Deg;
         if (playerController.GetIsFacingRight())
         {
@@ -116,7 +116,7 @@ public class Weapon : MonoBehaviour
         {
             transform.rotation = Quaternion.Euler(180, 0, -rotZ);
         }
-        if (Input.GetKey(KeyCode.Mouse0) && playerController.GetIsTankOn() && currentWaterAmmo > 0 && !dialogManager.GetComponent<DialogueManager>().DialogueActive)
+        if (Input.GetKey(KeyCode.Mouse0) && playerController.GetIsTankOn() && currentWaterAmmo > 0 && !dm.DialogueActive)
         {
             Shoot();
             Instantiate(waterParticle, firePoint.position, transform.rotation);
