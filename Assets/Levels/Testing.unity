@@ -1378,6 +1378,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AmmoBar
       objectReference: {fileID: 0}
+    - target: {fileID: 1853518767800770133, guid: e6ce57b8e0954c94f86e5f69e1c84c12, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6139584543300764233, guid: e6ce57b8e0954c94f86e5f69e1c84c12, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
