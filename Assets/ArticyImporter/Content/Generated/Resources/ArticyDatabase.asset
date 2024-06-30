@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: -1676762633, guid: df2ec02f61e861546b9427c26ccacb8d, type: 3}
   m_Name: ArticyDatabase
   m_EditorClassIdentifier: 
-  mHierarchy: {fileID: 9187668499942953232}
+  mHierarchy: {fileID: 5778239981320119951}
   mLocalization: {fileID: -5720477398706827900}
   mInternalProject:
     mName: Jam
@@ -59,55 +59,7 @@ MonoBehaviour:
   - PackageName: All objects
     PackagePath: All objects
     mIsDefaultPackage: 1
---- !u!114 &8014458121670872342
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd77e47f831e7b64b965ab40dcaa6e07, type: 3}
-  m_Name: DefaultGlobalVariables
-  m_EditorClassIdentifier: 
-  BoolVariableCache:
-  - mFullQualifiedName: GameState.end_conversation
-    mVar:
-      values: 00
-  - mFullQualifiedName: GameState.talked_to_collega
-    mVar:
-      values: 00
-  - mFullQualifiedName: GameState.fireproof_suit
-    mVar:
-      values: 00
-  - mFullQualifiedName: GameState.fire_hose
-    mVar:
-      values: 00
-  - mFullQualifiedName: GameState.training
-    mVar:
-      values: 00
-  - mFullQualifiedName: GameState.fireproof_suit_talked
-    mVar:
-      values: 00
-  - mFullQualifiedName: GameState.fire_hose_talked
-    mVar:
-      values: 00
-  - mFullQualifiedName: GameState.allow_take_hose
-    mVar:
-      values: 00
-  - mFullQualifiedName: GameState.touch_hose
-    mVar:
-      values: 00
-  IntVariableCache: []
-  StringVariableCache: []
-  LiveBoolVariableCache: []
-  LiveIntVariableCache: []
-  LiveStringVariableCache: []
-  isInitialized: 1
-  mGameState:
-    _VariableStorage: {fileID: 8014458121670872342}
---- !u!114 &9187668499942953232
+--- !u!114 &5778239981320119951
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -865,3 +817,51 @@ MonoBehaviour:
     technicalName: Ufo_0DE697BE
     articyType: AssetsUserFolder
     childCount: 0
+--- !u!114 &8014458121670872342
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd77e47f831e7b64b965ab40dcaa6e07, type: 3}
+  m_Name: DefaultGlobalVariables
+  m_EditorClassIdentifier: 
+  BoolVariableCache:
+  - mFullQualifiedName: GameState.end_conversation
+    mVar:
+      values: 00
+  - mFullQualifiedName: GameState.talked_to_collega
+    mVar:
+      values: 00
+  - mFullQualifiedName: GameState.fireproof_suit
+    mVar:
+      values: 00
+  - mFullQualifiedName: GameState.fire_hose
+    mVar:
+      values: 00
+  - mFullQualifiedName: GameState.training
+    mVar:
+      values: 00
+  - mFullQualifiedName: GameState.fireproof_suit_talked
+    mVar:
+      values: 00
+  - mFullQualifiedName: GameState.fire_hose_talked
+    mVar:
+      values: 00
+  - mFullQualifiedName: GameState.allow_take_hose
+    mVar:
+      values: 00
+  - mFullQualifiedName: GameState.touch_hose
+    mVar:
+      values: 00
+  IntVariableCache: []
+  StringVariableCache: []
+  LiveBoolVariableCache: []
+  LiveIntVariableCache: []
+  LiveStringVariableCache: []
+  isInitialized: 1
+  mGameState:
+    _VariableStorage: {fileID: 8014458121670872342}
