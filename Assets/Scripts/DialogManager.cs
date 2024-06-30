@@ -5,6 +5,7 @@ using Articy.Unity;
 using Articy.Unity.Interfaces;
 using Articy.Jam;
 using Articy.Jam.GlobalVariables;
+using Unity.Burst.CompilerServices;
 
 public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
 {
@@ -29,6 +30,8 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
     GameObject closePrefab;
     [SerializeField]
     GameObject player;
+    [SerializeField] GameObject wood;
+    private Animator animator;
     private TankPickUp tankPickUp;
     private CostumePickUp costumePickUp;
     private string item = "none";
@@ -45,6 +48,7 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
         flowPlayer = GetComponent<ArticyFlowPlayer>();
         tankPickUp = player.GetComponent<TankPickUp>();
         costumePickUp = player.GetComponent<CostumePickUp>();
+        animator = wood.GetComponent<Animator>();
     }
 
     void Update()
@@ -202,6 +206,10 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
             {
                 costumePickUp.WearCostume();
                 ifLastDialogLine = false;
+            }
+            if (ArticyGlobalVariables.Default.GameState.training)
+            {
+                animator.SetInteger("state", 1);
             }
             // Dialogue is finished, instantiate a close button
             GameObject btn = Instantiate(closePrefab, branchLayoutPanel);

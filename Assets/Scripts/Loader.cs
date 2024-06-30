@@ -10,7 +10,8 @@ public static class Loader
     {
         MainMenuScene,
         Testing,
-        LoadingScene
+        LoadingScene,
+        RespawnScene
     }
 
     private static Scene targetScene;

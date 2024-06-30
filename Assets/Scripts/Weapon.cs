@@ -14,6 +14,7 @@ public class Weapon : MonoBehaviour
     [SerializeField] private Animator animator;
     [SerializeField] private GameObject ammoBar;
     [SerializeField] private GameObject waterParticle;
+    [SerializeField] private GameObject dialogManager;
 
     private void Start()
     {
@@ -115,7 +116,7 @@ public class Weapon : MonoBehaviour
         {
             transform.rotation = Quaternion.Euler(180, 0, -rotZ);
         }
-        if (Input.GetKey(KeyCode.Mouse0) && playerController.GetIsTankOn() && currentWaterAmmo > 0)
+        if (Input.GetKey(KeyCode.Mouse0) && playerController.GetIsTankOn() && currentWaterAmmo > 0 && !dialogManager.GetComponent<DialogueManager>().DialogueActive)
         {
             Shoot();
             Instantiate(waterParticle, firePoint.position, transform.rotation);
