@@ -39,7 +39,8 @@ public class Water : MonoBehaviour
         BurningLog log = hitInfo.GetComponent<BurningLog>();
         if (log != null)
         {
-            if (log.TakeDamage(damage) == 1)
+            int logHitCode = log.TakeDamage(damage);
+            if (logHitCode == 1)
             {
                 Destroy(gameObject);
             }

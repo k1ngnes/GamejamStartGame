@@ -17,16 +17,17 @@ public class BurningLog : MonoBehaviour
 
     public int TakeDamage(int damage)
     {
-        if (animator.GetInteger("state") == 1)
-        {
-            health -= damage;
-            return 1;
-        }
         if (health <= 0)
         {
             Die();
             return 2;
         }
+        else if (animator.GetInteger("state") == 1)
+        {
+            health -= damage;
+            return 1;
+        }
+        
 
         return 0;
     }
