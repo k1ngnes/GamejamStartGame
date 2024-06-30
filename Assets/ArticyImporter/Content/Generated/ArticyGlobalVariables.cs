@@ -41,6 +41,14 @@ namespace Articy.Jam.GlobalVariables
             variableNames.Add("GameState.allow_take_hose");
             variableNames.Add("GameState.touch_hose");
             variableNames.Add("GameState.training_complete");
+            variableNames.Add("GameState.talked_to_collega2");
+            variableNames.Add("GameState.start_count");
+            variableNames.Add("GameState.counter");
+            variableNames.Add("GameState.good_talk");
+            variableNames.Add("GameState.bad_talk");
+            variableNames.Add("GameState.another_way");
+            variableNames.Add("GameState.destroy_fire_in_window");
+            variableNames.Add("GameState.gas_mask");
         }
         #endregion
         

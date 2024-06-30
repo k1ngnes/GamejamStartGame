@@ -20,7 +20,7 @@ namespace Articy.Jam.GlobalVariables
 {
     
     
-    [Articy.Unity.ArticyCodeGenerationHashAttribute(638553760760769780)]
+    [Articy.Unity.ArticyCodeGenerationHashAttribute(638553916997168873)]
     public class ArticyScriptFragments : BaseScriptFragments, ISerializationCallbackReceiver
     {
         
@@ -286,6 +286,15 @@ aGlobalVariablesState.GameState.fire_hose_talked = true;;
         }
         
         /// <summary>
+        /// ObjectID: 0x10000000000016B
+        /// Articy Object ref: articy://localhost/view/82ca42c8-cef4-4720-86fe-bf7ea1cb5544/72057594037928299?pane=selected&amp;tab=current
+        /// </summary>
+        public bool Script_0x10000000000016BText(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
+        {
+            return aGlobalVariablesState.GameState.talked_to_collega == true && aGlobalVariablesState.GameState.fireproof_suit == true && aGlobalVariablesState.GameState.touch_hose == false;;
+        }
+        
+        /// <summary>
         /// ObjectID: 0x10000000000016C
         /// Articy Object ref: articy://localhost/view/82ca42c8-cef4-4720-86fe-bf7ea1cb5544/72057594037928300?pane=selected&amp;tab=current
         /// </summary>
@@ -306,6 +315,15 @@ aGlobalVariablesState.GameState.fire_hose = true;;
         }
         
         /// <summary>
+        /// ObjectID: 0x10000000000017B
+        /// Articy Object ref: articy://localhost/view/82ca42c8-cef4-4720-86fe-bf7ea1cb5544/72057594037928315?pane=selected&amp;tab=current
+        /// </summary>
+        public bool Script_0x10000000000017BText(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
+        {
+            return aGlobalVariablesState.GameState.talked_to_collega == false && aGlobalVariablesState.GameState.fireproof_suit == true && aGlobalVariablesState.GameState.touch_hose == false;;
+        }
+        
+        /// <summary>
         /// ObjectID: 0x10000000000017C
         /// Articy Object ref: articy://localhost/view/82ca42c8-cef4-4720-86fe-bf7ea1cb5544/72057594037928316?pane=selected&amp;tab=current
         /// </summary>
@@ -314,6 +332,15 @@ aGlobalVariablesState.GameState.fire_hose = true;;
             aGlobalVariablesState.GameState.allow_take_hose = true;
 aGlobalVariablesState.GameState.touch_hose = true;
 aGlobalVariablesState.GameState.fire_hose = true;;
+        }
+        
+        /// <summary>
+        /// ObjectID: 0x100000000000207
+        /// Articy Object ref: articy://localhost/view/82ca42c8-cef4-4720-86fe-bf7ea1cb5544/72057594037928455?pane=selected&amp;tab=current
+        /// </summary>
+        public bool Script_0x100000000000207Text(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
+        {
+            return aGlobalVariablesState.GameState.talked_to_collega == true;
         }
         
         /// <summary>
@@ -326,12 +353,30 @@ aGlobalVariablesState.GameState.fire_hose = true;;
         }
         
         /// <summary>
+        /// ObjectID: 0x100000000000211
+        /// Articy Object ref: articy://localhost/view/82ca42c8-cef4-4720-86fe-bf7ea1cb5544/72057594037928465?pane=selected&amp;tab=current
+        /// </summary>
+        public bool Script_0x100000000000211Text(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
+        {
+            return aGlobalVariablesState.GameState.talked_to_collega == false;
+        }
+        
+        /// <summary>
         /// ObjectID: 0x100000000000212
         /// Articy Object ref: articy://localhost/view/82ca42c8-cef4-4720-86fe-bf7ea1cb5544/72057594037928466?pane=selected&amp;tab=current
         /// </summary>
         public void Script_0x100000000000212Text(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
         {
             aGlobalVariablesState.GameState.fireproof_suit = true;
+        }
+        
+        /// <summary>
+        /// ObjectID: 0x1000000000005BF
+        /// Articy Object ref: articy://localhost/view/82ca42c8-cef4-4720-86fe-bf7ea1cb5544/72057594037929407?pane=selected&amp;tab=current
+        /// </summary>
+        public bool Script_0x1000000000005BFText(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
+        {
+            return aGlobalVariablesState.GameState.fireproof_suit == false && aGlobalVariablesState.GameState.touch_hose == false;;
         }
         
         /// <summary>
@@ -359,6 +404,235 @@ aGlobalVariablesState.GameState.fire_hose = true;;
         public void Script_0x100000000000601Text(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
         {
             aGlobalVariablesState.GameState.fire_hose = true;
+        }
+        
+        /// <summary>
+        /// ObjectID: 0x10000000000063E
+        /// Articy Object ref: articy://localhost/view/82ca42c8-cef4-4720-86fe-bf7ea1cb5544/72057594037929534?pane=selected&amp;tab=current
+        /// </summary>
+        public bool Script_0x10000000000063EText(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
+        {
+            return aGlobalVariablesState.GameState.talked_to_collega2 == false;
+        }
+        
+        /// <summary>
+        /// ObjectID: 0x10000000000064D
+        /// Articy Object ref: articy://localhost/view/82ca42c8-cef4-4720-86fe-bf7ea1cb5544/72057594037929549?pane=selected&amp;tab=current
+        /// </summary>
+        public void Script_0x10000000000064DText(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
+        {
+            aGlobalVariablesState.GameState.talked_to_collega2 = true;;
+        }
+        
+        /// <summary>
+        /// ObjectID: 0x10000000000065C
+        /// Articy Object ref: articy://localhost/view/82ca42c8-cef4-4720-86fe-bf7ea1cb5544/72057594037929564?pane=selected&amp;tab=current
+        /// </summary>
+        public bool Script_0x10000000000065CText(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
+        {
+            return aGlobalVariablesState.GameState.talked_to_collega2 == true && aGlobalVariablesState.GameState.start_count == false;
+        }
+        
+        /// <summary>
+        /// ObjectID: 0x10000000000065D
+        /// Articy Object ref: articy://localhost/view/82ca42c8-cef4-4720-86fe-bf7ea1cb5544/72057594037929565?pane=selected&amp;tab=current
+        /// </summary>
+        public void Script_0x10000000000065DText(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
+        {
+            aGlobalVariablesState.GameState.start_count = true;
+aGlobalVariablesState.GameState.counter = 0;;
+        }
+        
+        /// <summary>
+        /// ObjectID: 0x10000000000067D
+        /// Articy Object ref: articy://localhost/view/82ca42c8-cef4-4720-86fe-bf7ea1cb5544/72057594037929597?pane=selected&amp;tab=current
+        /// </summary>
+        public bool Script_0x10000000000067DText(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
+        {
+            return aGlobalVariablesState.GameState.start_count == true;
+        }
+        
+        /// <summary>
+        /// ObjectID: 0x10000000000067E
+        /// Articy Object ref: articy://localhost/view/82ca42c8-cef4-4720-86fe-bf7ea1cb5544/72057594037929598?pane=selected&amp;tab=current
+        /// </summary>
+        public void Script_0x10000000000067EText(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
+        {
+            aGlobalVariablesState.GameState.counter++;;
+        }
+        
+        /// <summary>
+        /// ObjectID: 0x100000000000686
+        /// Articy Object ref: articy://localhost/view/82ca42c8-cef4-4720-86fe-bf7ea1cb5544/72057594037929606?pane=selected&amp;tab=current
+        /// </summary>
+        public bool Script_0x100000000000686Text(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
+        {
+            return aGlobalVariablesState.GameState.counter == 2;
+        }
+        
+        /// <summary>
+        /// ObjectID: 0x10000000000068B
+        /// Articy Object ref: articy://localhost/view/82ca42c8-cef4-4720-86fe-bf7ea1cb5544/72057594037929611?pane=selected&amp;tab=current
+        /// </summary>
+        public bool Script_0x10000000000068BText(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
+        {
+            return aGlobalVariablesState.GameState.counter == 2;
+        }
+        
+        /// <summary>
+        /// ObjectID: 0x10000000000069C
+        /// Articy Object ref: articy://localhost/view/82ca42c8-cef4-4720-86fe-bf7ea1cb5544/72057594037929628?pane=selected&amp;tab=current
+        /// </summary>
+        public void Script_0x10000000000069CText(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
+        {
+            aGlobalVariablesState.GameState.counter++;;
+        }
+        
+        /// <summary>
+        /// ObjectID: 0x1000000000006CF
+        /// Articy Object ref: articy://localhost/view/82ca42c8-cef4-4720-86fe-bf7ea1cb5544/72057594037929679?pane=selected&amp;tab=current
+        /// </summary>
+        public bool Script_0x1000000000006CFText(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
+        {
+            return aGlobalVariablesState.GameState.good_talk == false && aGlobalVariablesState.GameState.bad_talk == false;
+        }
+        
+        /// <summary>
+        /// ObjectID: 0x100000000000702
+        /// Articy Object ref: articy://localhost/view/82ca42c8-cef4-4720-86fe-bf7ea1cb5544/72057594037929730?pane=selected&amp;tab=current
+        /// </summary>
+        public void Script_0x100000000000702Text(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
+        {
+            aGlobalVariablesState.GameState.bad_talk = true;
+        }
+        
+        /// <summary>
+        /// ObjectID: 0x100000000000714
+        /// Articy Object ref: articy://localhost/view/82ca42c8-cef4-4720-86fe-bf7ea1cb5544/72057594037929748?pane=selected&amp;tab=current
+        /// </summary>
+        public void Script_0x100000000000714Text(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
+        {
+            aGlobalVariablesState.GameState.good_talk = true;;
+        }
+        
+        /// <summary>
+        /// ObjectID: 0x10000000000077C
+        /// Articy Object ref: articy://localhost/view/82ca42c8-cef4-4720-86fe-bf7ea1cb5544/72057594037929852?pane=selected&amp;tab=current
+        /// </summary>
+        public bool Script_0x10000000000077CText(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
+        {
+            return aGlobalVariablesState.GameState.bad_talk == false && aGlobalVariablesState.GameState.good_talk == false;
+        }
+        
+        /// <summary>
+        /// ObjectID: 0x100000000000782
+        /// Articy Object ref: articy://localhost/view/82ca42c8-cef4-4720-86fe-bf7ea1cb5544/72057594037929858?pane=selected&amp;tab=current
+        /// </summary>
+        public void Script_0x100000000000782Text(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
+        {
+            aGlobalVariablesState.GameState.another_way = true;;
+        }
+        
+        /// <summary>
+        /// ObjectID: 0x100000000000788
+        /// Articy Object ref: articy://localhost/view/82ca42c8-cef4-4720-86fe-bf7ea1cb5544/72057594037929864?pane=selected&amp;tab=current
+        /// </summary>
+        public bool Script_0x100000000000788Text(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
+        {
+            return aGlobalVariablesState.GameState.another_way == true;;
+        }
+        
+        /// <summary>
+        /// ObjectID: 0x100000000000793
+        /// Articy Object ref: articy://localhost/view/82ca42c8-cef4-4720-86fe-bf7ea1cb5544/72057594037929875?pane=selected&amp;tab=current
+        /// </summary>
+        public bool Script_0x100000000000793Text(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
+        {
+            return aGlobalVariablesState.GameState.bad_talk == true || aGlobalVariablesState.GameState.good_talk == true;
+        }
+        
+        /// <summary>
+        /// ObjectID: 0x10000000000079D
+        /// Articy Object ref: articy://localhost/view/82ca42c8-cef4-4720-86fe-bf7ea1cb5544/72057594037929885?pane=selected&amp;tab=current
+        /// </summary>
+        public bool Script_0x10000000000079DText(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
+        {
+            return aGlobalVariablesState.GameState.destroy_fire_in_window == true;
+        }
+        
+        /// <summary>
+        /// ObjectID: 0x1000000000007B3
+        /// Articy Object ref: articy://localhost/view/82ca42c8-cef4-4720-86fe-bf7ea1cb5544/72057594037929907?pane=selected&amp;tab=current
+        /// </summary>
+        public bool Script_0x1000000000007B3Text(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
+        {
+            return aGlobalVariablesState.GameState.gas_mask == false;
+        }
+        
+        /// <summary>
+        /// ObjectID: 0x1000000000007C1
+        /// Articy Object ref: articy://localhost/view/82ca42c8-cef4-4720-86fe-bf7ea1cb5544/72057594037929921?pane=selected&amp;tab=current
+        /// </summary>
+        public bool Script_0x1000000000007C1Text(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
+        {
+            return aGlobalVariablesState.GameState.good_talk == true
+;
+        }
+        
+        /// <summary>
+        /// ObjectID: 0x1000000000007C8
+        /// Articy Object ref: articy://localhost/view/82ca42c8-cef4-4720-86fe-bf7ea1cb5544/72057594037929928?pane=selected&amp;tab=current
+        /// </summary>
+        public bool Script_0x1000000000007C8Text(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
+        {
+            return aGlobalVariablesState.GameState.bad_talk == true
+;
+        }
+        
+        /// <summary>
+        /// ObjectID: 0x1000000000007D5
+        /// Articy Object ref: articy://localhost/view/82ca42c8-cef4-4720-86fe-bf7ea1cb5544/72057594037929941?pane=selected&amp;tab=current
+        /// </summary>
+        public bool Script_0x1000000000007D5Text(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
+        {
+            return aGlobalVariablesState.GameState.good_talk == false && aGlobalVariablesState.GameState.bad_talk == false;
+        }
+        
+        /// <summary>
+        /// ObjectID: 0x1000000000007DE
+        /// Articy Object ref: articy://localhost/view/82ca42c8-cef4-4720-86fe-bf7ea1cb5544/72057594037929950?pane=selected&amp;tab=current
+        /// </summary>
+        public void Script_0x1000000000007DEText(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
+        {
+            aGlobalVariablesState.GameState.gas_mask = true;;
+        }
+        
+        /// <summary>
+        /// ObjectID: 0x1000000000007E6
+        /// Articy Object ref: articy://localhost/view/82ca42c8-cef4-4720-86fe-bf7ea1cb5544/72057594037929958?pane=selected&amp;tab=current
+        /// </summary>
+        public bool Script_0x1000000000007E6Text(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
+        {
+            return aGlobalVariablesState.GameState.gas_mask == true;
+        }
+        
+        /// <summary>
+        /// ObjectID: 0x100000000000730
+        /// Articy Object ref: articy://localhost/view/82ca42c8-cef4-4720-86fe-bf7ea1cb5544/72057594037929776?pane=selected&amp;tab=current
+        /// </summary>
+        public bool Script_0x100000000000730Text(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
+        {
+            return aGlobalVariablesState.GameState.bad_talk == true;
+        }
+        
+        /// <summary>
+        /// ObjectID: 0x100000000000734
+        /// Articy Object ref: articy://localhost/view/82ca42c8-cef4-4720-86fe-bf7ea1cb5544/72057594037929780?pane=selected&amp;tab=current
+        /// </summary>
+        public bool Script_0x100000000000734Text(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
+        {
+            return aGlobalVariablesState.GameState.good_talk == true
+;
         }
         
         /// <summary>
@@ -488,24 +762,54 @@ aGlobalVariablesState.GameState.fireproof_suit == true && aGlobalVariablesState.
             Instructions.Add(24u, this.Script_0x100000000000384Text);
             Instructions.Add(25u, this.Script_0x1000000000003B8Text);
             Instructions.Add(26u, this.Script_0x100000000000167Text);
-            Instructions.Add(27u, this.Script_0x10000000000016CText);
-            Instructions.Add(28u, this.Script_0x100000000000175Text);
-            Instructions.Add(29u, this.Script_0x10000000000017CText);
-            Instructions.Add(30u, this.Script_0x100000000000208Text);
-            Instructions.Add(31u, this.Script_0x100000000000212Text);
-            Instructions.Add(32u, this.Script_0x1000000000005C0Text);
-            Instructions.Add(33u, this.Script_0x1000000000005C9Text);
-            Instructions.Add(34u, this.Script_0x100000000000601Text);
-            Conditions.Add(35u, this.Script_0x10000000000023EExpression);
-            Conditions.Add(36u, this.Script_0x100000000000243Expression);
-            Conditions.Add(37u, this.Script_0x100000000000248Expression);
-            Conditions.Add(38u, this.Script_0x10000000000027AExpression);
-            Instructions.Add(39u, this.Script_0x10000000000027EText);
-            Conditions.Add(40u, this.Script_0x1000000000002B1Expression);
-            Conditions.Add(41u, this.Script_0x1000000000002CCExpression);
-            Conditions.Add(42u, this.Script_0x100000000000324Expression);
-            Conditions.Add(43u, this.Script_0x10000000000032AExpression);
-            Conditions.Add(44u, this.Script_0x10000000000032FExpression);
+            Conditions.Add(27u, this.Script_0x10000000000016BText);
+            Instructions.Add(28u, this.Script_0x10000000000016CText);
+            Instructions.Add(29u, this.Script_0x100000000000175Text);
+            Conditions.Add(30u, this.Script_0x10000000000017BText);
+            Instructions.Add(31u, this.Script_0x10000000000017CText);
+            Conditions.Add(32u, this.Script_0x100000000000207Text);
+            Instructions.Add(33u, this.Script_0x100000000000208Text);
+            Conditions.Add(34u, this.Script_0x100000000000211Text);
+            Instructions.Add(35u, this.Script_0x100000000000212Text);
+            Conditions.Add(36u, this.Script_0x1000000000005BFText);
+            Instructions.Add(37u, this.Script_0x1000000000005C0Text);
+            Instructions.Add(38u, this.Script_0x1000000000005C9Text);
+            Instructions.Add(39u, this.Script_0x100000000000601Text);
+            Conditions.Add(40u, this.Script_0x10000000000063EText);
+            Instructions.Add(41u, this.Script_0x10000000000064DText);
+            Conditions.Add(42u, this.Script_0x10000000000065CText);
+            Instructions.Add(43u, this.Script_0x10000000000065DText);
+            Conditions.Add(44u, this.Script_0x10000000000067DText);
+            Instructions.Add(45u, this.Script_0x10000000000067EText);
+            Conditions.Add(46u, this.Script_0x100000000000686Text);
+            Conditions.Add(47u, this.Script_0x10000000000068BText);
+            Instructions.Add(48u, this.Script_0x10000000000069CText);
+            Conditions.Add(49u, this.Script_0x1000000000006CFText);
+            Instructions.Add(50u, this.Script_0x100000000000702Text);
+            Instructions.Add(51u, this.Script_0x100000000000714Text);
+            Conditions.Add(52u, this.Script_0x10000000000077CText);
+            Instructions.Add(53u, this.Script_0x100000000000782Text);
+            Conditions.Add(54u, this.Script_0x100000000000788Text);
+            Conditions.Add(55u, this.Script_0x100000000000793Text);
+            Conditions.Add(56u, this.Script_0x10000000000079DText);
+            Conditions.Add(57u, this.Script_0x1000000000007B3Text);
+            Conditions.Add(58u, this.Script_0x1000000000007C1Text);
+            Conditions.Add(59u, this.Script_0x1000000000007C8Text);
+            Conditions.Add(60u, this.Script_0x1000000000007D5Text);
+            Instructions.Add(61u, this.Script_0x1000000000007DEText);
+            Conditions.Add(62u, this.Script_0x1000000000007E6Text);
+            Conditions.Add(63u, this.Script_0x100000000000730Text);
+            Conditions.Add(64u, this.Script_0x100000000000734Text);
+            Conditions.Add(65u, this.Script_0x10000000000023EExpression);
+            Conditions.Add(66u, this.Script_0x100000000000243Expression);
+            Conditions.Add(67u, this.Script_0x100000000000248Expression);
+            Conditions.Add(68u, this.Script_0x10000000000027AExpression);
+            Instructions.Add(69u, this.Script_0x10000000000027EText);
+            Conditions.Add(70u, this.Script_0x1000000000002B1Expression);
+            Conditions.Add(71u, this.Script_0x1000000000002CCExpression);
+            Conditions.Add(72u, this.Script_0x100000000000324Expression);
+            Conditions.Add(73u, this.Script_0x10000000000032AExpression);
+            Conditions.Add(74u, this.Script_0x10000000000032FExpression);
         }
         #endregion
         

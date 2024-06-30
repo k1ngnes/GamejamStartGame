@@ -156,6 +156,110 @@ namespace Articy.Jam.GlobalVariables
             }
         }
         
+        // 
+        public bool talked_to_collega2
+        {
+            get
+            {
+                return _VariableStorage.Internal_GetVariableValueBoolean(10);
+            }
+            set
+            {
+                _VariableStorage.Internal_SetVariableValueBoolean(10, value);
+            }
+        }
+        
+        // 
+        public bool start_count
+        {
+            get
+            {
+                return _VariableStorage.Internal_GetVariableValueBoolean(11);
+            }
+            set
+            {
+                _VariableStorage.Internal_SetVariableValueBoolean(11, value);
+            }
+        }
+        
+        // 
+        public int counter
+        {
+            get
+            {
+                return _VariableStorage.Internal_GetVariableValueInt32(0);
+            }
+            set
+            {
+                _VariableStorage.Internal_SetVariableValueInt32(0, value);
+            }
+        }
+        
+        // 
+        public bool good_talk
+        {
+            get
+            {
+                return _VariableStorage.Internal_GetVariableValueBoolean(12);
+            }
+            set
+            {
+                _VariableStorage.Internal_SetVariableValueBoolean(12, value);
+            }
+        }
+        
+        // 
+        public bool bad_talk
+        {
+            get
+            {
+                return _VariableStorage.Internal_GetVariableValueBoolean(13);
+            }
+            set
+            {
+                _VariableStorage.Internal_SetVariableValueBoolean(13, value);
+            }
+        }
+        
+        // 
+        public bool another_way
+        {
+            get
+            {
+                return _VariableStorage.Internal_GetVariableValueBoolean(14);
+            }
+            set
+            {
+                _VariableStorage.Internal_SetVariableValueBoolean(14, value);
+            }
+        }
+        
+        // 
+        public bool destroy_fire_in_window
+        {
+            get
+            {
+                return _VariableStorage.Internal_GetVariableValueBoolean(15);
+            }
+            set
+            {
+                _VariableStorage.Internal_SetVariableValueBoolean(15, value);
+            }
+        }
+        
+        // 
+        public bool gas_mask
+        {
+            get
+            {
+                return _VariableStorage.Internal_GetVariableValueBoolean(16);
+            }
+            set
+            {
+                _VariableStorage.Internal_SetVariableValueBoolean(16, value);
+            }
+        }
+        
         public void RegisterVariables(BaseGlobalVariables aStorage)
         {
             _VariableStorage = aStorage;
@@ -169,6 +273,14 @@ namespace Articy.Jam.GlobalVariables
             aStorage.RegisterVariable("GameState.allow_take_hose", false);
             aStorage.RegisterVariable("GameState.touch_hose", false);
             aStorage.RegisterVariable("GameState.training_complete", false);
+            aStorage.RegisterVariable("GameState.talked_to_collega2", false);
+            aStorage.RegisterVariable("GameState.start_count", false);
+            aStorage.RegisterVariable("GameState.counter", 0);
+            aStorage.RegisterVariable("GameState.good_talk", false);
+            aStorage.RegisterVariable("GameState.bad_talk", false);
+            aStorage.RegisterVariable("GameState.another_way", false);
+            aStorage.RegisterVariable("GameState.destroy_fire_in_window", false);
+            aStorage.RegisterVariable("GameState.gas_mask", false);
         }
     }
 }
