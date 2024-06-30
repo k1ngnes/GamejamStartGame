@@ -197,6 +197,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7317225356503873826, guid: 9f56a02f893d19744a29e0f04746f4ae, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 7356729807829149935}
+    - target: {fileID: 7317225356503873826, guid: 9f56a02f893d19744a29e0f04746f4ae, type: 3}
       propertyPath: closePrefab
       value: 
       objectReference: {fileID: 4461043706072908899, guid: 3af203ef8d0d29c44885085d8838dd3b, type: 3}
@@ -309,6 +313,23 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1480714600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1480714595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 461291041, guid: df2ec02f61e861546b9427c26ccacb8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reference:
+    instanceId: 0
+    referencingMode: 0
+    lowId: 1277
+    highId: 16777216
 --- !u!1001 &1552310683
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -620,6 +641,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7070054544952153519, guid: b63f3416dfe2a414ebde01d06c8abf09, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1480714599}
+    - targetCorrespondingSourceObject: {fileID: 7070054544952153519, guid: b63f3416dfe2a414ebde01d06c8abf09, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1480714600}
   m_SourcePrefab: {fileID: 100100000, guid: b63f3416dfe2a414ebde01d06c8abf09, type: 3}
 --- !u!1001 &2904716807117137080
 PrefabInstance:
@@ -865,6 +889,10 @@ PrefabInstance:
       propertyPath: tank
       value: 
       objectReference: {fileID: 43296484}
+    - target: {fileID: 1053434347738836029, guid: 8a849ee25b359704782ad691db8df91f, type: 3}
+      propertyPath: dialogueManager
+      value: 
+      objectReference: {fileID: 43362067}
     - target: {fileID: 1106258055585712930, guid: 8a849ee25b359704782ad691db8df91f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -925,6 +953,10 @@ PrefabInstance:
       propertyPath: firePoint
       value: 
       objectReference: {fileID: 1002162391}
+    - target: {fileID: 4493892929143033104, guid: 8a849ee25b359704782ad691db8df91f, type: 3}
+      propertyPath: waterPrefab
+      value: 
+      objectReference: {fileID: 6998540775501742404, guid: 456c3635ab2c04641a3db453a2e56c73, type: 3}
     - target: {fileID: 4531647167545987903, guid: 8a849ee25b359704782ad691db8df91f, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -938,13 +970,25 @@ PrefabInstance:
       value: HoseSprite
       objectReference: {fileID: 0}
     - target: {fileID: 7400293528850618839, guid: 8a849ee25b359704782ad691db8df91f, type: 3}
+      propertyPath: hint
+      value: 
+      objectReference: {fileID: 4696741235033612426}
+    - target: {fileID: 7400293528850618839, guid: 8a849ee25b359704782ad691db8df91f, type: 3}
       propertyPath: dialogueManager
       value: 
       objectReference: {fileID: 43362067}
     - target: {fileID: 8724910193779866403, guid: 8a849ee25b359704782ad691db8df91f, type: 3}
+      propertyPath: hint
+      value: 
+      objectReference: {fileID: 4696741235033612426}
+    - target: {fileID: 8724910193779866403, guid: 8a849ee25b359704782ad691db8df91f, type: 3}
       propertyPath: costume
       value: 
       objectReference: {fileID: 4501060666635571502}
+    - target: {fileID: 8724910193779866403, guid: 8a849ee25b359704782ad691db8df91f, type: 3}
+      propertyPath: dialogueManager
+      value: 
+      objectReference: {fileID: 43362067}
     - target: {fileID: 9033791346846309056, guid: 8a849ee25b359704782ad691db8df91f, type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.49
