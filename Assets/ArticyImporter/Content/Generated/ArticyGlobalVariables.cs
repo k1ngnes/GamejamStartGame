@@ -36,6 +36,8 @@ namespace Articy.Jam.GlobalVariables
             variableNames.Add("GameState.fireproof_suit");
             variableNames.Add("GameState.fire_hose");
             variableNames.Add("GameState.training");
+            variableNames.Add("GameState.fireproof_suit_talked");
+            variableNames.Add("GameState.fire_hose_talked");
         }
         #endregion
         

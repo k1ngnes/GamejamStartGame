@@ -7,17 +7,20 @@ public class Weapon : MonoBehaviour
     [SerializeField] private Transform firePoint;
     [SerializeField] private GameObject waterPrefab;
     [SerializeField] private PlayerController playerController;
+    [SerializeField] private GameObject player;
     private Camera mainCam;
     private Vector3 mousePos;
     private int maxWaterAmmo = 100;
     private int currentWaterAmmo;
     [SerializeField] private AmmoText ammoBar;
+    private Rigidbody2D rb;
 
     private void Start()
     {
         mainCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
         currentWaterAmmo = maxWaterAmmo;
         ammoBar.SetMaxWaterAmmo(maxWaterAmmo);
+        rb = player.GetComponent<Rigidbody2D>();
     }
 
     void Update()
@@ -34,6 +37,8 @@ public class Weapon : MonoBehaviour
             if (rotZ > 80)
             {
                 rotZ = 80;
+                rb.velocity = new Vector2(-0.1f, rb.velocity.y);
+                playerController.Flip();
             }
             if (rotZ < -80)
             {

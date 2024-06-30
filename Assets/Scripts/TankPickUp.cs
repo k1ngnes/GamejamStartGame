@@ -45,6 +45,7 @@ public class TankPickUp : MonoBehaviour
         Tank tank = collision.GetComponent<Tank>();
         if (tank != null)
         {
+            Debug.Log("SOmething");
             animator.SetInteger("state", 0);
         }
     }

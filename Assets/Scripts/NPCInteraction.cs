@@ -1,3 +1,4 @@
+using Articy.Unity;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,6 +10,8 @@ public class NPCInteraction : MonoBehaviour
     [SerializeField] private LayerMask pickUpMask;
     [SerializeField] private float pickUpRadius = 0.4f;
     private GameObject interactedNPC;
+    [SerializeField] private DialogueManager dialogueManager;
+    private ArticyObject availableDialogue;
 
     private void Update()
     {
@@ -18,16 +21,18 @@ public class NPCInteraction : MonoBehaviour
             if (interaction != null)
             {
                 interactedNPC = interaction.gameObject;
-
-                switch (interactedNPC.name)
+                var articyReferenceComp = interactedNPC.GetComponent<ArticyReference>();
+                if (articyReferenceComp)
                 {
-                    case "NPCName(ObjectName)":
-                        //Here we can use public method from any npc dialogue
-                        break;
-                    default:
-                        break;
+                    availableDialogue = articyReferenceComp.reference.GetObject();
                 }
+
+                dialogueManager.StartDialogue(availableDialogue);
             }
+        }
+        if (dialogueManager.DialogueActive && Input.GetKeyDown(KeyCode.Escape))
+        {
+            dialogueManager.CloseDialogueBox();
         }
     }
 
@@ -42,6 +47,13 @@ public class NPCInteraction : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        Destroy(buttonHint);
+        if (collision.GetComponent<ArticyReference>() != null)
+        {
+            availableDialogue = null;
+        }
+        if (dialogueManager.DialogueActive)
+        {
+            dialogueManager.CloseDialogueBox();
+        }
     }
 }
