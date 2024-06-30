@@ -144,16 +144,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3c683ff4a731804b9c49030a2d55c0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &206082151 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2534734060069737421, guid: 3987bd29fd632ec43a67a7386a2673c0, type: 3}
-  m_PrefabInstance: {fileID: 8927343343568821667}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &350685554 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2794654121459945835, guid: 3987bd29fd632ec43a67a7386a2673c0, type: 3}
-  m_PrefabInstance: {fileID: 8927343343568821667}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &559148723
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -209,11 +199,11 @@ PrefabInstance:
     - target: {fileID: 7317225356503873826, guid: 9f56a02f893d19744a29e0f04746f4ae, type: 3}
       propertyPath: closePrefab
       value: 
-      objectReference: {fileID: 350685554}
+      objectReference: {fileID: 4461043706072908899, guid: 3af203ef8d0d29c44885085d8838dd3b, type: 3}
     - target: {fileID: 7317225356503873826, guid: 9f56a02f893d19744a29e0f04746f4ae, type: 3}
       propertyPath: branchPrefab
       value: 
-      objectReference: {fileID: 206082151}
+      objectReference: {fileID: 3461072080257667613, guid: c260b275a66861249b08bd535b119e40, type: 3}
     - target: {fileID: 7317225356503873826, guid: 9f56a02f893d19744a29e0f04746f4ae, type: 3}
       propertyPath: dialogueText
       value: 
