@@ -4,6 +4,7 @@ using UnityEngine.UI;
 using Articy.Unity;
 using Articy.Unity.Interfaces;
 using Articy.Jam;
+using Articy.Jam.GlobalVariables;
 
 public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
 {
@@ -162,7 +163,6 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
         // Check if any branch leads to a DialogueFragment target
         // If so, the dialogue is not yet finished
         bool dialogueIsFinished = true;
-        int tmp = 0;
         foreach (var branch in aBranches)
         {
             if (branch.Target is IDialogueFragment)
@@ -170,12 +170,15 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
                 dialogueIsFinished = false;
             }
         }
+        if (!ArticyGlobalVariables.Default.GameState.allow_take_hose)
+        {
+            ifLastDialogLine = true;
+        }
         if (dialogueIsFinished && !ifLastDialogLine && item != "none")
         {
             ifLastDialogLine = true;
             dialogueIsFinished = false;
         }
-
         if (!dialogueIsFinished)
         {
             // If we have branches, create a button for each of them
@@ -190,14 +193,15 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
         else
         {
             Debug.Log(item);
-            ifLastDialogLine = false;
-            if (item == "tank")
+            if (item == "tank" && ArticyGlobalVariables.Default.GameState.allow_take_hose)
             {
                 tankPickUp.WearTank();
+                ifLastDialogLine = false;
             }
             if (item == "costume")
             {
                 costumePickUp.WearCostume();
+                ifLastDialogLine = false;
             }
             // Dialogue is finished, instantiate a close button
             GameObject btn = Instantiate(closePrefab, branchLayoutPanel);

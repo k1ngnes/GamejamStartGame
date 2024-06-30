@@ -1,17 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-7713775209111907207
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 211aad6e2ef86fe44ae36dd8c17ab8eb, type: 3}
-  m_Name: ArticyScriptFragments
-  m_EditorClassIdentifier: 
 --- !u!114 &-5720477398706827900
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -32,7 +20,94 @@ MonoBehaviour:
   mThrowOnMissingText: 0
   mClearOnLanguageSwitch: 1
   mExportLanguage: en
---- !u!114 &-3549926154933835023
+--- !u!114 &-1072958235325552469
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 211aad6e2ef86fe44ae36dd8c17ab8eb, type: 3}
+  m_Name: ArticyScriptFragments
+  m_EditorClassIdentifier: 
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1676762633, guid: df2ec02f61e861546b9427c26ccacb8d, type: 3}
+  m_Name: ArticyDatabase
+  m_EditorClassIdentifier: 
+  mHierarchy: {fileID: 9187668499942953232}
+  mLocalization: {fileID: -5720477398706827900}
+  mInternalProject:
+    mName: Jam
+    mDetailName: "\u0421\u0446\u0435\u043D\u0430\u0440\u0438\u0439 \u0434\u043B\u044F
+      \u0438\u0433\u0440\u044B \u0434\u043B\u044F \u0434\u0436\u0435\u043C\u0430"
+    mId: 82ca42c8-cef4-4720-86fe-bf7ea1cb5544
+    mTechnicalName: Jam
+  mImportedAssets: []
+  mDefaultGlobalVariables: {fileID: 8014458121670872342}
+  mScriptFragments: {fileID: -1072958235325552469}
+  mPackages:
+  - PackageName: All objects
+    PackagePath: All objects
+    mIsDefaultPackage: 1
+--- !u!114 &8014458121670872342
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd77e47f831e7b64b965ab40dcaa6e07, type: 3}
+  m_Name: DefaultGlobalVariables
+  m_EditorClassIdentifier: 
+  BoolVariableCache:
+  - mFullQualifiedName: GameState.end_conversation
+    mVar:
+      values: 00
+  - mFullQualifiedName: GameState.talked_to_collega
+    mVar:
+      values: 00
+  - mFullQualifiedName: GameState.fireproof_suit
+    mVar:
+      values: 00
+  - mFullQualifiedName: GameState.fire_hose
+    mVar:
+      values: 00
+  - mFullQualifiedName: GameState.training
+    mVar:
+      values: 00
+  - mFullQualifiedName: GameState.fireproof_suit_talked
+    mVar:
+      values: 00
+  - mFullQualifiedName: GameState.fire_hose_talked
+    mVar:
+      values: 00
+  - mFullQualifiedName: GameState.allow_take_hose
+    mVar:
+      values: 00
+  - mFullQualifiedName: GameState.touch_hose
+    mVar:
+      values: 00
+  IntVariableCache: []
+  StringVariableCache: []
+  LiveBoolVariableCache: []
+  LiveIntVariableCache: []
+  LiveStringVariableCache: []
+  isInitialized: 1
+  mGameState:
+    _VariableStorage: {fileID: 8014458121670872342}
+--- !u!114 &9187668499942953232
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -124,7 +199,7 @@ MonoBehaviour:
     parent: 72057594037929196
     technicalName: Dlg_20DC5FDC
     articyType: Dialogue
-    childCount: 56
+    childCount: 55
   - id: 72057594037928884
     parent: 72057594037928236
     technicalName: DFr_7399AE0B
@@ -295,19 +370,14 @@ MonoBehaviour:
     technicalName: DFr_D1EDEB42
     articyType: DialogueFragment
     childCount: 0
-  - id: 72057594037928594
-    parent: 72057594037928236
-    technicalName: DFr_658CACB8
-    articyType: DialogueFragment
-    childCount: 0
   - id: 72057594037928646
     parent: 72057594037928236
     technicalName: DFr_28C732C9
     articyType: DialogueFragment
     childCount: 0
-  - id: 72057594037928601
+  - id: 72057594037928594
     parent: 72057594037928236
-    technicalName: DFr_0551E177
+    technicalName: DFr_658CACB8
     articyType: DialogueFragment
     childCount: 0
   - id: 72057594037928652
@@ -315,9 +385,9 @@ MonoBehaviour:
     technicalName: Cnd_EFA315AF
     articyType: Condition
     childCount: 0
-  - id: 72057594037928606
+  - id: 72057594037928601
     parent: 72057594037928236
-    technicalName: DFr_ADBF442C
+    technicalName: DFr_0551E177
     articyType: DialogueFragment
     childCount: 0
   - id: 72057594037928658
@@ -325,9 +395,9 @@ MonoBehaviour:
     technicalName: Jmp_45877C20
     articyType: Jump
     childCount: 0
-  - id: 72057594037928611
+  - id: 72057594037928606
     parent: 72057594037928236
-    technicalName: DFr_31AFDD70
+    technicalName: DFr_ADBF442C
     articyType: DialogueFragment
     childCount: 0
   - id: 72057594037928667
@@ -335,14 +405,19 @@ MonoBehaviour:
     technicalName: DFr_D2FE0693
     articyType: DialogueFragment
     childCount: 0
-  - id: 72057594037928616
+  - id: 72057594037928611
     parent: 72057594037928236
-    technicalName: DFr_42E1D7CA
+    technicalName: DFr_31AFDD70
     articyType: DialogueFragment
     childCount: 0
   - id: 72057594037928909
     parent: 72057594037928236
     technicalName: DFr_80D96CF4
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037928616
+    parent: 72057594037928236
+    technicalName: DFr_42E1D7CA
     articyType: DialogueFragment
     childCount: 0
   - id: 72057594037928820
@@ -354,11 +429,6 @@ MonoBehaviour:
     parent: 72057594037928236
     technicalName: DFr_55C5A798
     articyType: DialogueFragment
-    childCount: 0
-  - id: 72057594037928815
-    parent: 72057594037928236
-    technicalName: Hub_A366BD14
-    articyType: Hub
     childCount: 0
   - id: 72057594037928924
     parent: 72057594037928236
@@ -424,27 +494,7 @@ MonoBehaviour:
     parent: 72057594037928207
     technicalName: Dlg_CC28345A
     articyType: Dialogue
-    childCount: 5
-  - id: 72057594037928385
-    parent: 72057594037929206
-    technicalName: Cnd_98C038B5
-    articyType: Condition
-    childCount: 0
-  - id: 72057594037928367
-    parent: 72057594037929206
-    technicalName: Cnd_DCCA58F2
-    articyType: Condition
-    childCount: 0
-  - id: 72057594037928379
-    parent: 72057594037929206
-    technicalName: Cnd_E8414B1F
-    articyType: Condition
-    childCount: 0
-  - id: 72057594037928362
-    parent: 72057594037929206
-    technicalName: Cnd_CBE8E2E8
-    articyType: Condition
-    childCount: 0
+    childCount: 1
   - id: 72057594037928242
     parent: 72057594037929206
     technicalName: Dlg_848D424A
@@ -484,30 +534,60 @@ MonoBehaviour:
     parent: 72057594037928207
     technicalName: Dlg_BC78664E
     articyType: Dialogue
-    childCount: 2
-  - id: 72057594037928270
-    parent: 72057594037929213
-    technicalName: Cnd_8CC977DA
-    articyType: Condition
-    childCount: 0
+    childCount: 1
   - id: 72057594037928248
     parent: 72057594037929213
     technicalName: Dlg_69BF7479
     articyType: Dialogue
-    childCount: 4
-  - id: 72057594037928306
-    parent: 72057594037928248
-    technicalName: DFr_7798A05C
-    articyType: DialogueFragment
-    childCount: 0
+    childCount: 12
   - id: 72057594037928291
     parent: 72057594037928248
     technicalName: DFr_4F27F031
     articyType: DialogueFragment
     childCount: 0
-  - id: 72057594037928313
+  - id: 72057594037928306
     parent: 72057594037928248
-    technicalName: DFr_ABC827A4
+    technicalName: DFr_7798A05C
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037929395
+    parent: 72057594037928248
+    technicalName: DFr_48394515
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037929481
+    parent: 72057594037928248
+    technicalName: DFr_22EE0FB7
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037929489
+    parent: 72057594037928248
+    technicalName: DFr_C272DBDF
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037929437
+    parent: 72057594037928248
+    technicalName: DFr_21E32F0A
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037929429
+    parent: 72057594037928248
+    technicalName: DFr_BD3611C5
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037929413
+    parent: 72057594037928248
+    technicalName: DFr_585F153D
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037929469
+    parent: 72057594037928248
+    technicalName: DFr_07BCC8ED
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037929404
+    parent: 72057594037928248
+    technicalName: DFr_6D89AAE8
     articyType: DialogueFragment
     childCount: 0
   - id: 72057594037928297
@@ -515,16 +595,16 @@ MonoBehaviour:
     technicalName: DFr_FE07B62A
     articyType: DialogueFragment
     childCount: 0
+  - id: 72057594037928313
+    parent: 72057594037928248
+    technicalName: DFr_ABC827A4
+    articyType: DialogueFragment
+    childCount: 0
   - id: 72057594037929220
     parent: 72057594037928207
     technicalName: Dlg_6C69BF52
     articyType: Dialogue
-    childCount: 2
-  - id: 72057594037928278
-    parent: 72057594037929220
-    technicalName: Cnd_FAB4474D
-    articyType: Condition
-    childCount: 0
+    childCount: 1
   - id: 72057594037928254
     parent: 72057594037929220
     technicalName: Dlg_39570AB1
@@ -785,72 +865,3 @@ MonoBehaviour:
     technicalName: Ufo_0DE697BE
     articyType: AssetsUserFolder
     childCount: 0
---- !u!114 &-2895502475163216450
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd77e47f831e7b64b965ab40dcaa6e07, type: 3}
-  m_Name: DefaultGlobalVariables
-  m_EditorClassIdentifier: 
-  BoolVariableCache:
-  - mFullQualifiedName: GameState.end_conversation
-    mVar:
-      values: 00
-  - mFullQualifiedName: GameState.talked_to_collega
-    mVar:
-      values: 00
-  - mFullQualifiedName: GameState.fireproof_suit
-    mVar:
-      values: 00
-  - mFullQualifiedName: GameState.fire_hose
-    mVar:
-      values: 00
-  - mFullQualifiedName: GameState.training
-    mVar:
-      values: 00
-  - mFullQualifiedName: GameState.fireproof_suit_talked
-    mVar:
-      values: 00
-  - mFullQualifiedName: GameState.fire_hose_talked
-    mVar:
-      values: 00
-  IntVariableCache: []
-  StringVariableCache: []
-  LiveBoolVariableCache: []
-  LiveIntVariableCache: []
-  LiveStringVariableCache: []
-  isInitialized: 1
-  mGameState:
-    _VariableStorage: {fileID: -2895502475163216450}
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1676762633, guid: df2ec02f61e861546b9427c26ccacb8d, type: 3}
-  m_Name: ArticyDatabase
-  m_EditorClassIdentifier: 
-  mHierarchy: {fileID: -3549926154933835023}
-  mLocalization: {fileID: -5720477398706827900}
-  mInternalProject:
-    mName: Jam
-    mDetailName: "\u0421\u0446\u0435\u043D\u0430\u0440\u0438\u0439 \u0434\u043B\u044F
-      \u0438\u0433\u0440\u044B \u0434\u043B\u044F \u0434\u0436\u0435\u043C\u0430"
-    mId: 82ca42c8-cef4-4720-86fe-bf7ea1cb5544
-    mTechnicalName: Jam
-  mImportedAssets: []
-  mDefaultGlobalVariables: {fileID: -2895502475163216450}
-  mScriptFragments: {fileID: -7713775209111907207}
-  mPackages:
-  - PackageName: All objects
-    PackagePath: All objects
-    mIsDefaultPackage: 1
