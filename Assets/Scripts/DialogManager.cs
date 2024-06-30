@@ -196,7 +196,6 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
         }
         else
         {
-            Debug.Log(item);
             if (item == "tank" && ArticyGlobalVariables.Default.GameState.allow_take_hose)
             {
                 tankPickUp.WearTank();
