@@ -1,3 +1,4 @@
+using Articy.Jam.GlobalVariables;
 using Articy.Unity;
 using System.Collections;
 using System.Collections.Generic;
@@ -23,6 +24,7 @@ public class CostumePickUp : MonoBehaviour
     {
         playerController.SetIsCostumeOn(true);
         costume.CostumePickUp();
+        ArticyGlobalVariables.Default.GameState.allow_take_hose = true;
     }
 
     private void Update()

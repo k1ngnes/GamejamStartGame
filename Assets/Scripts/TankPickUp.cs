@@ -32,14 +32,14 @@ public class TankPickUp : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             Collider2D pickedUpItem = Physics2D.OverlapCircle(transform.position, pickUpRadius, pickUpMask);
-            if (pickedUpItem != null && playerController.GetIsCostumeOn())
+            if (pickedUpItem != null)
             {
                 var articyReferenceComp = pickedUpItem.gameObject.GetComponent<ArticyReference>();
                 if (articyReferenceComp)
                 {
                     availableDialogue = articyReferenceComp.reference.GetObject();
                 }
-                dialogueManager.StartDialogue(availableDialogue, pickedUpItem.gameObject); // передаем предмет
+                dialogueManager.StartDialogue(availableDialogue, pickedUpItem.gameObject);
             }
         }
         if (dialogueManager.DialogueActive && Input.GetKeyDown(KeyCode.Escape))
