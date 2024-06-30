@@ -1,26 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-5720477398706827900
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1174674681, guid: df2ec02f61e861546b9427c26ccacb8d, type: 3}
-  m_Name: LocalizationManager
-  m_EditorClassIdentifier: 
-  OnLanguageChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  mUseLocalization: 0
-  mLanguage: en
-  mThrowOnMissingText: 0
-  mClearOnLanguageSwitch: 1
-  mExportLanguage: en
---- !u!114 &-1072958235325552469
+--- !u!114 &-8784676831328636485
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -32,82 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 211aad6e2ef86fe44ae36dd8c17ab8eb, type: 3}
   m_Name: ArticyScriptFragments
   m_EditorClassIdentifier: 
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1676762633, guid: df2ec02f61e861546b9427c26ccacb8d, type: 3}
-  m_Name: ArticyDatabase
-  m_EditorClassIdentifier: 
-  mHierarchy: {fileID: 9187668499942953232}
-  mLocalization: {fileID: -5720477398706827900}
-  mInternalProject:
-    mName: Jam
-    mDetailName: "\u0421\u0446\u0435\u043D\u0430\u0440\u0438\u0439 \u0434\u043B\u044F
-      \u0438\u0433\u0440\u044B \u0434\u043B\u044F \u0434\u0436\u0435\u043C\u0430"
-    mId: 82ca42c8-cef4-4720-86fe-bf7ea1cb5544
-    mTechnicalName: Jam
-  mImportedAssets: []
-  mDefaultGlobalVariables: {fileID: 8014458121670872342}
-  mScriptFragments: {fileID: -1072958235325552469}
-  mPackages:
-  - PackageName: All objects
-    PackagePath: All objects
-    mIsDefaultPackage: 1
---- !u!114 &8014458121670872342
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd77e47f831e7b64b965ab40dcaa6e07, type: 3}
-  m_Name: DefaultGlobalVariables
-  m_EditorClassIdentifier: 
-  BoolVariableCache:
-  - mFullQualifiedName: GameState.end_conversation
-    mVar:
-      values: 00
-  - mFullQualifiedName: GameState.talked_to_collega
-    mVar:
-      values: 00
-  - mFullQualifiedName: GameState.fireproof_suit
-    mVar:
-      values: 00
-  - mFullQualifiedName: GameState.fire_hose
-    mVar:
-      values: 00
-  - mFullQualifiedName: GameState.training
-    mVar:
-      values: 00
-  - mFullQualifiedName: GameState.fireproof_suit_talked
-    mVar:
-      values: 00
-  - mFullQualifiedName: GameState.fire_hose_talked
-    mVar:
-      values: 00
-  - mFullQualifiedName: GameState.allow_take_hose
-    mVar:
-      values: 00
-  - mFullQualifiedName: GameState.touch_hose
-    mVar:
-      values: 00
-  IntVariableCache: []
-  StringVariableCache: []
-  LiveBoolVariableCache: []
-  LiveIntVariableCache: []
-  LiveStringVariableCache: []
-  isInitialized: 1
-  mGameState:
-    _VariableStorage: {fileID: 8014458121670872342}
---- !u!114 &9187668499942953232
+--- !u!114 &-7153031268662701472
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -199,7 +104,12 @@ MonoBehaviour:
     parent: 72057594037929196
     technicalName: Dlg_20DC5FDC
     articyType: Dialogue
-    childCount: 55
+    childCount: 57
+  - id: 72057594037929500
+    parent: 72057594037928236
+    technicalName: Jmp_BB62A1E3
+    articyType: Jump
+    childCount: 0
   - id: 72057594037928884
     parent: 72057594037928236
     technicalName: DFr_7399AE0B
@@ -455,6 +365,11 @@ MonoBehaviour:
     technicalName: Cnd_834F5C83
     articyType: Condition
     childCount: 0
+  - id: 72057594037929505
+    parent: 72057594037928236
+    technicalName: DFr_4E0A6DF3
+    articyType: DialogueFragment
+    childCount: 0
   - id: 72057594037928792
     parent: 72057594037928236
     technicalName: Dlg_23BCA08F
@@ -575,6 +490,11 @@ MonoBehaviour:
     technicalName: DFr_BD3611C5
     articyType: DialogueFragment
     childCount: 0
+  - id: 72057594037929404
+    parent: 72057594037928248
+    technicalName: DFr_6D89AAE8
+    articyType: DialogueFragment
+    childCount: 0
   - id: 72057594037929413
     parent: 72057594037928248
     technicalName: DFr_585F153D
@@ -583,11 +503,6 @@ MonoBehaviour:
   - id: 72057594037929469
     parent: 72057594037928248
     technicalName: DFr_07BCC8ED
-    articyType: DialogueFragment
-    childCount: 0
-  - id: 72057594037929404
-    parent: 72057594037928248
-    technicalName: DFr_6D89AAE8
     articyType: DialogueFragment
     childCount: 0
   - id: 72057594037928297
@@ -865,3 +780,101 @@ MonoBehaviour:
     technicalName: Ufo_0DE697BE
     articyType: AssetsUserFolder
     childCount: 0
+--- !u!114 &-5720477398706827900
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1174674681, guid: df2ec02f61e861546b9427c26ccacb8d, type: 3}
+  m_Name: LocalizationManager
+  m_EditorClassIdentifier: 
+  OnLanguageChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  mUseLocalization: 0
+  mLanguage: en
+  mThrowOnMissingText: 0
+  mClearOnLanguageSwitch: 1
+  mExportLanguage: en
+--- !u!114 &-2606807452878049958
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd77e47f831e7b64b965ab40dcaa6e07, type: 3}
+  m_Name: DefaultGlobalVariables
+  m_EditorClassIdentifier: 
+  BoolVariableCache:
+  - mFullQualifiedName: GameState.end_conversation
+    mVar:
+      values: 00
+  - mFullQualifiedName: GameState.talked_to_collega
+    mVar:
+      values: 00
+  - mFullQualifiedName: GameState.fireproof_suit
+    mVar:
+      values: 00
+  - mFullQualifiedName: GameState.fire_hose
+    mVar:
+      values: 00
+  - mFullQualifiedName: GameState.training
+    mVar:
+      values: 00
+  - mFullQualifiedName: GameState.fireproof_suit_talked
+    mVar:
+      values: 00
+  - mFullQualifiedName: GameState.fire_hose_talked
+    mVar:
+      values: 00
+  - mFullQualifiedName: GameState.allow_take_hose
+    mVar:
+      values: 00
+  - mFullQualifiedName: GameState.touch_hose
+    mVar:
+      values: 00
+  - mFullQualifiedName: GameState.training_complete
+    mVar:
+      values: 00
+  IntVariableCache: []
+  StringVariableCache: []
+  LiveBoolVariableCache: []
+  LiveIntVariableCache: []
+  LiveStringVariableCache: []
+  isInitialized: 1
+  mGameState:
+    _VariableStorage: {fileID: -2606807452878049958}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1676762633, guid: df2ec02f61e861546b9427c26ccacb8d, type: 3}
+  m_Name: ArticyDatabase
+  m_EditorClassIdentifier: 
+  mHierarchy: {fileID: -7153031268662701472}
+  mLocalization: {fileID: -5720477398706827900}
+  mInternalProject:
+    mName: Jam
+    mDetailName: "\u0421\u0446\u0435\u043D\u0430\u0440\u0438\u0439 \u0434\u043B\u044F
+      \u0438\u0433\u0440\u044B \u0434\u043B\u044F \u0434\u0436\u0435\u043C\u0430"
+    mId: 82ca42c8-cef4-4720-86fe-bf7ea1cb5544
+    mTechnicalName: Jam
+  mImportedAssets: []
+  mDefaultGlobalVariables: {fileID: -2606807452878049958}
+  mScriptFragments: {fileID: -8784676831328636485}
+  mPackages:
+  - PackageName: All objects
+    PackagePath: All objects
+    mIsDefaultPackage: 1

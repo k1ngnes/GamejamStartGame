@@ -143,6 +143,19 @@ namespace Articy.Jam.GlobalVariables
             }
         }
         
+        // 
+        public bool training_complete
+        {
+            get
+            {
+                return _VariableStorage.Internal_GetVariableValueBoolean(9);
+            }
+            set
+            {
+                _VariableStorage.Internal_SetVariableValueBoolean(9, value);
+            }
+        }
+        
         public void RegisterVariables(BaseGlobalVariables aStorage)
         {
             _VariableStorage = aStorage;
@@ -155,6 +168,7 @@ namespace Articy.Jam.GlobalVariables
             aStorage.RegisterVariable("GameState.fire_hose_talked", false);
             aStorage.RegisterVariable("GameState.allow_take_hose", false);
             aStorage.RegisterVariable("GameState.touch_hose", false);
+            aStorage.RegisterVariable("GameState.training_complete", false);
         }
     }
 }
