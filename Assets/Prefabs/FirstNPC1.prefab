@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1682930250382317994}
   - component: {fileID: 4774701892600375173}
   - component: {fileID: 2922820121351535768}
-  - component: {fileID: 8161940775126741454}
+  - component: {fileID: 234063723713611486}
   m_Layer: 9
   m_Name: FirstNPC1
   m_TagString: Untagged
@@ -171,7 +171,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &8161940775126741454
+--- !u!114 &234063723713611486
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
