@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Animations/Image.controller.meta
+<<<<<<< HEAD
+guid: e70272bd176a8984d8202d584f04f1af
+=======
+guid: 473d3bf370594d343a93bb8bc96501a4
+>>>>>>> ac92b9c025d7e48049eeb4b4504f5fba81f312f3
+=======
+guid: 72ef23e67f376be4e98028f3db7ef65f
+>>>>>>> 4edac912c1871f43285f76bfec2ab360f767ba8e:Assets/Animations/FiretruckLoading.controller.meta
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
