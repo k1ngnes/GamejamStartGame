@@ -26,6 +26,12 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
     // Reference to close button prefab
     [SerializeField]
     GameObject closePrefab;
+    [SerializeField]
+    GameObject player;
+    private TankPickUp tankPickUp;
+    private CostumePickUp costumePickUp;
+    private string item = "none";
+    private bool ifLastDialogLine = false; //set true when appear last dialog line of dialog
 
     // To check if we are currently showing the dialog ui interface
     public bool DialogueActive { get; set; }
@@ -36,6 +42,8 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
     void Start()
     {
         flowPlayer = GetComponent<ArticyFlowPlayer>();
+        tankPickUp = player.GetComponent<TankPickUp>();
+        costumePickUp = player.GetComponent<CostumePickUp>();
     }
 
     void Update()
@@ -46,7 +54,7 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
             // Ensure selectedButtonIndex is within bounds
             selectedButtonIndex = Mathf.Clamp(selectedButtonIndex, 0, branchLayoutPanel.childCount - 1);
 
-            if (Input.GetKeyDown(KeyCode.Return)) // KeyCode.Return - ÍÎ‡‚Ë¯‡ Enter
+            if (Input.GetKeyDown(KeyCode.Return)) // KeyCode.Return - –∫–ª–∞–≤–∏—à–∞ Enter
             {
                 Button currentButton = branchLayoutPanel.GetChild(selectedButtonIndex).GetComponent<Button>();
                 currentButton.onClick.Invoke();
@@ -79,9 +87,33 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
 
     public void StartDialogue(IArticyObject aObject)
     {
+        item = "none";
         DialogueActive = true;
         dialogueWidget.SetActive(DialogueActive);
         flowPlayer.StartOn = aObject;
+    }
+
+    public void StartDialogue(IArticyObject aObject, GameObject aItem)
+    {
+        item = "none";
+        DialogueActive = true;
+        dialogueWidget.SetActive(DialogueActive);
+        flowPlayer.StartOn = aObject;
+
+        if (aItem != null)
+        {
+            Tank tankComponent = aItem.GetComponent<Tank>();
+            Costume costumeComponent = aItem.GetComponent<Costume>();
+
+            if (tankComponent != null)
+            {
+                item = "tank";
+            }
+            if (costumeComponent != null)
+            {
+                item = "costume";
+            }
+        }
     }
 
     public void CloseDialogueBox()
@@ -130,12 +162,18 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
         // Check if any branch leads to a DialogueFragment target
         // If so, the dialogue is not yet finished
         bool dialogueIsFinished = true;
+        int tmp = 0;
         foreach (var branch in aBranches)
         {
             if (branch.Target is IDialogueFragment)
             {
                 dialogueIsFinished = false;
             }
+        }
+        if (dialogueIsFinished && !ifLastDialogLine)
+        {
+            ifLastDialogLine = true;
+            dialogueIsFinished = false;
         }
 
         if (!dialogueIsFinished)
@@ -151,6 +189,16 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
         }
         else
         {
+            Debug.Log(item);
+            ifLastDialogLine = false;
+            if (item == "tank")
+            {
+                tankPickUp.WearTank();
+            }
+            if (item == "costume")
+            {
+                costumePickUp.WearCostume();
+            }
             // Dialogue is finished, instantiate a close button
             GameObject btn = Instantiate(closePrefab, branchLayoutPanel);
             // Clicking this button will close the Dialogue UI
