@@ -14,10 +14,13 @@ public class NPCInteraction : MonoBehaviour
     private ArticyObject availableDialogue;
     [SerializeField] GameObject hint;
     private Animator animator;
+    private Animator logAnimator;
+    [SerializeField] GameObject burningLog;
 
     private void Start()
     {
         animator = hint.GetComponent<Animator>();
+        logAnimator = burningLog.GetComponent<Animator>();
     }
 
     private void Update()
@@ -32,8 +35,7 @@ public class NPCInteraction : MonoBehaviour
                 {
                     availableDialogue = articyReferenceComp.reference.GetObject();
                 }
-                Debug.Log(animator.GetInteger("state"));
-                if (animator.GetInteger("state") == 2)
+                if (logAnimator.GetInteger("state") == 2)
                 {
                     ArticyGlobalVariables.Default.GameState.training_complete = true;
                 }
