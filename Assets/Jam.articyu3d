@@ -5,8 +5,8 @@
 		"set_IncludedNodes": "Settings, Project, GlobalVariables, ObjectDefinitions, Packages, ScriptMethods, Hierarchy, Assets",
 		"set_UseScriptSupport": "True",
 		"ExportVersion": "1.2",
-		"ObjectDefinitionsHash": "293F9F0EE5AD183BC2C08092EB6B18097C7D44B60D168AD685E837BF0FE136CE",
-		"ScriptFragmentsHash": "2555687123"
+		"ObjectDefinitionsHash": "37E878C8BE8E1371A178629DC08FEF20A95A9E7AD28EBE7626BA88D5D98CBAB9",
+		"ScriptFragmentsHash": "1722215849"
 	},
 	"Project": {
 		"Name": "Jam",
@@ -123,6 +123,42 @@
 				},
 				{
 					"Variable": "gas_mask",
+					"Type": "Boolean",
+					"Value": "False",
+					"Description": ""
+				},
+				{
+					"Variable": "hostage_on",
+					"Type": "Boolean",
+					"Value": "False",
+					"Description": ""
+				},
+				{
+					"Variable": "for_what",
+					"Type": "Boolean",
+					"Value": "False",
+					"Description": ""
+				},
+				{
+					"Variable": "done_with_street",
+					"Type": "Boolean",
+					"Value": "False",
+					"Description": ""
+				},
+				{
+					"Variable": "room_6_done",
+					"Type": "Boolean",
+					"Value": "False",
+					"Description": ""
+				},
+				{
+					"Variable": "room_7_done",
+					"Type": "Boolean",
+					"Value": "False",
+					"Description": ""
+				},
+				{
+					"Variable": "room_8_done",
 					"Type": "Boolean",
 					"Value": "False",
 					"Description": ""
@@ -2491,7 +2527,384 @@
 							{
 								"Text": "",
 								"Id": "0x010000000000062C",
-								"Owner": "0x0100000000000628"
+								"Owner": "0x0100000000000628",
+								"Connections": [
+									{
+										"Color": {
+											"a": 1.0,
+											"r": 0.5764706,
+											"g": 0.75686276,
+											"b": 0.8
+										},
+										"Label": "",
+										"TargetPin": "0x0100000000000882",
+										"Target": "0x010000000000087F"
+									}
+								]
+							}
+						]
+					}
+				},
+				{
+					"Type": "FlowFragment",
+					"Properties": {
+						"TechnicalName": "FFr_E854A0B9",
+						"Id": "0x010000000000087F",
+						"Parent": "0x0300000043CE43F7",
+						"Attachments": [
+							"0x010000000000011E"
+						],
+						"DisplayName": "Коридор 2-го этажа",
+						"PreviewImage": {
+							"ViewBox": {
+								"x": 0.0,
+								"y": 0.0,
+								"w": 0.0,
+								"h": 0.0
+							},
+							"Mode": "FromAsset",
+							"Asset": "0x0000000000000000"
+						},
+						"Color": {
+							"r": 0.5764706,
+							"g": 0.75686276,
+							"b": 0.8
+						},
+						"Text": "",
+						"ExternalId": "",
+						"Position": {
+							"x": 400.0,
+							"y": 250.0
+						},
+						"ZIndex": 3.0,
+						"Size": {
+							"w": 275.0,
+							"h": 200.0
+						},
+						"ShortId": 3897860281,
+						"InputPins": [
+							{
+								"Text": "",
+								"Id": "0x0100000000000882",
+								"Owner": "0x010000000000087F",
+								"Connections": [
+									{
+										"Color": {
+											"a": 1.0,
+											"r": 0.5764706,
+											"g": 0.75686276,
+											"b": 0.8
+										},
+										"Label": "",
+										"TargetPin": "0x010000000000088A",
+										"Target": "0x0100000000000887"
+									},
+									{
+										"Color": {
+											"a": 1.0,
+											"r": 0.5764706,
+											"g": 0.75686276,
+											"b": 0.8
+										},
+										"Label": "",
+										"TargetPin": "0x01000000000008F8",
+										"Target": "0x01000000000008F5"
+									},
+									{
+										"Color": {
+											"a": 1.0,
+											"r": 0.5764706,
+											"g": 0.75686276,
+											"b": 0.8
+										},
+										"Label": "",
+										"TargetPin": "0x0100000000000958",
+										"Target": "0x0100000000000955"
+									},
+									{
+										"Color": {
+											"a": 1.0,
+											"r": 0.5764706,
+											"g": 0.75686276,
+											"b": 0.8
+										},
+										"Label": "",
+										"TargetPin": "0x010000000000095D",
+										"Target": "0x010000000000095C"
+									}
+								]
+							}
+						],
+						"OutputPins": [
+							{
+								"Text": "",
+								"Id": "0x0100000000000883",
+								"Owner": "0x010000000000087F",
+								"Connections": [
+									{
+										"Color": {
+											"a": 1.0,
+											"r": 0.5764706,
+											"g": 0.75686276,
+											"b": 0.8
+										},
+										"Label": "",
+										"TargetPin": "0x010000000000062B",
+										"Target": "0x0100000000000628"
+									}
+								]
+							},
+							{
+								"Text": "",
+								"Id": "0x01000000000008D3",
+								"Owner": "0x010000000000087F",
+								"Connections": [
+									{
+										"Color": {
+											"a": 1.0,
+											"r": 0.5764706,
+											"g": 0.75686276,
+											"b": 0.8
+										},
+										"Label": "",
+										"TargetPin": "0x0100000000000919",
+										"Target": "0x0100000000000916"
+									}
+								]
+							},
+							{
+								"Text": "",
+								"Id": "0x010000000000092C",
+								"Owner": "0x010000000000087F",
+								"Connections": [
+									{
+										"Color": {
+											"a": 1.0,
+											"r": 0.5764706,
+											"g": 0.75686276,
+											"b": 0.8
+										},
+										"Label": "",
+										"TargetPin": "0x010000000000091F",
+										"Target": "0x010000000000091C"
+									}
+								]
+							},
+							{
+								"Text": "",
+								"Id": "0x010000000000092D",
+								"Owner": "0x010000000000087F",
+								"Connections": [
+									{
+										"Color": {
+											"a": 1.0,
+											"r": 0.5764706,
+											"g": 0.75686276,
+											"b": 0.8
+										},
+										"Label": "",
+										"TargetPin": "0x0100000000000925",
+										"Target": "0x0100000000000922"
+									}
+								]
+							}
+						]
+					}
+				},
+				{
+					"Type": "FlowFragment",
+					"Properties": {
+						"TechnicalName": "FFr_A51774ED",
+						"Id": "0x0100000000000916",
+						"Parent": "0x0300000043CE43F7",
+						"Attachments": [
+							"0x010000000000011E"
+						],
+						"DisplayName": "Квартира 6",
+						"PreviewImage": {
+							"ViewBox": {
+								"x": 0.0,
+								"y": 0.0,
+								"w": 0.0,
+								"h": 0.0
+							},
+							"Mode": "FromAsset",
+							"Asset": "0x0000000000000000"
+						},
+						"Color": {
+							"r": 0.5764706,
+							"g": 0.75686276,
+							"b": 0.8
+						},
+						"Text": "",
+						"ExternalId": "",
+						"Position": {
+							"x": 900.0,
+							"y": -25.0
+						},
+						"ZIndex": 6.0,
+						"Size": {
+							"w": 275.0,
+							"h": 200.0
+						},
+						"ShortId": 2769777901,
+						"InputPins": [
+							{
+								"Text": "",
+								"Id": "0x0100000000000919",
+								"Owner": "0x0100000000000916"
+							}
+						],
+						"OutputPins": [
+							{
+								"Text": "",
+								"Id": "0x010000000000091A",
+								"Owner": "0x0100000000000916",
+								"Connections": [
+									{
+										"Color": {
+											"a": 1.0,
+											"r": 0.5764706,
+											"g": 0.75686276,
+											"b": 0.8
+										},
+										"Label": "",
+										"TargetPin": "0x0100000000000882",
+										"Target": "0x010000000000087F"
+									}
+								]
+							}
+						]
+					}
+				},
+				{
+					"Type": "FlowFragment",
+					"Properties": {
+						"TechnicalName": "FFr_86D45029",
+						"Id": "0x010000000000091C",
+						"Parent": "0x0300000043CE43F7",
+						"Attachments": [
+							"0x010000000000011E"
+						],
+						"DisplayName": "Квартира 7",
+						"PreviewImage": {
+							"ViewBox": {
+								"x": 0.0,
+								"y": 0.0,
+								"w": 0.0,
+								"h": 0.0
+							},
+							"Mode": "FromAsset",
+							"Asset": "0x0000000000000000"
+						},
+						"Color": {
+							"r": 0.5764706,
+							"g": 0.75686276,
+							"b": 0.8
+						},
+						"Text": "",
+						"ExternalId": "",
+						"Position": {
+							"x": 900.0,
+							"y": 250.0
+						},
+						"ZIndex": 7.0,
+						"Size": {
+							"w": 275.0,
+							"h": 200.0
+						},
+						"ShortId": 2262061097,
+						"InputPins": [
+							{
+								"Text": "",
+								"Id": "0x010000000000091F",
+								"Owner": "0x010000000000091C"
+							}
+						],
+						"OutputPins": [
+							{
+								"Text": "",
+								"Id": "0x0100000000000920",
+								"Owner": "0x010000000000091C",
+								"Connections": [
+									{
+										"Color": {
+											"a": 1.0,
+											"r": 0.5764706,
+											"g": 0.75686276,
+											"b": 0.8
+										},
+										"Label": "",
+										"TargetPin": "0x0100000000000882",
+										"Target": "0x010000000000087F"
+									}
+								]
+							}
+						]
+					}
+				},
+				{
+					"Type": "FlowFragment",
+					"Properties": {
+						"TechnicalName": "FFr_D6C3E8DF",
+						"Id": "0x0100000000000922",
+						"Parent": "0x0300000043CE43F7",
+						"Attachments": [
+							"0x010000000000011E"
+						],
+						"DisplayName": "Квартира 8",
+						"PreviewImage": {
+							"ViewBox": {
+								"x": 0.0,
+								"y": 0.0,
+								"w": 0.0,
+								"h": 0.0
+							},
+							"Mode": "FromAsset",
+							"Asset": "0x0000000000000000"
+						},
+						"Color": {
+							"r": 0.5764706,
+							"g": 0.75686276,
+							"b": 0.8
+						},
+						"Text": "",
+						"ExternalId": "",
+						"Position": {
+							"x": 900.0,
+							"y": 525.0
+						},
+						"ZIndex": 8.0,
+						"Size": {
+							"w": 275.0,
+							"h": 200.0
+						},
+						"ShortId": 3603163359,
+						"InputPins": [
+							{
+								"Text": "",
+								"Id": "0x0100000000000925",
+								"Owner": "0x0100000000000922"
+							}
+						],
+						"OutputPins": [
+							{
+								"Text": "",
+								"Id": "0x0100000000000926",
+								"Owner": "0x0100000000000922",
+								"Connections": [
+									{
+										"Color": {
+											"a": 1.0,
+											"r": 0.5764706,
+											"g": 0.75686276,
+											"b": 0.8
+										},
+										"Label": "",
+										"TargetPin": "0x0100000000000882",
+										"Target": "0x010000000000087F"
+									}
+								]
 							}
 						]
 					}
@@ -3867,6 +4280,28 @@
 										"Label": "",
 										"TargetPin": "0x010000000000079D",
 										"Target": "0x010000000000079A"
+									},
+									{
+										"Color": {
+											"a": 1.0,
+											"r": 0.5764706,
+											"g": 0.75686276,
+											"b": 0.8
+										},
+										"Label": "",
+										"TargetPin": "0x01000000000008DF",
+										"Target": "0x01000000000008DC"
+									},
+									{
+										"Color": {
+											"a": 1.0,
+											"r": 0.5764706,
+											"g": 0.75686276,
+											"b": 0.8
+										},
+										"Label": "",
+										"TargetPin": "0x01000000000008E8",
+										"Target": "0x01000000000008E5"
 									}
 								]
 							}
@@ -3972,6 +4407,353 @@
 								"Text": "",
 								"Id": "0x01000000000007AB",
 								"Owner": "0x01000000000007A7"
+							}
+						]
+					}
+				},
+				{
+					"Type": "Dialogue",
+					"Properties": {
+						"TechnicalName": "Dlg_C702A9E0",
+						"Id": "0x0100000000000887",
+						"Parent": "0x010000000000087F",
+						"Attachments": [
+							"0x010000000000011E"
+						],
+						"DisplayName": "Лестничная клетка",
+						"PreviewImage": {
+							"ViewBox": {
+								"x": 0.0,
+								"y": 0.0,
+								"w": 0.0,
+								"h": 0.0
+							},
+							"Mode": "FromAsset",
+							"Asset": "0x0000000000000000"
+						},
+						"Color": {
+							"r": 0.527115166,
+							"g": 0.0,
+							"b": 0.0
+						},
+						"Text": "",
+						"ExternalId": "",
+						"Position": {
+							"x": 542.0,
+							"y": 300.0
+						},
+						"ZIndex": 0.0,
+						"Size": {
+							"w": 291.0,
+							"h": 200.0
+						},
+						"ShortId": 3338840544,
+						"InputPins": [
+							{
+								"Text": "",
+								"Id": "0x010000000000088A",
+								"Owner": "0x0100000000000887",
+								"Connections": [
+									{
+										"Color": {
+											"a": 1.0,
+											"r": 0.5764706,
+											"g": 0.75686276,
+											"b": 0.8
+										},
+										"Label": "",
+										"TargetPin": "0x0100000000000896",
+										"Target": "0x0100000000000893"
+									}
+								]
+							}
+						],
+						"OutputPins": [
+							{
+								"Text": "",
+								"Id": "0x010000000000088B",
+								"Owner": "0x0100000000000887",
+								"Connections": [
+									{
+										"Color": {
+											"a": 1.0,
+											"r": 0.5764706,
+											"g": 0.75686276,
+											"b": 0.8
+										},
+										"Label": "",
+										"TargetPin": "0x0100000000000883",
+										"Target": "0x010000000000087F"
+									}
+								]
+							},
+							{
+								"Text": "",
+								"Id": "0x01000000000008D2",
+								"Owner": "0x0100000000000887"
+							}
+						]
+					}
+				},
+				{
+					"Type": "Dialogue",
+					"Properties": {
+						"TechnicalName": "Dlg_8DC9479A",
+						"Id": "0x01000000000008F5",
+						"Parent": "0x010000000000087F",
+						"Attachments": [
+							"0x010000000000011E"
+						],
+						"DisplayName": "Дверь в квартиру 6",
+						"PreviewImage": {
+							"ViewBox": {
+								"x": 0.0,
+								"y": 0.0,
+								"w": 0.0,
+								"h": 0.0
+							},
+							"Mode": "FromAsset",
+							"Asset": "0x0000000000000000"
+						},
+						"Color": {
+							"r": 0.527115166,
+							"g": 0.0,
+							"b": 0.0
+						},
+						"Text": "",
+						"ExternalId": "",
+						"Position": {
+							"x": 542.0,
+							"y": 675.0
+						},
+						"ZIndex": 3.0,
+						"Size": {
+							"w": 291.0,
+							"h": 200.0
+						},
+						"ShortId": 2378778522,
+						"InputPins": [
+							{
+								"Text": "",
+								"Id": "0x01000000000008F8",
+								"Owner": "0x01000000000008F5",
+								"Connections": [
+									{
+										"Color": {
+											"a": 1.0,
+											"r": 0.5764706,
+											"g": 0.75686276,
+											"b": 0.8
+										},
+										"Label": "",
+										"TargetPin": "0x010000000000090C",
+										"Target": "0x0100000000000909"
+									}
+								]
+							}
+						],
+						"OutputPins": [
+							{
+								"Text": "",
+								"Id": "0x01000000000008F9",
+								"Owner": "0x01000000000008F5",
+								"Connections": [
+									{
+										"Color": {
+											"a": 1.0,
+											"r": 0.5764706,
+											"g": 0.75686276,
+											"b": 0.8
+										},
+										"Label": "",
+										"TargetPin": "0x01000000000008D3",
+										"Target": "0x010000000000087F"
+									}
+								]
+							},
+							{
+								"Text": "",
+								"Id": "0x0100000000000914",
+								"Owner": "0x01000000000008F5"
+							}
+						]
+					}
+				},
+				{
+					"Type": "Dialogue",
+					"Properties": {
+						"TechnicalName": "Dlg_C5E7FFF2",
+						"Id": "0x0100000000000955",
+						"Parent": "0x010000000000087F",
+						"Attachments": [
+							"0x010000000000011E"
+						],
+						"DisplayName": "Дверь в квартиру 7",
+						"PreviewImage": {
+							"ViewBox": {
+								"x": 0.0,
+								"y": 0.0,
+								"w": 0.0,
+								"h": 0.0
+							},
+							"Mode": "FromAsset",
+							"Asset": "0x0000000000000000"
+						},
+						"Color": {
+							"r": 0.527115166,
+							"g": 0.0,
+							"b": 0.0
+						},
+						"Text": "",
+						"ExternalId": "",
+						"Position": {
+							"x": 542.0,
+							"y": 1050.0
+						},
+						"ZIndex": 6.0,
+						"Size": {
+							"w": 291.0,
+							"h": 200.0
+						},
+						"ShortId": 3320315890,
+						"InputPins": [
+							{
+								"Text": "",
+								"Id": "0x0100000000000958",
+								"Owner": "0x0100000000000955",
+								"Connections": [
+									{
+										"Color": {
+											"a": 1.0,
+											"r": 0.5764706,
+											"g": 0.75686276,
+											"b": 0.8
+										},
+										"Label": "",
+										"TargetPin": "0x010000000000099E",
+										"Target": "0x010000000000099D"
+									},
+									{
+										"Color": {
+											"a": 1.0,
+											"r": 0.5764706,
+											"g": 0.75686276,
+											"b": 0.8
+										},
+										"Label": "",
+										"TargetPin": "0x01000000000009B4",
+										"Target": "0x01000000000009B1"
+									}
+								]
+							}
+						],
+						"OutputPins": [
+							{
+								"Text": "",
+								"Id": "0x0100000000000959",
+								"Owner": "0x0100000000000955",
+								"Connections": [
+									{
+										"Color": {
+											"a": 1.0,
+											"r": 0.5764706,
+											"g": 0.75686276,
+											"b": 0.8
+										},
+										"Label": "",
+										"TargetPin": "0x010000000000092C",
+										"Target": "0x010000000000087F"
+									}
+								]
+							},
+							{
+								"Text": "",
+								"Id": "0x0100000000000966",
+								"Owner": "0x0100000000000955"
+							}
+						]
+					}
+				},
+				{
+					"Type": "Dialogue",
+					"Properties": {
+						"TechnicalName": "Dlg_2A008E31",
+						"Id": "0x010000000000095C",
+						"Parent": "0x010000000000087F",
+						"Attachments": [
+							"0x010000000000011E"
+						],
+						"DisplayName": "Дверь в квартиру 8",
+						"PreviewImage": {
+							"ViewBox": {
+								"x": 0.0,
+								"y": 0.0,
+								"w": 0.0,
+								"h": 0.0
+							},
+							"Mode": "FromAsset",
+							"Asset": "0x0000000000000000"
+						},
+						"Color": {
+							"r": 0.527115166,
+							"g": 0.0,
+							"b": 0.0
+						},
+						"Text": "",
+						"ExternalId": "",
+						"Position": {
+							"x": 542.0,
+							"y": 1425.0
+						},
+						"ZIndex": 6.0,
+						"Size": {
+							"w": 291.0,
+							"h": 200.0
+						},
+						"ShortId": 704679473,
+						"InputPins": [
+							{
+								"Text": "",
+								"Id": "0x010000000000095D",
+								"Owner": "0x010000000000095C",
+								"Connections": [
+									{
+										"Color": {
+											"a": 1.0,
+											"r": 0.5764706,
+											"g": 0.75686276,
+											"b": 0.8
+										},
+										"Label": "",
+										"TargetPin": "0x0100000000000976",
+										"Target": "0x0100000000000975"
+									}
+								]
+							}
+						],
+						"OutputPins": [
+							{
+								"Text": "",
+								"Id": "0x010000000000095E",
+								"Owner": "0x010000000000095C",
+								"Connections": [
+									{
+										"Color": {
+											"a": 1.0,
+											"r": 0.5764706,
+											"g": 0.75686276,
+											"b": 0.8
+										},
+										"Label": "",
+										"TargetPin": "0x010000000000092D",
+										"Target": "0x010000000000087F"
+									}
+								]
+							},
+							{
+								"Text": "",
+								"Id": "0x0100000000000965",
+								"Owner": "0x010000000000095C"
 							}
 						]
 					}
@@ -4487,7 +5269,7 @@
 						"Parent": "0x010000000000012C",
 						"MenuText": "...",
 						"StageDirections": "",
-						"Speaker": "0x010000000000011E",
+						"Speaker": "0x0100000000000676",
 						"SplitHeight": 64.0,
 						"Color": {
 							"r": 0.5764706,
@@ -4935,7 +5717,7 @@
 						"Parent": "0x010000000000012C",
 						"MenuText": "...",
 						"StageDirections": "",
-						"Speaker": "0x010000000000011E",
+						"Speaker": "0x0100000000000676",
 						"SplitHeight": 64.0,
 						"Color": {
 							"r": 0.5764706,
@@ -6245,7 +7027,7 @@
 						"Parent": "0x0100000000000132",
 						"MenuText": "",
 						"StageDirections": "",
-						"Speaker": "0x010000000000011E",
+						"Speaker": "0x0100000000000676",
 						"SplitHeight": 64.0,
 						"Color": {
 							"r": 0.577580452,
@@ -6301,7 +7083,7 @@
 						"Parent": "0x0100000000000132",
 						"MenuText": "",
 						"StageDirections": "",
-						"Speaker": "0x010000000000011E",
+						"Speaker": "0x0100000000000676",
 						"SplitHeight": 64.0,
 						"Color": {
 							"r": 0.577580452,
@@ -6357,7 +7139,7 @@
 						"Parent": "0x0100000000000132",
 						"MenuText": "",
 						"StageDirections": "",
-						"Speaker": "0x010000000000011E",
+						"Speaker": "0x0100000000000676",
 						"SplitHeight": 64.0,
 						"Color": {
 							"r": 0.577580452,
@@ -6413,7 +7195,7 @@
 						"Parent": "0x0100000000000132",
 						"MenuText": "",
 						"StageDirections": "",
-						"Speaker": "0x010000000000011E",
+						"Speaker": "0x0100000000000676",
 						"SplitHeight": 64.0,
 						"Color": {
 							"r": 0.577580452,
@@ -6525,7 +7307,7 @@
 						"Parent": "0x0100000000000132",
 						"MenuText": "",
 						"StageDirections": "",
-						"Speaker": "0x010000000000011E",
+						"Speaker": "0x0100000000000676",
 						"SplitHeight": 64.0,
 						"Color": {
 							"r": 0.577580452,
@@ -7253,7 +8035,7 @@
 						"Parent": "0x010000000000013E",
 						"MenuText": "",
 						"StageDirections": "",
-						"Speaker": "0x010000000000011E",
+						"Speaker": "0x0100000000000676",
 						"SplitHeight": 64.0,
 						"Color": {
 							"r": 0.5764706,
@@ -7365,7 +8147,7 @@
 						"Parent": "0x0100000000000138",
 						"MenuText": "",
 						"StageDirections": "",
-						"Speaker": "0x010000000000011E",
+						"Speaker": "0x0100000000000676",
 						"SplitHeight": 64.0,
 						"Color": {
 							"r": 0.5764706,
@@ -7421,7 +8203,7 @@
 						"Parent": "0x0100000000000138",
 						"MenuText": "",
 						"StageDirections": "",
-						"Speaker": "0x010000000000011E",
+						"Speaker": "0x0100000000000676",
 						"SplitHeight": 64.0,
 						"Color": {
 							"r": 0.5764706,
@@ -8339,7 +9121,7 @@
 						"Parent": "0x0100000000000632",
 						"MenuText": "...",
 						"StageDirections": "",
-						"Speaker": "0x010000000000011E",
+						"Speaker": "0x0100000000000676",
 						"SplitHeight": 64.0,
 						"Color": {
 							"r": 0.5764706,
@@ -8518,7 +9300,7 @@
 						"Parent": "0x01000000000006C0",
 						"MenuText": "...",
 						"StageDirections": "",
-						"Speaker": "0x010000000000011E",
+						"Speaker": "0x0100000000000676",
 						"SplitHeight": 64.0,
 						"Color": {
 							"r": 0.5764706,
@@ -9264,7 +10046,7 @@
 							"g": 0.75686276,
 							"b": 0.8
 						},
-						"Text": "Возможно, если я потушу огонь в огне, то это как-то поможет мне открыть дверь",
+						"Text": "Возможно, если я потушу огонь в окне, то это как-то поможет мне открыть дверь",
 						"ExternalId": "",
 						"Position": {
 							"x": 3900.0,
@@ -9446,7 +10228,7 @@
 						"ShortId": 3959375928,
 						"InputPins": [
 							{
-								"Text": "GameState.bad_talk == false && GameState.good_talk == false",
+								"Text": "GameState.bad_talk == false && GameState.good_talk == false && GameState.for_what == false",
 								"Id": "0x010000000000077C",
 								"Owner": "0x0100000000000779"
 							}
@@ -9481,14 +10263,14 @@
 						"Parent": "0x0100000000000771",
 						"MenuText": "",
 						"StageDirections": "",
-						"Speaker": "0x010000000000011E",
+						"Speaker": "0x0100000000000676",
 						"SplitHeight": 64.0,
 						"Color": {
 							"r": 0.5764706,
 							"g": 0.75686276,
 							"b": 0.8
 						},
-						"Text": "Нельзя бездумно открывать эту дверь, иначе я дам огнб, больше кислорода и это может привести к плачевным последствиям",
+						"Text": "Нельзя бездумно открывать эту дверь, иначе я дам огню, больше кислорода и это может привести к плачевным последствиям",
 						"ExternalId": "",
 						"Position": {
 							"x": 675.0,
@@ -9558,7 +10340,7 @@
 						"ShortId": 1729052520,
 						"InputPins": [
 							{
-								"Text": "GameState.another_way == true;",
+								"Text": "GameState.another_way == true && GameState.for_what == false",
 								"Id": "0x0100000000000788",
 								"Owner": "0x0100000000000785"
 							}
@@ -9593,7 +10375,7 @@
 						"Parent": "0x0100000000000771",
 						"MenuText": "",
 						"StageDirections": "",
-						"Speaker": "0x010000000000011E",
+						"Speaker": "0x0100000000000676",
 						"SplitHeight": 64.0,
 						"Color": {
 							"r": 0.5764706,
@@ -9614,7 +10396,7 @@
 						"ShortId": 2031915207,
 						"InputPins": [
 							{
-								"Text": "GameState.bad_talk == true || GameState.good_talk == true",
+								"Text": "GameState.bad_talk == true && GameState.for_what == false || GameState.good_talk == true && GameState.for_what == false",
 								"Id": "0x0100000000000793",
 								"Owner": "0x0100000000000790"
 							}
@@ -9649,7 +10431,7 @@
 						"Parent": "0x0100000000000771",
 						"MenuText": "",
 						"StageDirections": "",
-						"Speaker": "0x010000000000011E",
+						"Speaker": "0x0100000000000676",
 						"SplitHeight": 64.0,
 						"Color": {
 							"r": 0.5764706,
@@ -9670,14 +10452,14 @@
 						"ShortId": 1754350855,
 						"InputPins": [
 							{
-								"Text": "GameState.destroy_fire_in_window == true",
+								"Text": "GameState.destroy_fire_in_window == true && GameState.for_what == false",
 								"Id": "0x010000000000079D",
 								"Owner": "0x010000000000079A"
 							}
 						],
 						"OutputPins": [
 							{
-								"Text": "",
+								"Text": "GameState.done_with_street = true;",
 								"Id": "0x010000000000079E",
 								"Owner": "0x010000000000079A",
 								"Connections": [
@@ -10432,7 +11214,7 @@
 						"Parent": "0x010000000000012C",
 						"MenuText": "...",
 						"StageDirections": "",
-						"Speaker": "0x010000000000011E",
+						"Speaker": "0x0100000000000676",
 						"SplitHeight": 64.0,
 						"Color": {
 							"r": 0.5764706,
@@ -10663,7 +11445,7 @@
 							"g": 0.75686276,
 							"b": 0.8
 						},
-						"Text": "Ощещение что сегодня не с той ноги встал",
+						"Text": "Ощущение, что сегодня не с той ноги встал",
 						"ExternalId": "",
 						"Position": {
 							"x": -750.0,
@@ -10712,7 +11494,7 @@
 						"Parent": "0x010000000000012C",
 						"MenuText": "...",
 						"StageDirections": "",
-						"Speaker": "0x010000000000011E",
+						"Speaker": "0x0100000000000676",
 						"SplitHeight": 64.0,
 						"Color": {
 							"r": 0.5764706,
@@ -10810,6 +11592,1337 @@
 										"Label": "",
 										"TargetPin": "0x0100000000000295",
 										"Target": "0x0100000000000292"
+									}
+								]
+							}
+						]
+					}
+				},
+				{
+					"Type": "DialogueFragment",
+					"Properties": {
+						"TechnicalName": "DFr_15680AB9",
+						"Id": "0x010000000000088E",
+						"Parent": "0x0100000000000887",
+						"MenuText": "На улицу",
+						"StageDirections": "",
+						"Speaker": "0x0100000000000676",
+						"SplitHeight": 64.0,
+						"Color": {
+							"r": 0.5764706,
+							"g": 0.75686276,
+							"b": 0.8
+						},
+						"Text": "Да. Мне как можно быстрее нужно отнести человека к скорой помощи",
+						"ExternalId": "",
+						"Position": {
+							"x": 475.0,
+							"y": -200.0
+						},
+						"ZIndex": 0.0,
+						"Size": {
+							"w": 225.0,
+							"h": 200.0
+						},
+						"ShortId": 359140025,
+						"InputPins": [
+							{
+								"Text": "GameState.hostage_on == true",
+								"Id": "0x0100000000000891",
+								"Owner": "0x010000000000088E"
+							}
+						],
+						"OutputPins": [
+							{
+								"Text": "",
+								"Id": "0x0100000000000892",
+								"Owner": "0x010000000000088E",
+								"Connections": [
+									{
+										"Color": {
+											"a": 1.0,
+											"r": 0.5764706,
+											"g": 0.75686276,
+											"b": 0.8
+										},
+										"Label": "",
+										"TargetPin": "0x010000000000088B",
+										"Target": "0x0100000000000887"
+									}
+								]
+							}
+						]
+					}
+				},
+				{
+					"Type": "DialogueFragment",
+					"Properties": {
+						"TechnicalName": "DFr_9078AA10",
+						"Id": "0x0100000000000893",
+						"Parent": "0x0100000000000887",
+						"MenuText": "",
+						"StageDirections": "",
+						"Speaker": "0x0100000000000676",
+						"SplitHeight": 64.0,
+						"Color": {
+							"r": 0.5764706,
+							"g": 0.75686276,
+							"b": 0.8
+						},
+						"Text": "Куда мне пойти?",
+						"ExternalId": "",
+						"Position": {
+							"x": 75.0,
+							"y": 350.0
+						},
+						"ZIndex": 1.0,
+						"Size": {
+							"w": 225.0,
+							"h": 200.0
+						},
+						"ShortId": 2423826960,
+						"InputPins": [
+							{
+								"Text": "",
+								"Id": "0x0100000000000896",
+								"Owner": "0x0100000000000893"
+							}
+						],
+						"OutputPins": [
+							{
+								"Text": "",
+								"Id": "0x0100000000000897",
+								"Owner": "0x0100000000000893",
+								"Connections": [
+									{
+										"Color": {
+											"a": 1.0,
+											"r": 0.5764706,
+											"g": 0.75686276,
+											"b": 0.8
+										},
+										"Label": "",
+										"TargetPin": "0x0100000000000891",
+										"Target": "0x010000000000088E"
+									},
+									{
+										"Color": {
+											"a": 1.0,
+											"r": 0.5764706,
+											"g": 0.75686276,
+											"b": 0.8
+										},
+										"Label": "",
+										"TargetPin": "0x010000000000089C",
+										"Target": "0x0100000000000899"
+									},
+									{
+										"Color": {
+											"a": 1.0,
+											"r": 0.5764706,
+											"g": 0.75686276,
+											"b": 0.8
+										},
+										"Label": "",
+										"TargetPin": "0x01000000000008A5",
+										"Target": "0x01000000000008A2"
+									},
+									{
+										"Color": {
+											"a": 1.0,
+											"r": 0.5764706,
+											"g": 0.75686276,
+											"b": 0.8
+										},
+										"Label": "",
+										"TargetPin": "0x01000000000008BA",
+										"Target": "0x01000000000008B7"
+									}
+								]
+							}
+						]
+					}
+				},
+				{
+					"Type": "DialogueFragment",
+					"Properties": {
+						"TechnicalName": "DFr_A71E4DDC",
+						"Id": "0x0100000000000899",
+						"Parent": "0x0100000000000887",
+						"MenuText": "На 1 этаж",
+						"StageDirections": "",
+						"Speaker": "0x0100000000000676",
+						"SplitHeight": 64.0,
+						"Color": {
+							"r": 0.5764706,
+							"g": 0.75686276,
+							"b": 0.8
+						},
+						"Text": "Я не пойду на 1 этаж, так как там работает мой коллега.",
+						"ExternalId": "",
+						"Position": {
+							"x": 475.0,
+							"y": 350.0
+						},
+						"ZIndex": 2.0,
+						"Size": {
+							"w": 225.0,
+							"h": 200.0
+						},
+						"ShortId": 2803781084,
+						"InputPins": [
+							{
+								"Text": "",
+								"Id": "0x010000000000089C",
+								"Owner": "0x0100000000000899"
+							}
+						],
+						"OutputPins": [
+							{
+								"Text": "",
+								"Id": "0x010000000000089D",
+								"Owner": "0x0100000000000899",
+								"Connections": [
+									{
+										"Color": {
+											"a": 1.0,
+											"r": 0.5764706,
+											"g": 0.75686276,
+											"b": 0.8
+										},
+										"Label": "",
+										"TargetPin": "0x01000000000008D2",
+										"Target": "0x0100000000000887"
+									}
+								]
+							}
+						]
+					}
+				},
+				{
+					"Type": "DialogueFragment",
+					"Properties": {
+						"TechnicalName": "DFr_52DE665B",
+						"Id": "0x01000000000008A2",
+						"Parent": "0x0100000000000887",
+						"MenuText": "На 3 этаж",
+						"StageDirections": "",
+						"Speaker": "0x0100000000000676",
+						"SplitHeight": 64.0,
+						"Color": {
+							"r": 0.5764706,
+							"g": 0.75686276,
+							"b": 0.8
+						},
+						"Text": "3 этаж - не моя зона ответсвенности. Хотя я могу туда пойти, как только управлюсь на своем этаже",
+						"ExternalId": "",
+						"Position": {
+							"x": 475.0,
+							"y": 625.0
+						},
+						"ZIndex": 5.0,
+						"Size": {
+							"w": 225.0,
+							"h": 200.0
+						},
+						"ShortId": 1390306907,
+						"InputPins": [
+							{
+								"Text": "",
+								"Id": "0x01000000000008A5",
+								"Owner": "0x01000000000008A2"
+							}
+						],
+						"OutputPins": [
+							{
+								"Text": "",
+								"Id": "0x01000000000008A6",
+								"Owner": "0x01000000000008A2",
+								"Connections": [
+									{
+										"Color": {
+											"a": 1.0,
+											"r": 0.5764706,
+											"g": 0.75686276,
+											"b": 0.8
+										},
+										"Label": "",
+										"TargetPin": "0x01000000000008D2",
+										"Target": "0x0100000000000887"
+									}
+								]
+							}
+						]
+					}
+				},
+				{
+					"Type": "DialogueFragment",
+					"Properties": {
+						"TechnicalName": "DFr_D48BBD51",
+						"Id": "0x01000000000008BE",
+						"Parent": "0x0100000000000887",
+						"MenuText": "НА УЛИЦУ",
+						"StageDirections": "",
+						"Speaker": "0x010000000000011E",
+						"SplitHeight": 64.0,
+						"Color": {
+							"r": 0.5764706,
+							"g": 0.75686276,
+							"b": 0.8
+						},
+						"Text": "МНЕ НУЖНО НА УЛИЦУ",
+						"ExternalId": "",
+						"Position": {
+							"x": 975.0,
+							"y": -200.0
+						},
+						"ZIndex": 9.0,
+						"Size": {
+							"w": 225.0,
+							"h": 200.0
+						},
+						"ShortId": 3565927761,
+						"InputPins": [
+							{
+								"Text": "",
+								"Id": "0x01000000000008C1",
+								"Owner": "0x01000000000008BE"
+							}
+						],
+						"OutputPins": [
+							{
+								"Text": "GameState.for_what = true;",
+								"Id": "0x01000000000008C2",
+								"Owner": "0x01000000000008BE",
+								"Connections": [
+									{
+										"Color": {
+											"a": 1.0,
+											"r": 0.5764706,
+											"g": 0.75686276,
+											"b": 0.8
+										},
+										"Label": "",
+										"TargetPin": "0x010000000000088B",
+										"Target": "0x0100000000000887"
+									}
+								]
+							}
+						]
+					}
+				},
+				{
+					"Type": "DialogueFragment",
+					"Properties": {
+						"TechnicalName": "DFr_10E9FA0E",
+						"Id": "0x01000000000008B7",
+						"Parent": "0x0100000000000887",
+						"MenuText": "На улицу",
+						"StageDirections": "",
+						"Speaker": "0x0100000000000676",
+						"SplitHeight": 64.0,
+						"Color": {
+							"r": 0.5764706,
+							"g": 0.75686276,
+							"b": 0.8
+						},
+						"Text": "Хмм. Но мне же некого выносить из горящего здания на улицу... Я думаю что на этаже еще могли остаться люди.",
+						"ExternalId": "",
+						"Position": {
+							"x": 475.0,
+							"y": 75.0
+						},
+						"ZIndex": 8.0,
+						"Size": {
+							"w": 225.0,
+							"h": 200.0
+						},
+						"ShortId": 283769358,
+						"InputPins": [
+							{
+								"Text": "GameState.hostage_on == false",
+								"Id": "0x01000000000008BA",
+								"Owner": "0x01000000000008B7"
+							}
+						],
+						"OutputPins": [
+							{
+								"Text": "",
+								"Id": "0x01000000000008BB",
+								"Owner": "0x01000000000008B7",
+								"Connections": [
+									{
+										"Color": {
+											"a": 1.0,
+											"r": 0.5764706,
+											"g": 0.75686276,
+											"b": 0.8
+										},
+										"Label": "",
+										"TargetPin": "0x01000000000008C1",
+										"Target": "0x01000000000008BE"
+									},
+									{
+										"Color": {
+											"a": 1.0,
+											"r": 0.5764706,
+											"g": 0.75686276,
+											"b": 0.8
+										},
+										"Label": "",
+										"TargetPin": "0x01000000000008C6",
+										"Target": "0x01000000000008C3"
+									}
+								]
+							}
+						]
+					}
+				},
+				{
+					"Type": "DialogueFragment",
+					"Properties": {
+						"TechnicalName": "DFr_ECD853AD",
+						"Id": "0x01000000000008C3",
+						"Parent": "0x0100000000000887",
+						"MenuText": "Остаться",
+						"StageDirections": "",
+						"Speaker": "0x0100000000000676",
+						"SplitHeight": 64.0,
+						"Color": {
+							"r": 0.5764706,
+							"g": 0.75686276,
+							"b": 0.8
+						},
+						"Text": "Пожалуй еще поищу кого-нибудь на этаже",
+						"ExternalId": "",
+						"Position": {
+							"x": 850.0,
+							"y": 175.0
+						},
+						"ZIndex": 10.0,
+						"Size": {
+							"w": 225.0,
+							"h": 200.0
+						},
+						"ShortId": 3973600173,
+						"InputPins": [
+							{
+								"Text": "",
+								"Id": "0x01000000000008C6",
+								"Owner": "0x01000000000008C3"
+							}
+						],
+						"OutputPins": [
+							{
+								"Text": "",
+								"Id": "0x01000000000008C7",
+								"Owner": "0x01000000000008C3",
+								"Connections": [
+									{
+										"Color": {
+											"a": 1.0,
+											"r": 0.5764706,
+											"g": 0.75686276,
+											"b": 0.8
+										},
+										"Label": "",
+										"TargetPin": "0x01000000000008D2",
+										"Target": "0x0100000000000887"
+									}
+								]
+							}
+						]
+					}
+				},
+				{
+					"Type": "DialogueFragment",
+					"Properties": {
+						"TechnicalName": "DFr_02A9942C",
+						"Id": "0x01000000000008DC",
+						"Parent": "0x0100000000000771",
+						"MenuText": "",
+						"StageDirections": "",
+						"Speaker": "0x010000000000011E",
+						"SplitHeight": 64.0,
+						"Color": {
+							"r": 0.5764706,
+							"g": 0.75686276,
+							"b": 0.8
+						},
+						"Text": "БОЖЕ. И зачем я только выходил на улицу...",
+						"ExternalId": "",
+						"Position": {
+							"x": 350.0,
+							"y": 1175.0
+						},
+						"ZIndex": 14.0,
+						"Size": {
+							"w": 225.0,
+							"h": 200.0
+						},
+						"ShortId": 44667948,
+						"InputPins": [
+							{
+								"Text": "GameState.for_what == true && GameState.done_with_street == true",
+								"Id": "0x01000000000008DF",
+								"Owner": "0x01000000000008DC"
+							}
+						],
+						"OutputPins": [
+							{
+								"Text": "GameState.for_what = false;",
+								"Id": "0x01000000000008E0",
+								"Owner": "0x01000000000008DC",
+								"Connections": [
+									{
+										"Color": {
+											"a": 1.0,
+											"r": 0.5764706,
+											"g": 0.75686276,
+											"b": 0.8
+										},
+										"Label": "",
+										"TargetPin": "0x01000000000007A4",
+										"Target": "0x0100000000000771"
+									}
+								]
+							}
+						]
+					}
+				},
+				{
+					"Type": "DialogueFragment",
+					"Properties": {
+						"TechnicalName": "DFr_3E64AC60",
+						"Id": "0x01000000000008E5",
+						"Parent": "0x0100000000000771",
+						"MenuText": "",
+						"StageDirections": "",
+						"Speaker": "0x0100000000000676",
+						"SplitHeight": 64.0,
+						"Color": {
+							"r": 0.5764706,
+							"g": 0.75686276,
+							"b": 0.8
+						},
+						"Text": "Мне нужно продолжать искать людей нуждающихся в моей помощи и тушить пожар",
+						"ExternalId": "",
+						"Position": {
+							"x": 350.0,
+							"y": 1450.0
+						},
+						"ZIndex": 17.0,
+						"Size": {
+							"w": 225.0,
+							"h": 200.0
+						},
+						"ShortId": 1046785120,
+						"InputPins": [
+							{
+								"Text": "GameState.for_what == false && GameState.done_with_street == true",
+								"Id": "0x01000000000008E8",
+								"Owner": "0x01000000000008E5"
+							}
+						],
+						"OutputPins": [
+							{
+								"Text": "",
+								"Id": "0x01000000000008E9",
+								"Owner": "0x01000000000008E5",
+								"Connections": [
+									{
+										"Color": {
+											"a": 1.0,
+											"r": 0.5764706,
+											"g": 0.75686276,
+											"b": 0.8
+										},
+										"Label": "",
+										"TargetPin": "0x01000000000007A4",
+										"Target": "0x0100000000000771"
+									}
+								]
+							}
+						]
+					}
+				},
+				{
+					"Type": "DialogueFragment",
+					"Properties": {
+						"TechnicalName": "DFr_C8C66776",
+						"Id": "0x01000000000008FD",
+						"Parent": "0x01000000000008F5",
+						"MenuText": "Зайти",
+						"StageDirections": "",
+						"Speaker": "0x0100000000000676",
+						"SplitHeight": 64.0,
+						"Color": {
+							"r": 0.5764706,
+							"g": 0.75686276,
+							"b": 0.8
+						},
+						"Text": "Да. Возможно там есть источники огня и люди.",
+						"ExternalId": "",
+						"Position": {
+							"x": 475.0,
+							"y": 300.0
+						},
+						"ZIndex": 0.0,
+						"Size": {
+							"w": 225.0,
+							"h": 200.0
+						},
+						"ShortId": 3368445814,
+						"InputPins": [
+							{
+								"Text": "GameState.room_6_done == false",
+								"Id": "0x0100000000000900",
+								"Owner": "0x01000000000008FD"
+							}
+						],
+						"OutputPins": [
+							{
+								"Text": "",
+								"Id": "0x0100000000000901",
+								"Owner": "0x01000000000008FD",
+								"Connections": [
+									{
+										"Color": {
+											"a": 1.0,
+											"r": 0.5764706,
+											"g": 0.75686276,
+											"b": 0.8
+										},
+										"Label": "",
+										"TargetPin": "0x01000000000008F9",
+										"Target": "0x01000000000008F5"
+									}
+								]
+							}
+						]
+					}
+				},
+				{
+					"Type": "DialogueFragment",
+					"Properties": {
+						"TechnicalName": "DFr_8B7F4ABA",
+						"Id": "0x0100000000000903",
+						"Parent": "0x01000000000008F5",
+						"MenuText": "Пройти мимо",
+						"StageDirections": "",
+						"Speaker": "0x0100000000000676",
+						"SplitHeight": 64.0,
+						"Color": {
+							"r": 0.5764706,
+							"g": 0.75686276,
+							"b": 0.8
+						},
+						"Text": "Не сейчас",
+						"ExternalId": "",
+						"Position": {
+							"x": 475.0,
+							"y": 600.0
+						},
+						"ZIndex": 1.0,
+						"Size": {
+							"w": 225.0,
+							"h": 200.0
+						},
+						"ShortId": 2340375226,
+						"InputPins": [
+							{
+								"Text": "GameState.room_6_done == false",
+								"Id": "0x0100000000000906",
+								"Owner": "0x0100000000000903"
+							}
+						],
+						"OutputPins": [
+							{
+								"Text": "",
+								"Id": "0x0100000000000907",
+								"Owner": "0x0100000000000903",
+								"Connections": [
+									{
+										"Color": {
+											"a": 1.0,
+											"r": 0.5764706,
+											"g": 0.75686276,
+											"b": 0.8
+										},
+										"Label": "",
+										"TargetPin": "0x0100000000000914",
+										"Target": "0x01000000000008F5"
+									}
+								]
+							}
+						]
+					}
+				},
+				{
+					"Type": "DialogueFragment",
+					"Properties": {
+						"TechnicalName": "DFr_6D356DED",
+						"Id": "0x0100000000000909",
+						"Parent": "0x01000000000008F5",
+						"MenuText": "",
+						"StageDirections": "",
+						"Speaker": "0x0100000000000676",
+						"SplitHeight": 64.0,
+						"Color": {
+							"r": 0.5764706,
+							"g": 0.75686276,
+							"b": 0.8
+						},
+						"Text": "Зайти в 6 квартиру?",
+						"ExternalId": "",
+						"Position": {
+							"x": 125.0,
+							"y": 450.0
+						},
+						"ZIndex": 2.0,
+						"Size": {
+							"w": 225.0,
+							"h": 200.0
+						},
+						"ShortId": 1832218093,
+						"InputPins": [
+							{
+								"Text": "",
+								"Id": "0x010000000000090C",
+								"Owner": "0x0100000000000909"
+							}
+						],
+						"OutputPins": [
+							{
+								"Text": "",
+								"Id": "0x010000000000090D",
+								"Owner": "0x0100000000000909",
+								"Connections": [
+									{
+										"Color": {
+											"a": 1.0,
+											"r": 0.5764706,
+											"g": 0.75686276,
+											"b": 0.8
+										},
+										"Label": "",
+										"TargetPin": "0x0100000000000900",
+										"Target": "0x01000000000008FD"
+									},
+									{
+										"Color": {
+											"a": 1.0,
+											"r": 0.5764706,
+											"g": 0.75686276,
+											"b": 0.8
+										},
+										"Label": "",
+										"TargetPin": "0x0100000000000906",
+										"Target": "0x0100000000000903"
+									},
+									{
+										"Color": {
+											"a": 1.0,
+											"r": 0.5764706,
+											"g": 0.75686276,
+											"b": 0.8
+										},
+										"Label": "",
+										"TargetPin": "0x010000000000094E",
+										"Target": "0x010000000000094B"
+									}
+								]
+							}
+						]
+					}
+				},
+				{
+					"Type": "DialogueFragment",
+					"Properties": {
+						"TechnicalName": "DFr_CA293839",
+						"Id": "0x010000000000094B",
+						"Parent": "0x01000000000008F5",
+						"MenuText": "Нет",
+						"StageDirections": "",
+						"Speaker": "0x0100000000000676",
+						"SplitHeight": 64.0,
+						"Color": {
+							"r": 0.5764706,
+							"g": 0.75686276,
+							"b": 0.8
+						},
+						"Text": "Нет. Мне больше там негего делать",
+						"ExternalId": "",
+						"Position": {
+							"x": 475.0,
+							"y": 850.0
+						},
+						"ZIndex": 8.0,
+						"Size": {
+							"w": 225.0,
+							"h": 200.0
+						},
+						"ShortId": 3391699001,
+						"InputPins": [
+							{
+								"Text": "GameState.room_6_done == true",
+								"Id": "0x010000000000094E",
+								"Owner": "0x010000000000094B"
+							}
+						],
+						"OutputPins": [
+							{
+								"Text": "",
+								"Id": "0x010000000000094F",
+								"Owner": "0x010000000000094B",
+								"Connections": [
+									{
+										"Color": {
+											"a": 1.0,
+											"r": 0.5764706,
+											"g": 0.75686276,
+											"b": 0.8
+										},
+										"Label": "",
+										"TargetPin": "0x0100000000000914",
+										"Target": "0x01000000000008F5"
+									}
+								]
+							}
+						]
+					}
+				},
+				{
+					"Type": "DialogueFragment",
+					"Properties": {
+						"TechnicalName": "DFr_DC5BB1AE",
+						"Id": "0x010000000000097B",
+						"Parent": "0x010000000000095C",
+						"MenuText": "Нет",
+						"StageDirections": "",
+						"Speaker": "0x0100000000000676",
+						"SplitHeight": 64.0,
+						"Color": {
+							"r": 0.5764706,
+							"g": 0.75686276,
+							"b": 0.8
+						},
+						"Text": "Нет. Мне больше там негего делать",
+						"ExternalId": "",
+						"Position": {
+							"x": 550.0,
+							"y": 897.0
+						},
+						"ZIndex": 8.0,
+						"Size": {
+							"w": 225.0,
+							"h": 200.0
+						},
+						"ShortId": 3696996782,
+						"InputPins": [
+							{
+								"Text": "GameState.room_8_done == true",
+								"Id": "0x010000000000097C",
+								"Owner": "0x010000000000097B"
+							}
+						],
+						"OutputPins": [
+							{
+								"Text": "",
+								"Id": "0x010000000000097D",
+								"Owner": "0x010000000000097B",
+								"Connections": [
+									{
+										"Color": {
+											"a": 1.0,
+											"r": 0.5764706,
+											"g": 0.75686276,
+											"b": 0.8
+										},
+										"Label": "",
+										"TargetPin": "0x0100000000000965",
+										"Target": "0x010000000000095C"
+									}
+								]
+							}
+						]
+					}
+				},
+				{
+					"Type": "DialogueFragment",
+					"Properties": {
+						"TechnicalName": "DFr_09E2C99E",
+						"Id": "0x0100000000000975",
+						"Parent": "0x010000000000095C",
+						"MenuText": "",
+						"StageDirections": "",
+						"Speaker": "0x0100000000000676",
+						"SplitHeight": 64.0,
+						"Color": {
+							"r": 0.5764706,
+							"g": 0.75686276,
+							"b": 0.8
+						},
+						"Text": "Зайти в 8 квартиру?",
+						"ExternalId": "",
+						"Position": {
+							"x": 200.0,
+							"y": 497.0
+						},
+						"ZIndex": 2.0,
+						"Size": {
+							"w": 225.0,
+							"h": 200.0
+						},
+						"ShortId": 165857694,
+						"InputPins": [
+							{
+								"Text": "",
+								"Id": "0x0100000000000976",
+								"Owner": "0x0100000000000975"
+							}
+						],
+						"OutputPins": [
+							{
+								"Text": "",
+								"Id": "0x0100000000000977",
+								"Owner": "0x0100000000000975",
+								"Connections": [
+									{
+										"Color": {
+											"a": 1.0,
+											"r": 0.5764706,
+											"g": 0.75686276,
+											"b": 0.8
+										},
+										"Label": "",
+										"TargetPin": "0x0100000000000968",
+										"Target": "0x0100000000000967"
+									},
+									{
+										"Color": {
+											"a": 1.0,
+											"r": 0.5764706,
+											"g": 0.75686276,
+											"b": 0.8
+										},
+										"Label": "",
+										"TargetPin": "0x010000000000096F",
+										"Target": "0x010000000000096E"
+									},
+									{
+										"Color": {
+											"a": 1.0,
+											"r": 0.5764706,
+											"g": 0.75686276,
+											"b": 0.8
+										},
+										"Label": "",
+										"TargetPin": "0x010000000000097C",
+										"Target": "0x010000000000097B"
+									}
+								]
+							}
+						]
+					}
+				},
+				{
+					"Type": "DialogueFragment",
+					"Properties": {
+						"TechnicalName": "DFr_05F40999",
+						"Id": "0x010000000000096E",
+						"Parent": "0x010000000000095C",
+						"MenuText": "Пройти мимо",
+						"StageDirections": "",
+						"Speaker": "0x0100000000000676",
+						"SplitHeight": 64.0,
+						"Color": {
+							"r": 0.5764706,
+							"g": 0.75686276,
+							"b": 0.8
+						},
+						"Text": "Не сейчас",
+						"ExternalId": "",
+						"Position": {
+							"x": 550.0,
+							"y": 647.0
+						},
+						"ZIndex": 1.0,
+						"Size": {
+							"w": 225.0,
+							"h": 200.0
+						},
+						"ShortId": 99879321,
+						"InputPins": [
+							{
+								"Text": "GameState.room_8_done == false",
+								"Id": "0x010000000000096F",
+								"Owner": "0x010000000000096E"
+							}
+						],
+						"OutputPins": [
+							{
+								"Text": "",
+								"Id": "0x0100000000000970",
+								"Owner": "0x010000000000096E",
+								"Connections": [
+									{
+										"Color": {
+											"a": 1.0,
+											"r": 0.5764706,
+											"g": 0.75686276,
+											"b": 0.8
+										},
+										"Label": "",
+										"TargetPin": "0x0100000000000965",
+										"Target": "0x010000000000095C"
+									}
+								]
+							}
+						]
+					}
+				},
+				{
+					"Type": "DialogueFragment",
+					"Properties": {
+						"TechnicalName": "DFr_648E4ABA",
+						"Id": "0x0100000000000967",
+						"Parent": "0x010000000000095C",
+						"MenuText": "Зайти",
+						"StageDirections": "",
+						"Speaker": "0x0100000000000676",
+						"SplitHeight": 64.0,
+						"Color": {
+							"r": 0.5764706,
+							"g": 0.75686276,
+							"b": 0.8
+						},
+						"Text": "Да. Возможно там есть источники огня и люди.",
+						"ExternalId": "",
+						"Position": {
+							"x": 550.0,
+							"y": 347.0
+						},
+						"ZIndex": 0.0,
+						"Size": {
+							"w": 225.0,
+							"h": 200.0
+						},
+						"ShortId": 1687046842,
+						"InputPins": [
+							{
+								"Text": "GameState.room_8_done == false",
+								"Id": "0x0100000000000968",
+								"Owner": "0x0100000000000967"
+							}
+						],
+						"OutputPins": [
+							{
+								"Text": "",
+								"Id": "0x0100000000000969",
+								"Owner": "0x0100000000000967",
+								"Connections": [
+									{
+										"Color": {
+											"a": 1.0,
+											"r": 0.5764706,
+											"g": 0.75686276,
+											"b": 0.8
+										},
+										"Label": "",
+										"TargetPin": "0x010000000000095E",
+										"Target": "0x010000000000095C"
+									}
+								]
+							}
+						]
+					}
+				},
+				{
+					"Type": "DialogueFragment",
+					"Properties": {
+						"TechnicalName": "DFr_91085735",
+						"Id": "0x01000000000009B1",
+						"Parent": "0x0100000000000955",
+						"MenuText": "",
+						"StageDirections": "",
+						"Speaker": "0x010000000000011E",
+						"SplitHeight": 64.0,
+						"Color": {
+							"r": 0.5764706,
+							"g": 0.75686276,
+							"b": 0.8
+						},
+						"Text": "К-ха, к-ха. Из этой двери сочится очень много дыма. Пожалуй туда не стоит соваться без противогаза.",
+						"ExternalId": "",
+						"Position": {
+							"x": 200.0,
+							"y": 925.0
+						},
+						"ZIndex": 8.0,
+						"Size": {
+							"w": 225.0,
+							"h": 200.0
+						},
+						"ShortId": 2433242933,
+						"InputPins": [
+							{
+								"Text": "GameState.gas_mask == false",
+								"Id": "0x01000000000009B4",
+								"Owner": "0x01000000000009B1"
+							}
+						],
+						"OutputPins": [
+							{
+								"Text": "",
+								"Id": "0x01000000000009B5",
+								"Owner": "0x01000000000009B1",
+								"Connections": [
+									{
+										"Color": {
+											"a": 1.0,
+											"r": 0.5764706,
+											"g": 0.75686276,
+											"b": 0.8
+										},
+										"Label": "",
+										"TargetPin": "0x01000000000009BB",
+										"Target": "0x01000000000009B8"
+									}
+								]
+							}
+						]
+					}
+				},
+				{
+					"Type": "DialogueFragment",
+					"Properties": {
+						"TechnicalName": "DFr_8466F6D9",
+						"Id": "0x010000000000099D",
+						"Parent": "0x0100000000000955",
+						"MenuText": "",
+						"StageDirections": "",
+						"Speaker": "0x0100000000000676",
+						"SplitHeight": 64.0,
+						"Color": {
+							"r": 0.5764706,
+							"g": 0.75686276,
+							"b": 0.8
+						},
+						"Text": "Зайти в 7 квартиру?",
+						"ExternalId": "",
+						"Position": {
+							"x": 200.0,
+							"y": 525.0
+						},
+						"ZIndex": 2.0,
+						"Size": {
+							"w": 225.0,
+							"h": 200.0
+						},
+						"ShortId": 2221340377,
+						"InputPins": [
+							{
+								"Text": "GameState.gas_mask == true",
+								"Id": "0x010000000000099E",
+								"Owner": "0x010000000000099D"
+							}
+						],
+						"OutputPins": [
+							{
+								"Text": "",
+								"Id": "0x010000000000099F",
+								"Owner": "0x010000000000099D",
+								"Connections": [
+									{
+										"Color": {
+											"a": 1.0,
+											"r": 0.5764706,
+											"g": 0.75686276,
+											"b": 0.8
+										},
+										"Label": "",
+										"TargetPin": "0x0100000000000990",
+										"Target": "0x010000000000098F"
+									},
+									{
+										"Color": {
+											"a": 1.0,
+											"r": 0.5764706,
+											"g": 0.75686276,
+											"b": 0.8
+										},
+										"Label": "",
+										"TargetPin": "0x0100000000000997",
+										"Target": "0x0100000000000996"
+									}
+								]
+							}
+						]
+					}
+				},
+				{
+					"Type": "DialogueFragment",
+					"Properties": {
+						"TechnicalName": "DFr_AAD5465E",
+						"Id": "0x0100000000000996",
+						"Parent": "0x0100000000000955",
+						"MenuText": "Пройти мимо",
+						"StageDirections": "",
+						"Speaker": "0x0100000000000676",
+						"SplitHeight": 64.0,
+						"Color": {
+							"r": 0.5764706,
+							"g": 0.75686276,
+							"b": 0.8
+						},
+						"Text": "Не сейчас",
+						"ExternalId": "",
+						"Position": {
+							"x": 550.0,
+							"y": 675.0
+						},
+						"ZIndex": 1.0,
+						"Size": {
+							"w": 225.0,
+							"h": 200.0
+						},
+						"ShortId": 2866103902,
+						"InputPins": [
+							{
+								"Text": "GameState.room_7_done == false",
+								"Id": "0x0100000000000997",
+								"Owner": "0x0100000000000996"
+							}
+						],
+						"OutputPins": [
+							{
+								"Text": "",
+								"Id": "0x0100000000000998",
+								"Owner": "0x0100000000000996",
+								"Connections": [
+									{
+										"Color": {
+											"a": 1.0,
+											"r": 0.5764706,
+											"g": 0.75686276,
+											"b": 0.8
+										},
+										"Label": "",
+										"TargetPin": "0x0100000000000966",
+										"Target": "0x0100000000000955"
+									}
+								]
+							}
+						]
+					}
+				},
+				{
+					"Type": "DialogueFragment",
+					"Properties": {
+						"TechnicalName": "DFr_C0C02A81",
+						"Id": "0x010000000000098F",
+						"Parent": "0x0100000000000955",
+						"MenuText": "Зайти",
+						"StageDirections": "",
+						"Speaker": "0x0100000000000676",
+						"SplitHeight": 64.0,
+						"Color": {
+							"r": 0.5764706,
+							"g": 0.75686276,
+							"b": 0.8
+						},
+						"Text": "Да. Возможно там есть источники огня и люди.",
+						"ExternalId": "",
+						"Position": {
+							"x": 550.0,
+							"y": 375.0
+						},
+						"ZIndex": 0.0,
+						"Size": {
+							"w": 225.0,
+							"h": 200.0
+						},
+						"ShortId": 3233819265,
+						"InputPins": [
+							{
+								"Text": "GameState.room_7_done == false",
+								"Id": "0x0100000000000990",
+								"Owner": "0x010000000000098F"
+							}
+						],
+						"OutputPins": [
+							{
+								"Text": "",
+								"Id": "0x0100000000000991",
+								"Owner": "0x010000000000098F",
+								"Connections": [
+									{
+										"Color": {
+											"a": 1.0,
+											"r": 0.5764706,
+											"g": 0.75686276,
+											"b": 0.8
+										},
+										"Label": "",
+										"TargetPin": "0x0100000000000959",
+										"Target": "0x0100000000000955"
+									}
+								]
+							}
+						]
+					}
+				},
+				{
+					"Type": "DialogueFragment",
+					"Properties": {
+						"TechnicalName": "DFr_97AE29A7",
+						"Id": "0x01000000000009B8",
+						"Parent": "0x0100000000000955",
+						"MenuText": "",
+						"StageDirections": "",
+						"Speaker": "0x0100000000000676",
+						"SplitHeight": 64.0,
+						"Color": {
+							"r": 0.5764706,
+							"g": 0.75686276,
+							"b": 0.8
+						},
+						"Text": "Сначала нужно найти противогаз",
+						"ExternalId": "",
+						"Position": {
+							"x": 550.0,
+							"y": 925.0
+						},
+						"ZIndex": 10.0,
+						"Size": {
+							"w": 225.0,
+							"h": 200.0
+						},
+						"ShortId": 2544773543,
+						"InputPins": [
+							{
+								"Text": "",
+								"Id": "0x01000000000009BB",
+								"Owner": "0x01000000000009B8"
+							}
+						],
+						"OutputPins": [
+							{
+								"Text": "",
+								"Id": "0x01000000000009BC",
+								"Owner": "0x01000000000009B8",
+								"Connections": [
+									{
+										"Color": {
+											"a": 1.0,
+											"r": 0.5764706,
+											"g": 0.75686276,
+											"b": 0.8
+										},
+										"Label": "",
+										"TargetPin": "0x0100000000000966",
+										"Target": "0x0100000000000955"
 									}
 								]
 							}
@@ -12116,6 +14229,114 @@
 					}
 				},
 				{
+					"Type": "Comment",
+					"Properties": {
+						"TechnicalName": "CMT_72057594037930222",
+						"Id": "0x01000000000008EE",
+						"Parent": "0x010000000000087F",
+						"CreatedBy": "",
+						"CreatedOn": "2024-06-30T22:45:47.171789Z",
+						"Color": {
+							"r": 0.0,
+							"g": 0.0,
+							"b": 0.0
+						},
+						"Text": "Лестничная клетка. Нужна для выхода на улицу. Можно выйти принудительно без человека на спине",
+						"ExternalId": "",
+						"Position": {
+							"x": 575.0,
+							"y": 200.0
+						},
+						"ZIndex": 2.0,
+						"Size": {
+							"w": 225.0,
+							"h": 100.0
+						},
+						"ShortId": 2349768799
+					}
+				},
+				{
+					"Type": "Comment",
+					"Properties": {
+						"TechnicalName": "CMT_72057594037930235",
+						"Id": "0x01000000000008FB",
+						"Parent": "0x010000000000087F",
+						"CreatedBy": "",
+						"CreatedOn": "2024-06-30T22:47:39.2311069Z",
+						"Color": {
+							"r": 0.0,
+							"g": 0.0,
+							"b": 0.0
+						},
+						"Text": "Дверь в 6 квартиру. Попасть в нее после спасения человека невозможно",
+						"ExternalId": "",
+						"Position": {
+							"x": 575.0,
+							"y": 575.0
+						},
+						"ZIndex": 4.0,
+						"Size": {
+							"w": 225.0,
+							"h": 100.0
+						},
+						"ShortId": 681612418
+					}
+				},
+				{
+					"Type": "Comment",
+					"Properties": {
+						"TechnicalName": "CMT_72057594037930331",
+						"Id": "0x010000000000095B",
+						"Parent": "0x010000000000087F",
+						"CreatedBy": "",
+						"CreatedOn": "2024-06-30T23:06:38.9407517Z",
+						"Color": {
+							"r": 0.0,
+							"g": 0.0,
+							"b": 0.0
+						},
+						"Text": "Дверь в 7 квартиру. Попасть в нее без противогаза невозможно",
+						"ExternalId": "",
+						"Position": {
+							"x": 575.0,
+							"y": 950.0
+						},
+						"ZIndex": 7.0,
+						"Size": {
+							"w": 225.0,
+							"h": 100.0
+						},
+						"ShortId": 236424772
+					}
+				},
+				{
+					"Type": "Comment",
+					"Properties": {
+						"TechnicalName": "CMT_72057594037930338",
+						"Id": "0x0100000000000962",
+						"Parent": "0x010000000000087F",
+						"CreatedBy": "",
+						"CreatedOn": "2024-06-30T23:06:38.9407517Z",
+						"Color": {
+							"r": 0.0,
+							"g": 0.0,
+							"b": 0.0
+						},
+						"Text": "Дверь в 8 квартиру. Попасть в нее после спасения человека невозможно",
+						"ExternalId": "",
+						"Position": {
+							"x": 575.0,
+							"y": 1325.0
+						},
+						"ZIndex": 7.0,
+						"Size": {
+							"w": 225.0,
+							"h": 100.0
+						},
+						"ShortId": 384256030
+					}
+				},
+				{
 					"Type": "Entity",
 					"Properties": {
 						"TechnicalName": "Ntt_2604511C",
@@ -12298,6 +14519,80 @@
 							"Asset": "0x010000000000071D"
 						},
 						"ShortId": 3670917429
+					}
+				},
+				{
+					"Type": "Entity",
+					"Properties": {
+						"TechnicalName": "Ntt_A31472E4",
+						"Id": "0x0100000000000933",
+						"Parent": "0x03000000AC61A2B3",
+						"Attachments": [],
+						"DisplayName": "Голый человек",
+						"Color": {
+							"r": 0.0,
+							"g": 0.434153676,
+							"b": 0.08021983
+						},
+						"Text": "",
+						"ExternalId": "",
+						"Position": {
+							"x": 100.0,
+							"y": 100.0
+						},
+						"ZIndex": 5.0,
+						"Size": {
+							"w": 256.0,
+							"h": 196.0
+						},
+						"PreviewImage": {
+							"ViewBox": {
+								"x": 0.0,
+								"y": 0.0,
+								"w": 0.0,
+								"h": 0.0
+							},
+							"Mode": "FromAsset",
+							"Asset": "0x0000000000000000"
+						},
+						"ShortId": 2736026340
+					}
+				},
+				{
+					"Type": "Entity",
+					"Properties": {
+						"TechnicalName": "Ntt_E4FECA6F",
+						"Id": "0x0100000000000937",
+						"Parent": "0x03000000AC61A2B3",
+						"Attachments": [],
+						"DisplayName": "Хипстер",
+						"Color": {
+							"r": 0.215860531,
+							"g": 0.127437681,
+							"b": 0.361306816
+						},
+						"Text": "",
+						"ExternalId": "",
+						"Position": {
+							"x": 120.0,
+							"y": 120.0
+						},
+						"ZIndex": 6.0,
+						"Size": {
+							"w": 256.0,
+							"h": 196.0
+						},
+						"PreviewImage": {
+							"ViewBox": {
+								"x": 0.0,
+								"y": 0.0,
+								"w": 0.0,
+								"h": 0.0
+							},
+							"Mode": "FromAsset",
+							"Asset": "0x0000000000000000"
+						},
+						"ShortId": 3841903215
 					}
 				},
 				{
@@ -13359,6 +15654,16 @@
 										"Type": "DialogueFragment"
 									},
 									{
+										"Id": "0x01000000000008DC",
+										"TechnicalName": "DFr_02A9942C",
+										"Type": "DialogueFragment"
+									},
+									{
+										"Id": "0x01000000000008E5",
+										"TechnicalName": "DFr_3E64AC60",
+										"Type": "DialogueFragment"
+									},
+									{
 										"Id": "0x010000000000077E",
 										"TechnicalName": "DFr_7F6C5EC6",
 										"Type": "DialogueFragment"
@@ -13371,6 +15676,176 @@
 								]
 							}
 						]
+					},
+					{
+						"Id": "0x010000000000087F",
+						"TechnicalName": "FFr_E854A0B9",
+						"Type": "FlowFragment",
+						"Children": [
+							{
+								"Id": "0x01000000000008FB",
+								"TechnicalName": "",
+								"Type": "Comment"
+							},
+							{
+								"Id": "0x010000000000095B",
+								"TechnicalName": "",
+								"Type": "Comment"
+							},
+							{
+								"Id": "0x0100000000000962",
+								"TechnicalName": "",
+								"Type": "Comment"
+							},
+							{
+								"Id": "0x01000000000008EE",
+								"TechnicalName": "",
+								"Type": "Comment"
+							},
+							{
+								"Id": "0x0100000000000887",
+								"TechnicalName": "Dlg_C702A9E0",
+								"Type": "Dialogue",
+								"Children": [
+									{
+										"Id": "0x0100000000000893",
+										"TechnicalName": "DFr_9078AA10",
+										"Type": "DialogueFragment"
+									},
+									{
+										"Id": "0x010000000000088E",
+										"TechnicalName": "DFr_15680AB9",
+										"Type": "DialogueFragment"
+									},
+									{
+										"Id": "0x01000000000008B7",
+										"TechnicalName": "DFr_10E9FA0E",
+										"Type": "DialogueFragment"
+									},
+									{
+										"Id": "0x0100000000000899",
+										"TechnicalName": "DFr_A71E4DDC",
+										"Type": "DialogueFragment"
+									},
+									{
+										"Id": "0x01000000000008A2",
+										"TechnicalName": "DFr_52DE665B",
+										"Type": "DialogueFragment"
+									},
+									{
+										"Id": "0x01000000000008C3",
+										"TechnicalName": "DFr_ECD853AD",
+										"Type": "DialogueFragment"
+									},
+									{
+										"Id": "0x01000000000008BE",
+										"TechnicalName": "DFr_D48BBD51",
+										"Type": "DialogueFragment"
+									}
+								]
+							},
+							{
+								"Id": "0x01000000000008F5",
+								"TechnicalName": "Dlg_8DC9479A",
+								"Type": "Dialogue",
+								"Children": [
+									{
+										"Id": "0x0100000000000909",
+										"TechnicalName": "DFr_6D356DED",
+										"Type": "DialogueFragment"
+									},
+									{
+										"Id": "0x01000000000008FD",
+										"TechnicalName": "DFr_C8C66776",
+										"Type": "DialogueFragment"
+									},
+									{
+										"Id": "0x0100000000000903",
+										"TechnicalName": "DFr_8B7F4ABA",
+										"Type": "DialogueFragment"
+									},
+									{
+										"Id": "0x010000000000094B",
+										"TechnicalName": "DFr_CA293839",
+										"Type": "DialogueFragment"
+									}
+								]
+							},
+							{
+								"Id": "0x0100000000000955",
+								"TechnicalName": "Dlg_C5E7FFF2",
+								"Type": "Dialogue",
+								"Children": [
+									{
+										"Id": "0x010000000000099D",
+										"TechnicalName": "DFr_8466F6D9",
+										"Type": "DialogueFragment"
+									},
+									{
+										"Id": "0x01000000000009B1",
+										"TechnicalName": "DFr_91085735",
+										"Type": "DialogueFragment"
+									},
+									{
+										"Id": "0x010000000000098F",
+										"TechnicalName": "DFr_C0C02A81",
+										"Type": "DialogueFragment"
+									},
+									{
+										"Id": "0x0100000000000996",
+										"TechnicalName": "DFr_AAD5465E",
+										"Type": "DialogueFragment"
+									},
+									{
+										"Id": "0x01000000000009B8",
+										"TechnicalName": "DFr_97AE29A7",
+										"Type": "DialogueFragment"
+									}
+								]
+							},
+							{
+								"Id": "0x010000000000095C",
+								"TechnicalName": "Dlg_2A008E31",
+								"Type": "Dialogue",
+								"Children": [
+									{
+										"Id": "0x0100000000000975",
+										"TechnicalName": "DFr_09E2C99E",
+										"Type": "DialogueFragment"
+									},
+									{
+										"Id": "0x0100000000000967",
+										"TechnicalName": "DFr_648E4ABA",
+										"Type": "DialogueFragment"
+									},
+									{
+										"Id": "0x010000000000096E",
+										"TechnicalName": "DFr_05F40999",
+										"Type": "DialogueFragment"
+									},
+									{
+										"Id": "0x010000000000097B",
+										"TechnicalName": "DFr_DC5BB1AE",
+										"Type": "DialogueFragment"
+									}
+								]
+							}
+						]
+					},
+					{
+						"Id": "0x0100000000000916",
+						"TechnicalName": "FFr_A51774ED",
+						"Type": "FlowFragment"
+					},
+					{
+						"Id": "0x010000000000091C",
+						"TechnicalName": "FFr_86D45029",
+						"Type": "FlowFragment"
+					},
+					{
+						"Id": "0x0100000000000922",
+						"TechnicalName": "FFr_D6C3E8DF",
+						"Type": "FlowFragment"
 					}
 				]
 			},
@@ -13379,6 +15854,11 @@
 				"TechnicalName": "Entities",
 				"Type": "Entities",
 				"Children": [
+					{
+						"Id": "0x0100000000000933",
+						"TechnicalName": "Ntt_A31472E4",
+						"Type": "Entity"
+					},
 					{
 						"Id": "0x0100000000000122",
 						"TechnicalName": "Ntt_42939B89",
@@ -13402,6 +15882,11 @@
 					{
 						"Id": "0x010000000000011E",
 						"TechnicalName": "Ntt_2604511C",
+						"Type": "Entity"
+					},
+					{
+						"Id": "0x0100000000000937",
+						"TechnicalName": "Ntt_E4FECA6F",
 						"Type": "Entity"
 					}
 				]
