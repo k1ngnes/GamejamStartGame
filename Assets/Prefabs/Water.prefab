@@ -175,4 +175,4 @@ MonoBehaviour:
   damage: 40
   rb: {fileID: 2725353712608171633}
   vaporEffect: {fileID: 6243525480990966502, guid: 6063f1fa6ecc8dc44bbb626c9e953ac7, type: 3}
-  timeToLive: 10
+  timeToLive: 5

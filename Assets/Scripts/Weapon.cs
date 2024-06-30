@@ -9,11 +9,9 @@ public class Weapon : MonoBehaviour
     [SerializeField] private PlayerController playerController;
     private Camera mainCam;
     private Vector3 mousePos;
-    private int maxWaterAmmo = 100;
+    private int maxWaterAmmo = 1000;
     private int currentWaterAmmo;
     [SerializeField] private AmmoText ammoBar;
-
-
 
     private void Start()
     {
@@ -61,7 +59,7 @@ public class Weapon : MonoBehaviour
         {
             transform.rotation = Quaternion.Euler(180, 0, -rotZ);
         }
-        if (Input.GetKey(KeyCode.Mouse0) && currentWaterAmmo > 0)
+        if (Input.GetKey(KeyCode.Mouse0) && playerController.GetIsTankOn() && currentWaterAmmo > 0)
         {
             Shoot();
             currentWaterAmmo -= 1;

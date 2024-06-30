@@ -48,6 +48,9 @@ MonoBehaviour:
   dialogueWidget: {fileID: 0}
   dialogueText: {fileID: 0}
   dialogueSpeaker: {fileID: 0}
+  branchLayoutPanel: {fileID: 0}
+  branchPrefab: {fileID: 0}
+  closePrefab: {fileID: 0}
 --- !u!114 &6712443543284928435
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67,8 +70,8 @@ MonoBehaviour:
   startOn:
     instanceId: 0
     referencingMode: 0
-    lowId: 856
-    highId: 16777216
+    lowId: 0
+    highId: 0
   pauseOn: 4
   ignoreInvalidBranches: 1
   continuouslyRecalculateBranches: 0

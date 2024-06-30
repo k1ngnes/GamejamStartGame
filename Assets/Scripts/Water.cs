@@ -5,10 +5,10 @@ using UnityEngine;
 public class Water : MonoBehaviour
 {
     [SerializeField] private float speed = 10f;
-    [SerializeField] private int damage = 40;
+    [SerializeField] private int damage = 10;
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private GameObject vaporEffect;
-    [SerializeField] private float timeToLive = 100f;
+    [SerializeField] private float timeToLive = 10f;
 
 
     private void Start()
@@ -34,8 +34,15 @@ public class Water : MonoBehaviour
         if (fire != null)
         {
             fire.TakeDamage(damage);
-            Instantiate(vaporEffect, transform.position, Quaternion.identity);
             Destroy(gameObject);
+        }
+        BurningLog log = hitInfo.GetComponent<BurningLog>();
+        if (log != null)
+        {
+            if (log.TakeDamage(damage) == 1)
+            {
+                Destroy(gameObject);
+            }
         }
     }
 }
