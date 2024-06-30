@@ -7,7 +7,6 @@ using UnityEngine;
 public class NPCInteraction : MonoBehaviour
 {
     [SerializeField] private PlayerController playerController;
-    [SerializeField] private GameObject buttonHint;
     [SerializeField] private LayerMask pickUpMask;
     [SerializeField] private float pickUpRadius = 0.4f;
     [SerializeField] private DialogueManager dialogueManager;
