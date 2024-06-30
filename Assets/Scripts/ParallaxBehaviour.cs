@@ -20,7 +20,7 @@ public class ParallaxBehaviour : MonoBehaviour
 
     void Update()
     {
-        var delta:Vector3 = followingTarget.position - targetPreviousPosition;
+        Vector3 delta = followingTarget.position - targetPreviousPosition;
 
         if (disableVerticalParallax)
             delta.y = 0;
