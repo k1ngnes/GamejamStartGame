@@ -12,7 +12,105 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 211aad6e2ef86fe44ae36dd8c17ab8eb, type: 3}
   m_Name: ArticyScriptFragments
   m_EditorClassIdentifier: 
---- !u!114 &-7153031268662701472
+--- !u!114 &-5720477398706827900
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1174674681, guid: df2ec02f61e861546b9427c26ccacb8d, type: 3}
+  m_Name: LocalizationManager
+  m_EditorClassIdentifier: 
+  OnLanguageChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  mUseLocalization: 0
+  mLanguage: en
+  mThrowOnMissingText: 0
+  mClearOnLanguageSwitch: 1
+  mExportLanguage: en
+--- !u!114 &-2606807452878049958
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd77e47f831e7b64b965ab40dcaa6e07, type: 3}
+  m_Name: DefaultGlobalVariables
+  m_EditorClassIdentifier: 
+  BoolVariableCache:
+  - mFullQualifiedName: GameState.end_conversation
+    mVar:
+      values: 00
+  - mFullQualifiedName: GameState.talked_to_collega
+    mVar:
+      values: 00
+  - mFullQualifiedName: GameState.fireproof_suit
+    mVar:
+      values: 00
+  - mFullQualifiedName: GameState.fire_hose
+    mVar:
+      values: 00
+  - mFullQualifiedName: GameState.training
+    mVar:
+      values: 00
+  - mFullQualifiedName: GameState.fireproof_suit_talked
+    mVar:
+      values: 00
+  - mFullQualifiedName: GameState.fire_hose_talked
+    mVar:
+      values: 00
+  - mFullQualifiedName: GameState.allow_take_hose
+    mVar:
+      values: 00
+  - mFullQualifiedName: GameState.touch_hose
+    mVar:
+      values: 00
+  - mFullQualifiedName: GameState.training_complete
+    mVar:
+      values: 00
+  IntVariableCache: []
+  StringVariableCache: []
+  LiveBoolVariableCache: []
+  LiveIntVariableCache: []
+  LiveStringVariableCache: []
+  isInitialized: 1
+  mGameState:
+    _VariableStorage: {fileID: -2606807452878049958}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1676762633, guid: df2ec02f61e861546b9427c26ccacb8d, type: 3}
+  m_Name: ArticyDatabase
+  m_EditorClassIdentifier: 
+  mHierarchy: {fileID: 8991868932652574236}
+  mLocalization: {fileID: -5720477398706827900}
+  mInternalProject:
+    mName: Jam
+    mDetailName: "\u0421\u0446\u0435\u043D\u0430\u0440\u0438\u0439 \u0434\u043B\u044F
+      \u0438\u0433\u0440\u044B \u0434\u043B\u044F \u0434\u0436\u0435\u043C\u0430"
+    mId: 82ca42c8-cef4-4720-86fe-bf7ea1cb5544
+    mTechnicalName: Jam
+  mImportedAssets: []
+  mDefaultGlobalVariables: {fileID: -2606807452878049958}
+  mScriptFragments: {fileID: -8784676831328636485}
+  mPackages:
+  - PackageName: All objects
+    PackagePath: All objects
+    mIsDefaultPackage: 1
+--- !u!114 &8991868932652574236
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -780,101 +878,3 @@ MonoBehaviour:
     technicalName: Ufo_0DE697BE
     articyType: AssetsUserFolder
     childCount: 0
---- !u!114 &-5720477398706827900
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1174674681, guid: df2ec02f61e861546b9427c26ccacb8d, type: 3}
-  m_Name: LocalizationManager
-  m_EditorClassIdentifier: 
-  OnLanguageChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  mUseLocalization: 0
-  mLanguage: en
-  mThrowOnMissingText: 0
-  mClearOnLanguageSwitch: 1
-  mExportLanguage: en
---- !u!114 &-2606807452878049958
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd77e47f831e7b64b965ab40dcaa6e07, type: 3}
-  m_Name: DefaultGlobalVariables
-  m_EditorClassIdentifier: 
-  BoolVariableCache:
-  - mFullQualifiedName: GameState.end_conversation
-    mVar:
-      values: 00
-  - mFullQualifiedName: GameState.talked_to_collega
-    mVar:
-      values: 00
-  - mFullQualifiedName: GameState.fireproof_suit
-    mVar:
-      values: 00
-  - mFullQualifiedName: GameState.fire_hose
-    mVar:
-      values: 00
-  - mFullQualifiedName: GameState.training
-    mVar:
-      values: 00
-  - mFullQualifiedName: GameState.fireproof_suit_talked
-    mVar:
-      values: 00
-  - mFullQualifiedName: GameState.fire_hose_talked
-    mVar:
-      values: 00
-  - mFullQualifiedName: GameState.allow_take_hose
-    mVar:
-      values: 00
-  - mFullQualifiedName: GameState.touch_hose
-    mVar:
-      values: 00
-  - mFullQualifiedName: GameState.training_complete
-    mVar:
-      values: 00
-  IntVariableCache: []
-  StringVariableCache: []
-  LiveBoolVariableCache: []
-  LiveIntVariableCache: []
-  LiveStringVariableCache: []
-  isInitialized: 1
-  mGameState:
-    _VariableStorage: {fileID: -2606807452878049958}
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1676762633, guid: df2ec02f61e861546b9427c26ccacb8d, type: 3}
-  m_Name: ArticyDatabase
-  m_EditorClassIdentifier: 
-  mHierarchy: {fileID: -7153031268662701472}
-  mLocalization: {fileID: -5720477398706827900}
-  mInternalProject:
-    mName: Jam
-    mDetailName: "\u0421\u0446\u0435\u043D\u0430\u0440\u0438\u0439 \u0434\u043B\u044F
-      \u0438\u0433\u0440\u044B \u0434\u043B\u044F \u0434\u0436\u0435\u043C\u0430"
-    mId: 82ca42c8-cef4-4720-86fe-bf7ea1cb5544
-    mTechnicalName: Jam
-  mImportedAssets: []
-  mDefaultGlobalVariables: {fileID: -2606807452878049958}
-  mScriptFragments: {fileID: -8784676831328636485}
-  mPackages:
-  - PackageName: All objects
-    PackagePath: All objects
-    mIsDefaultPackage: 1
