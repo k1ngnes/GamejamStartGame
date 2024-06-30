@@ -9,7 +9,7 @@ public class Weapon : MonoBehaviour
     [SerializeField] private PlayerController playerController;
     private Camera mainCam;
     private Vector3 mousePos;
-    private int maxWaterAmmo = 100;
+    private int maxWaterAmmo = 1000;
     private int currentWaterAmmo;
     [SerializeField] private AmmoText ammoBar;
 
