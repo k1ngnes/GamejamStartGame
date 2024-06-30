@@ -49,8 +49,11 @@ MonoBehaviour:
   dialogueText: {fileID: 0}
   dialogueSpeaker: {fileID: 0}
   branchLayoutPanel: {fileID: 0}
-  branchPrefab: {fileID: 0}
-  closePrefab: {fileID: 0}
+  branchPrefab: {fileID: 3461072080257667613, guid: c260b275a66861249b08bd535b119e40, type: 3}
+  closePrefab: {fileID: 4461043706072908899, guid: 3af203ef8d0d29c44885085d8838dd3b, type: 3}
+  player: {fileID: 0}
+  wood: {fileID: 0}
+  DialogueActive: 0
 --- !u!114 &6712443543284928435
 MonoBehaviour:
   m_ObjectHideFlags: 0
