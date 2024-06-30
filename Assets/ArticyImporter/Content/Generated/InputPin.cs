@@ -22,7 +22,7 @@ namespace Articy.Jam
     
     
     [Serializable()]
-    [Articy.Unity.ArticyCodeGenerationHashAttribute(638553368905332995)]
+    [Articy.Unity.ArticyCodeGenerationHashAttribute(638553689359720791)]
     public class InputPin : ArticyPrimitive, IInputPin
     {
         

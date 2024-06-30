@@ -1,3 +1,4 @@
+using Articy.Unity;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -11,11 +12,19 @@ public class TankPickUp : MonoBehaviour
     [SerializeField] private Tank tank;
     [SerializeField] GameObject hint;
     private Animator animator;
-    
+    [SerializeField] private DialogueManager dialogueManager;
+    private ArticyObject availableDialogue;
+
 
     private void Start()
     {
         animator = hint.GetComponent<Animator>();
+    }
+
+    public void WearTank()
+    {
+        playerController.SetIsTankOn(true);
+        tank.TankPickUp();
     }
 
     private void Update()
@@ -23,11 +32,19 @@ public class TankPickUp : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             Collider2D pickedUpItem = Physics2D.OverlapCircle(transform.position, pickUpRadius, pickUpMask);
-            if (pickedUpItem != null && playerController.GetIsCostumeOn())
+            if (pickedUpItem != null)
             {
-                playerController.SetIsTankOn(true);
-                tank.TankPickUp();
+                var articyReferenceComp = pickedUpItem.gameObject.GetComponent<ArticyReference>();
+                if (articyReferenceComp)
+                {
+                    availableDialogue = articyReferenceComp.reference.GetObject();
+                }
+                dialogueManager.StartDialogue(availableDialogue, pickedUpItem.gameObject);
             }
+        }
+        if (dialogueManager.DialogueActive && Input.GetKeyDown(KeyCode.Escape))
+        {
+            dialogueManager.CloseDialogueBox();
         }
     }
 
@@ -42,10 +59,17 @@ public class TankPickUp : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
+        if (collision.GetComponent<ArticyReference>() != null)
+        {
+            availableDialogue = null;
+        }
+        if (dialogueManager.DialogueActive)
+        {
+            dialogueManager.CloseDialogueBox();
+        }
         Tank tank = collision.GetComponent<Tank>();
         if (tank != null)
         {
-            Debug.Log("SOmething");
             animator.SetInteger("state", 0);
         }
     }

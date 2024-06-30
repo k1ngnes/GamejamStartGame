@@ -12,6 +12,7 @@ public class Weapon : MonoBehaviour
     private int maxWaterAmmo = 1000;
     private int currentWaterAmmo;
     [SerializeField] private AmmoText ammoBar;
+    [SerializeField] private GameObject waterParticle;
 
     private void Start()
     {
@@ -62,6 +63,7 @@ public class Weapon : MonoBehaviour
         if (Input.GetKey(KeyCode.Mouse0) && playerController.GetIsTankOn() && currentWaterAmmo > 0)
         {
             Shoot();
+            Instantiate(waterParticle, firePoint.position, transform.rotation);
             currentWaterAmmo -= 1;
         }
     }
