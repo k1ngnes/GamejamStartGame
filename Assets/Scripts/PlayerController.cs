@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private GameObject weaponObject;
     private Animator animator;
     [SerializeField] private GameObject player;
+    [SerializeField] private GameObject dialogManager;
 
     private void Start()
     {
@@ -29,7 +30,6 @@ public class PlayerController : MonoBehaviour
             weaponObject.SetActive(false);
         }
     }
-
 
     private void Update()
     {
@@ -51,7 +51,10 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.velocity = new Vector2(horizontal * maxSpeed, rb.velocity.y);
+        if (!dialogManager.GetComponent<DialogueManager>().DialogueActive)
+        {
+            rb.velocity = new Vector2(horizontal * maxSpeed, rb.velocity.y);
+        }
         animator.SetFloat("xVelocity", Math.Abs(rb.velocity.x));
         animator.SetFloat("yVelocity", rb.velocity.y);
     }
