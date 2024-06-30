@@ -38,7 +38,7 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
     private bool ifLastDialogLine = false; //set true when appear last dialog line of dialog
 
     // To check if we are currently showing the dialog ui interface
-    public bool DialogueActive { get; set; }
+    public bool DialogueActive = false;
 
     private ArticyFlowPlayer flowPlayer;
     private int selectedButtonIndex = 0;
