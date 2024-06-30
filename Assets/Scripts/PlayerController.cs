@@ -86,7 +86,7 @@ public class PlayerController : MonoBehaviour
         animator.SetBool("isJumping", false);
     }
 
-    public void Flip()
+    private void Flip()
     {
         if (isFacingRight && horizontal < 0f || !isFacingRight && horizontal > 0f)
         {
