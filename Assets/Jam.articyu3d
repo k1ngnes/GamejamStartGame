@@ -5,8 +5,8 @@
 		"set_IncludedNodes": "Settings, Project, GlobalVariables, ObjectDefinitions, Packages, ScriptMethods, Hierarchy, Assets",
 		"set_UseScriptSupport": "True",
 		"ExportVersion": "1.2",
-		"ObjectDefinitionsHash": "BA2352F80B6F8897D397B4F6559796FC19855E155102C097608D326C2ED6526A",
-		"ScriptFragmentsHash": "4588103190"
+		"ObjectDefinitionsHash": "3E76C1296E7EB0AF93EA6802BC4CD8F028F654321DEFFB14DB0236568DF73860",
+		"ScriptFragmentsHash": "3563501328"
 	},
 	"Project": {
 		"Name": "Jam",
@@ -69,6 +69,12 @@
 				},
 				{
 					"Variable": "touch_hose",
+					"Type": "Boolean",
+					"Value": "False",
+					"Description": ""
+				},
+				{
+					"Variable": "training_complete",
 					"Type": "Boolean",
 					"Value": "False",
 					"Description": ""
@@ -2415,6 +2421,17 @@
 										"Label": "",
 										"TargetPin": "0x01000000000003CA",
 										"Target": "0x010000000000012C"
+									},
+									{
+										"Color": {
+											"a": 1.0,
+											"r": 0.5764706,
+											"g": 0.75686276,
+											"b": 0.8
+										},
+										"Label": "",
+										"TargetPin": "0x010000000000061A",
+										"Target": "0x010000000000012C"
 									}
 								]
 							}
@@ -2522,7 +2539,7 @@
 								]
 							},
 							{
-								"Text": "//После прохождения обучения\nGameState.training == true",
+								"Text": "//После прохождения обучения\nGameState.training == true && GameState.training_complete == true",
 								"Id": "0x01000000000003CA",
 								"Owner": "0x010000000000012C",
 								"Connections": [
@@ -2536,6 +2553,24 @@
 										"Label": "",
 										"TargetPin": "0x01000000000003B7",
 										"Target": "0x01000000000003B4"
+									}
+								]
+							},
+							{
+								"Text": "//Еще не потушил\nGameState.training == true && GameState.training_complete == false",
+								"Id": "0x010000000000061A",
+								"Owner": "0x010000000000012C",
+								"Connections": [
+									{
+										"Color": {
+											"a": 1.0,
+											"r": 0.5764706,
+											"g": 0.75686276,
+											"b": 0.8
+										},
+										"Label": "",
+										"TargetPin": "0x010000000000061F",
+										"Target": "0x010000000000061C"
 									}
 								]
 							}
@@ -3180,7 +3215,7 @@
 						],
 						"OutputPins": [
 							{
-								"Text": "GameState.fire_hose = true",
+								"Text": "",
 								"Id": "0x010000000000013C",
 								"Owner": "0x0100000000000138",
 								"Connections": [
@@ -3359,7 +3394,7 @@
 						],
 						"OutputPins": [
 							{
-								"Text": "GameState.fireproof_suit = true",
+								"Text": "",
 								"Id": "0x0100000000000142",
 								"Owner": "0x010000000000013E",
 								"Connections": [
@@ -4906,7 +4941,7 @@
 							"g": 0.7605245,
 							"b": 0.7991027
 						},
-						"Text": "Сейчас я подожку этот стог сена, а тебе его нужно потушить",
+						"Text": "Сейчас я подожку этот пенек, а тебе его нужно потушить",
 						"ExternalId": "",
 						"Position": {
 							"x": 175.0,
@@ -5039,7 +5074,7 @@
 						],
 						"OutputPins": [
 							{
-								"Text": "GameState.training = true",
+								"Text": "",
 								"Id": "0x010000000000039A",
 								"Owner": "0x0100000000000396",
 								"Connections": [
@@ -5162,7 +5197,7 @@
 						],
 						"OutputPins": [
 							{
-								"Text": "GameState.fire_hose_talked = true;",
+								"Text": "GameState.fire_hose_talked = true;\nGameState.training = true;",
 								"Id": "0x0100000000000380",
 								"Owner": "0x010000000000037C",
 								"Connections": [
@@ -5256,8 +5291,8 @@
 						"Text": "Хорошо сработано! Молодец",
 						"ExternalId": "",
 						"Position": {
-							"x": -750.0,
-							"y": 1725.0
+							"x": -725.0,
+							"y": 1650.0
 						},
 						"ZIndex": 109.0,
 						"Size": {
@@ -6002,7 +6037,7 @@
 						],
 						"OutputPins": [
 							{
-								"Text": "GameState.allow_take_hose = true;\nGameState.touch_hose = true",
+								"Text": "GameState.allow_take_hose = true;\nGameState.touch_hose = true;\nGameState.fire_hose = true;",
 								"Id": "0x010000000000016C",
 								"Owner": "0x0100000000000169",
 								"Connections": [
@@ -6114,7 +6149,7 @@
 						],
 						"OutputPins": [
 							{
-								"Text": "GameState.allow_take_hose = true;\nGameState.touch_hose = true",
+								"Text": "GameState.allow_take_hose = true;\nGameState.touch_hose = true;\nGameState.fire_hose = true;",
 								"Id": "0x010000000000017C",
 								"Owner": "0x0100000000000179",
 								"Connections": [
@@ -6226,7 +6261,7 @@
 						],
 						"OutputPins": [
 							{
-								"Text": "",
+								"Text": "GameState.fireproof_suit = true",
 								"Id": "0x0100000000000208",
 								"Owner": "0x0100000000000204",
 								"Connections": [
@@ -6338,7 +6373,7 @@
 						],
 						"OutputPins": [
 							{
-								"Text": "",
+								"Text": "GameState.fireproof_suit = true",
 								"Id": "0x0100000000000212",
 								"Owner": "0x010000000000020E",
 								"Connections": [
@@ -6432,7 +6467,7 @@
 						"Text": "Два баллона. Судя по всему один - с кислородом, а второй - с водой. Но без костюма со специальными крепежами мне его не надеть",
 						"ExternalId": "",
 						"Position": {
-							"x": 725.0,
+							"x": 700.0,
 							"y": 675.0
 						},
 						"ZIndex": 12.0,
@@ -6506,7 +6541,7 @@
 						],
 						"OutputPins": [
 							{
-								"Text": "",
+								"Text": "GameState.fire_hose = true;",
 								"Id": "0x01000000000005C9",
 								"Owner": "0x01000000000005C5",
 								"Connections": [
@@ -6562,7 +6597,7 @@
 						],
 						"OutputPins": [
 							{
-								"Text": "",
+								"Text": "GameState.fire_hose = true",
 								"Id": "0x0100000000000601",
 								"Owner": "0x01000000000005FD",
 								"Connections": [
@@ -6800,6 +6835,62 @@
 										"Label": "",
 										"TargetPin": "0x0100000000000600",
 										"Target": "0x01000000000005FD"
+									}
+								]
+							}
+						]
+					}
+				},
+				{
+					"Type": "DialogueFragment",
+					"Properties": {
+						"TechnicalName": "DFr_4E0A6DF3",
+						"Id": "0x0100000000000621",
+						"Parent": "0x010000000000012C",
+						"MenuText": "",
+						"StageDirections": "",
+						"Speaker": "0x0100000000000122",
+						"SplitHeight": 64.0,
+						"Color": {
+							"r": 0.162029386,
+							"g": 0.0295568351,
+							"b": 0.351532638
+						},
+						"Text": "Потуши пенек!!!",
+						"ExternalId": "",
+						"Position": {
+							"x": 5950.0,
+							"y": 1675.0
+						},
+						"ZIndex": 117.0,
+						"Size": {
+							"w": 225.0,
+							"h": 200.0
+						},
+						"ShortId": 1309306355,
+						"InputPins": [
+							{
+								"Text": "",
+								"Id": "0x0100000000000624",
+								"Owner": "0x0100000000000621"
+							}
+						],
+						"OutputPins": [
+							{
+								"Text": "",
+								"Id": "0x0100000000000625",
+								"Owner": "0x0100000000000621",
+								"Connections": [
+									{
+										"Color": {
+											"a": 1.0,
+											"r": 0.5764706,
+											"g": 0.75686276,
+											"b": 0.8
+										},
+										"Label": "",
+										"TargetPin": "0x0100000000000130",
+										"Target": "0x010000000000012C"
 									}
 								]
 							}
@@ -7095,7 +7186,7 @@
 						"ExternalId": "",
 						"Position": {
 							"x": -375.0,
-							"y": 1750.0
+							"y": 1675.0
 						},
 						"ZIndex": 108.0,
 						"Size": {
@@ -7108,6 +7199,40 @@
 								"Text": "",
 								"Id": "0x01000000000003B3",
 								"Owner": "0x01000000000003B0"
+							}
+						]
+					}
+				},
+				{
+					"Type": "Jump",
+					"Properties": {
+						"TechnicalName": "Jmp_BB62A1E3",
+						"Id": "0x010000000000061C",
+						"Parent": "0x010000000000012C",
+						"Target": "0x0100000000000621",
+						"TargetPin": "0x0100000000000624",
+						"Color": {
+							"r": 0.5764706,
+							"g": 0.75686276,
+							"b": 0.8
+						},
+						"Text": "",
+						"ExternalId": "",
+						"Position": {
+							"x": -800.0,
+							"y": 2050.0
+						},
+						"ZIndex": 115.0,
+						"Size": {
+							"w": 175.0,
+							"h": 150.0
+						},
+						"ShortId": 3143803363,
+						"InputPins": [
+							{
+								"Text": "",
+								"Id": "0x010000000000061F",
+								"Owner": "0x010000000000061C"
 							}
 						]
 					}
@@ -8086,6 +8211,11 @@
 										"Type": "Dialogue",
 										"Children": [
 											{
+												"Id": "0x010000000000061C",
+												"TechnicalName": "Jmp_BB62A1E3",
+												"Type": "Jump"
+											},
+											{
 												"Id": "0x01000000000003B4",
 												"TechnicalName": "DFr_7399AE0B",
 												"Type": "DialogueFragment"
@@ -8341,6 +8471,11 @@
 												"Type": "Condition"
 											},
 											{
+												"Id": "0x0100000000000621",
+												"TechnicalName": "DFr_4E0A6DF3",
+												"Type": "DialogueFragment"
+											},
+											{
 												"Id": "0x0100000000000358",
 												"TechnicalName": "Dlg_23BCA08F",
 												"Type": "Dialogue",
@@ -8471,6 +8606,11 @@
 												"Type": "DialogueFragment"
 											},
 											{
+												"Id": "0x01000000000005BC",
+												"TechnicalName": "DFr_6D89AAE8",
+												"Type": "DialogueFragment"
+											},
+											{
 												"Id": "0x01000000000005C5",
 												"TechnicalName": "DFr_585F153D",
 												"Type": "DialogueFragment"
@@ -8478,11 +8618,6 @@
 											{
 												"Id": "0x01000000000005FD",
 												"TechnicalName": "DFr_07BCC8ED",
-												"Type": "DialogueFragment"
-											},
-											{
-												"Id": "0x01000000000005BC",
-												"TechnicalName": "DFr_6D89AAE8",
 												"Type": "DialogueFragment"
 											},
 											{

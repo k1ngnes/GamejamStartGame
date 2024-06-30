@@ -1,3 +1,4 @@
+using Articy.Jam.GlobalVariables;
 using Articy.Unity;
 using System.Collections;
 using System.Collections.Generic;
@@ -31,7 +32,11 @@ public class NPCInteraction : MonoBehaviour
                 {
                     availableDialogue = articyReferenceComp.reference.GetObject();
                 }
-
+                Debug.Log(animator.GetInteger("state"));
+                if (animator.GetInteger("state") == 2)
+                {
+                    ArticyGlobalVariables.Default.GameState.training_complete = true;
+                }
                 dialogueManager.StartDialogue(availableDialogue);
             }
         }
