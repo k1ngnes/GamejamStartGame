@@ -170,7 +170,7 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
                 dialogueIsFinished = false;
             }
         }
-        if (dialogueIsFinished && !ifLastDialogLine)
+        if (dialogueIsFinished && !ifLastDialogLine && item != "none")
         {
             ifLastDialogLine = true;
             dialogueIsFinished = false;
@@ -193,11 +193,11 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
             ifLastDialogLine = false;
             if (item == "tank")
             {
-                //tankPickUp.WearTank();
+                tankPickUp.WearTank();
             }
             if (item == "costume")
             {
-                //costumePickUp.WearCostume();
+                costumePickUp.WearCostume();
             }
             // Dialogue is finished, instantiate a close button
             GameObject btn = Instantiate(closePrefab, branchLayoutPanel);
