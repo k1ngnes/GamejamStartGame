@@ -138,7 +138,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7317225356503873826, guid: 9f56a02f893d19744a29e0f04746f4ae, type: 3}
   m_PrefabInstance: {fileID: 559148723}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1839506583}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a3c683ff4a731804b9c49030a2d55c0a, type: 3}
@@ -479,6 +479,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62d9188e07c6a474f8d8823301c7e97c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1839506583 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2537682255826696792, guid: 9f56a02f893d19744a29e0f04746f4ae, type: 3}
+  m_PrefabInstance: {fileID: 559148723}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &1933479080 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6094423558500493940, guid: 3987bd29fd632ec43a67a7386a2673c0, type: 3}
@@ -947,6 +952,10 @@ PrefabInstance:
       propertyPath: weaponObject
       value: 
       objectReference: {fileID: 1820983074755094676}
+    - target: {fileID: 205884642880391884, guid: 8a849ee25b359704782ad691db8df91f, type: 3}
+      propertyPath: dialogManager
+      value: 
+      objectReference: {fileID: 1839506583}
     - target: {fileID: 222977164197075017, guid: 8a849ee25b359704782ad691db8df91f, type: 3}
       propertyPath: m_GravityScale
       value: 2
@@ -1027,6 +1036,14 @@ PrefabInstance:
       propertyPath: waterPrefab
       value: 
       objectReference: {fileID: 6998540775501742404, guid: 456c3635ab2c04641a3db453a2e56c73, type: 3}
+    - target: {fileID: 4493892929143033104, guid: 8a849ee25b359704782ad691db8df91f, type: 3}
+      propertyPath: dialogManager
+      value: 
+      objectReference: {fileID: 1839506583}
+    - target: {fileID: 4493892929143033104, guid: 8a849ee25b359704782ad691db8df91f, type: 3}
+      propertyPath: waterParticle
+      value: 
+      objectReference: {fileID: 37981055858566573, guid: 3d5b370fff7798d41a51d8bb1c0c798e, type: 3}
     - target: {fileID: 4531647167545987903, guid: 8a849ee25b359704782ad691db8df91f, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -1480,5 +1497,5 @@ SceneRoots:
   - {fileID: 1920220888122525750}
   - {fileID: 1552310683}
   - {fileID: 6919636637203884380}
-  - {fileID: 6731133688620332872}
   - {fileID: 212615411}
+  - {fileID: 6731133688620332872}
