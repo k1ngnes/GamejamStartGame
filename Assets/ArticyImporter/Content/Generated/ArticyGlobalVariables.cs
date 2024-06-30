@@ -49,6 +49,12 @@ namespace Articy.Jam.GlobalVariables
             variableNames.Add("GameState.another_way");
             variableNames.Add("GameState.destroy_fire_in_window");
             variableNames.Add("GameState.gas_mask");
+            variableNames.Add("GameState.hostage_on");
+            variableNames.Add("GameState.for_what");
+            variableNames.Add("GameState.done_with_street");
+            variableNames.Add("GameState.room_6_done");
+            variableNames.Add("GameState.room_7_done");
+            variableNames.Add("GameState.room_8_done");
         }
         #endregion
         

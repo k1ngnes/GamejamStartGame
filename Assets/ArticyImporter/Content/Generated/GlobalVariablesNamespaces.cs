@@ -260,6 +260,84 @@ namespace Articy.Jam.GlobalVariables
             }
         }
         
+        // 
+        public bool hostage_on
+        {
+            get
+            {
+                return _VariableStorage.Internal_GetVariableValueBoolean(17);
+            }
+            set
+            {
+                _VariableStorage.Internal_SetVariableValueBoolean(17, value);
+            }
+        }
+        
+        // 
+        public bool for_what
+        {
+            get
+            {
+                return _VariableStorage.Internal_GetVariableValueBoolean(18);
+            }
+            set
+            {
+                _VariableStorage.Internal_SetVariableValueBoolean(18, value);
+            }
+        }
+        
+        // 
+        public bool done_with_street
+        {
+            get
+            {
+                return _VariableStorage.Internal_GetVariableValueBoolean(19);
+            }
+            set
+            {
+                _VariableStorage.Internal_SetVariableValueBoolean(19, value);
+            }
+        }
+        
+        // 
+        public bool room_6_done
+        {
+            get
+            {
+                return _VariableStorage.Internal_GetVariableValueBoolean(20);
+            }
+            set
+            {
+                _VariableStorage.Internal_SetVariableValueBoolean(20, value);
+            }
+        }
+        
+        // 
+        public bool room_7_done
+        {
+            get
+            {
+                return _VariableStorage.Internal_GetVariableValueBoolean(21);
+            }
+            set
+            {
+                _VariableStorage.Internal_SetVariableValueBoolean(21, value);
+            }
+        }
+        
+        // 
+        public bool room_8_done
+        {
+            get
+            {
+                return _VariableStorage.Internal_GetVariableValueBoolean(22);
+            }
+            set
+            {
+                _VariableStorage.Internal_SetVariableValueBoolean(22, value);
+            }
+        }
+        
         public void RegisterVariables(BaseGlobalVariables aStorage)
         {
             _VariableStorage = aStorage;
@@ -281,6 +359,12 @@ namespace Articy.Jam.GlobalVariables
             aStorage.RegisterVariable("GameState.another_way", false);
             aStorage.RegisterVariable("GameState.destroy_fire_in_window", false);
             aStorage.RegisterVariable("GameState.gas_mask", false);
+            aStorage.RegisterVariable("GameState.hostage_on", false);
+            aStorage.RegisterVariable("GameState.for_what", false);
+            aStorage.RegisterVariable("GameState.done_with_street", false);
+            aStorage.RegisterVariable("GameState.room_6_done", false);
+            aStorage.RegisterVariable("GameState.room_7_done", false);
+            aStorage.RegisterVariable("GameState.room_8_done", false);
         }
     }
 }
