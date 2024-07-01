@@ -8,7 +8,7 @@ public class Water : MonoBehaviour
     [SerializeField] private int damage = 10;
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private GameObject vaporEffect;
-    [SerializeField] private float timeToLive = 10f;
+    [SerializeField] private float timeToLive = 5f;
 
 
     private void Start()
