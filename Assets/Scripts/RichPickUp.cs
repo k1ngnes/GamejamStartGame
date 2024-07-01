@@ -24,9 +24,14 @@ public class RichPickUp : MonoBehaviour
 
     public void WearRich()
     {
-        //if (ArticyGlobalVariables.Default.GameState.best_choice)
-        playerController.SetIsRichOn(true);
-
+        if (!ArticyGlobalVariables.Default.GameState.best_choice)
+        {
+            playerController.SetIsRichOn(true);
+        }
+        else if (ArticyGlobalVariables.Default.GameState.best_choice)
+        {
+            playerController.SetIsOldOn(true);
+        }
         rich.RichPickUp();
     }
 

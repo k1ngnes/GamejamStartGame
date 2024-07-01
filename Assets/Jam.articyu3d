@@ -5,8 +5,8 @@
 		"set_IncludedNodes": "Settings, Project, GlobalVariables, ObjectDefinitions, Packages, ScriptMethods, Hierarchy, Assets",
 		"set_UseScriptSupport": "True",
 		"ExportVersion": "1.2",
-		"ObjectDefinitionsHash": "C52570CD29680AFD35FBF7BF261C9A0AB5AAEBC7CECC33F2BEB50D2D62C6621E",
-		"ScriptFragmentsHash": "2538561871"
+		"ObjectDefinitionsHash": "A408F3E31BD3AD9D9FFB5208330119862B1F0F02B39C8C4C6D097026114E68F6",
+		"ScriptFragmentsHash": "7639679090"
 	},
 	"Project": {
 		"Name": "Jam",
@@ -165,6 +165,12 @@
 				},
 				{
 					"Variable": "move_to_the_next_location",
+					"Type": "Boolean",
+					"Value": "False",
+					"Description": ""
+				},
+				{
+					"Variable": "best_choice",
 					"Type": "Boolean",
 					"Value": "False",
 					"Description": ""
@@ -15783,7 +15789,7 @@
 						],
 						"OutputPins": [
 							{
-								"Text": "",
+								"Text": "GameState.best_choice = true;",
 								"Id": "0x0100000000000B88",
 								"Owner": "0x0100000000000B84",
 								"Connections": [

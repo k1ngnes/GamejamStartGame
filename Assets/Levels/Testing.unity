@@ -365,6 +365,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8824930116599281127, guid: 9914d42958cc6924e93dc0a36921f7fb, type: 3}
   m_PrefabInstance: {fileID: 6731133688620332872}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &787153174 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8252301467226362492, guid: b8fcb8f3b161ff04eb4a4399039f1963, type: 3}
+  m_PrefabInstance: {fileID: 83755055}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fb3325aa46f2c4408dc4560fdd0c486, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &848493788 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5695925189721736166, guid: 52443c0e754f1f746b2745f96da5e7c8, type: 3}
@@ -1262,6 +1273,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 205884642880391884, guid: 8a849ee25b359704782ad691db8df91f, type: 3}
+      propertyPath: isTankOn
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 205884642880391884, guid: 8a849ee25b359704782ad691db8df91f, type: 3}
+      propertyPath: isCostumeOn
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 205884642880391884, guid: 8a849ee25b359704782ad691db8df91f, type: 3}
       propertyPath: dialogManager
       value: 
       objectReference: {fileID: 145989330}
@@ -1341,6 +1360,10 @@ PrefabInstance:
       propertyPath: dialogueManager
       value: 
       objectReference: {fileID: 43362067}
+    - target: {fileID: 8421082182195411963, guid: 8a849ee25b359704782ad691db8df91f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1213666231, guid: 8fd220dc86d875b488eedb985bf8d14b, type: 3}
     - target: {fileID: 8724910193779866403, guid: 8a849ee25b359704782ad691db8df91f, type: 3}
       propertyPath: hint
       value: 
@@ -1651,14 +1674,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1473cc3ece766394fb10a63cffe15d52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerController: {fileID: 0}
+  playerController: {fileID: 7356729807829149936}
   pickUpMask:
     serializedVersion: 2
     m_Bits: 0
   pickUpRadius: 0.4
-  naked: {fileID: 0}
-  hint: {fileID: 0}
-  dialogueManager: {fileID: 0}
+  naked: {fileID: 787153174}
+  hint: {fileID: 4696741235033612426}
+  dialogueManager: {fileID: 43362067}
 --- !u!114 &7356729807829149949
 MonoBehaviour:
   m_ObjectHideFlags: 0

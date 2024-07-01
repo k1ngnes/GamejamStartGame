@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private bool isWomanOn = false;
     [SerializeField] private bool isRichOn = false;
     [SerializeField] private bool isHipsterOn = false;
+    [SerializeField] private bool isOldOn = false;
     private bool isGrounded;
 
     [SerializeField] private Rigidbody2D rb;
@@ -127,7 +128,15 @@ public class PlayerController : MonoBehaviour
         return isHipsterOn;
     }
 
+    public bool GetIsOldOn()
+    {
+        return isOldOn;
+    }
 
+    public void SetIsOldOn(bool value)
+    {
+        isOldOn = value;
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
