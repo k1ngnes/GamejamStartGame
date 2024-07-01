@@ -12,12 +12,27 @@ EditorBuildSettings:
     path: Assets/Levels/StartLevelScene.unity
     guid: 37638bea91b382f43ac77a84b45fde80
   - enabled: 1
+    path: Assets/Levels/Level1Scene.unity
+    guid: 7ad6ad961857ad64a9c9633b5b492fee
+  - enabled: 1
+    path: Assets/Levels/Level1Hallway.unity
+    guid: 0547d4888018aa3429b80745eb97b953
+  - enabled: 1
+    path: Assets/Levels/Level1Room6.unity
+    guid: e24917cf425f43a458431f4e2562e78b
+  - enabled: 1
+    path: Assets/Levels/Level1Room7.unity
+    guid: 03758bb5f10f2e24087955c7e966363c
+  - enabled: 1
+    path: Assets/Levels/Level1Room8.unity
+    guid: 98b0f0ac989501d44a01b6c4e9be5dac
+  - enabled: 1
     path: Assets/Levels/LoadingScene.unity
     guid: 8d3aea342a8b92342b67c60ff78c8781
   - enabled: 1
     path: Assets/Levels/RespawnScene.unity
     guid: 88fbd983b3e4e8642b64f6cae70963c7
-  - enabled: 1
+  - enabled: 0
     path: Assets/Levels/Testing.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   m_configObjects: {}
