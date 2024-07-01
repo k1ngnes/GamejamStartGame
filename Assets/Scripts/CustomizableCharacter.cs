@@ -18,7 +18,7 @@ public class CustomizableCharacter : MonoBehaviour
         SkinChoice();
     }
 
-    private void SkinChoice() 
+    private void SkinChoice()
     {
         if (playerController.GetIsCostumeOn() && !playerController.GetIsTankOn())
         {
@@ -27,6 +27,26 @@ public class CustomizableCharacter : MonoBehaviour
         if (playerController.GetIsTankOn() && playerController.GetIsCostumeOn())
         {
             animator.SetInteger("skinNumber", 2);
+        }
+        if (playerController.GetIsHipsterOn())
+        {
+            animator.SetInteger("skinNumber", 3);
+        }
+        if (playerController.GetIsNakedOn())
+        {
+            animator.SetInteger("skinNumber", 4);
+        }
+        if (playerController.GetIsWomanOn())
+        {
+            animator.SetInteger("skinNumber", 5);
+        }
+        if (playerController.GetIsRichOn())
+        {
+            animator.SetInteger("skinNumber", 7);
+        }
+        if (playerController.GetIsOldOn())
+        {
+            animator.SetInteger("skinNumber", 8);
         }
     }
 }

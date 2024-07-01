@@ -34,7 +34,11 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
     private Animator animator;
     private TankPickUp tankPickUp;
     private CostumePickUp costumePickUp;
-    private string item = "none";
+    private NakedPickUp nakedPickUp;
+    private WomanPickUp womanPickUp;
+    private RichPickUp richPickUp;
+    private HipsterPickUp hipsterPickUp;
+    private string item = "npc";
     private bool ifLastDialogLine = false; //set true when appear last dialog line of dialog
 
     // To check if we are currently showing the dialog ui interface
@@ -48,6 +52,10 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
         flowPlayer = GetComponent<ArticyFlowPlayer>();
         tankPickUp = player.GetComponent<TankPickUp>();
         costumePickUp = player.GetComponent<CostumePickUp>();
+        nakedPickUp = player.GetComponent<NakedPickUp>();
+        richPickUp = player.GetComponent<RichPickUp>();
+        womanPickUp = player.GetComponent<WomanPickUp>();
+        hipsterPickUp = player.GetComponent<HipsterPickUp>();
         animator = wood.GetComponent<Animator>();
     }
 
@@ -92,7 +100,7 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
 
     public void StartDialogue(IArticyObject aObject)
     {
-        item = "none";
+        item = "npc";
         DialogueActive = true;
         dialogueWidget.SetActive(DialogueActive);
         flowPlayer.StartOn = aObject;
@@ -100,7 +108,7 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
 
     public void StartDialogue(IArticyObject aObject, GameObject aItem)
     {
-        item = "none";
+        item = "npc";
         DialogueActive = true;
         dialogueWidget.SetActive(DialogueActive);
         flowPlayer.StartOn = aObject;
@@ -109,6 +117,10 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
         {
             Tank tankComponent = aItem.GetComponent<Tank>();
             Costume costumeComponent = aItem.GetComponent<Costume>();
+            Hipster hipsterComponent = aItem.GetComponent<Hipster>();
+            Naked nakedComponent = aItem.GetComponent<Naked>();
+            Rich richComponent = aItem.GetComponent<Rich>();
+            Woman womanComponent = aItem.GetComponent<Woman>();
 
             if (tankComponent != null)
             {
@@ -117,6 +129,22 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
             if (costumeComponent != null)
             {
                 item = "costume";
+            }
+            if (hipsterComponent != null)
+            {
+                item = "hipster";
+            }
+            if (nakedComponent != null)
+            {
+                item = "naked";
+            }
+            if (richComponent != null)
+            {
+                item = "rich";
+            }
+            if (womanComponent != null)
+            {
+                item = "woman";
             }
         }
     }
@@ -178,7 +206,7 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
         {
             ifLastDialogLine = true;
         }
-        if (dialogueIsFinished && !ifLastDialogLine && item != "none")
+        if (dialogueIsFinished && !ifLastDialogLine && item != "npc")
         {
             ifLastDialogLine = true;
             dialogueIsFinished = false;
@@ -206,15 +234,40 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
                 costumePickUp.WearCostume();
                 ifLastDialogLine = false;
             }
+            if (item == "woman")
+            {
+                womanPickUp.WearWoman();
+                ifLastDialogLine = false;
+            }
+            if (item == "rich")
+            {
+                richPickUp.WearRich();
+                ifLastDialogLine = false;
+            }
+            if (item == "naked")
+            {
+                nakedPickUp.WearNaked();
+                ifLastDialogLine = false;
+            }
+            if (item == "hipster")
+            {
+                hipsterPickUp.WearHipster();
+                ifLastDialogLine = false;
+            }
             if (ArticyGlobalVariables.Default.GameState.training)
             {
                 animator.SetInteger("state", 1);
             }
-            if (item == "none" && ArticyGlobalVariables.Default.GameState.move_to_the_next_location)
+            if (item == "npc" && ArticyGlobalVariables.Default.GameState.move_to_the_next_location)
             {
                 Loader.Load(Loader.Scene.Level1Scene);
                 ifLastDialogLine = false;
                 ArticyGlobalVariables.Default.GameState.move_to_the_next_location = false;
+            }
+
+            if (item == "npc" && ArticyGlobalVariables.Default.GameState.gas_mask)
+            {
+                //player.SetIsGasmaskOn(true);
             }
             // Dialogue is finished, instantiate a close button
             GameObject btn = Instantiate(closePrefab, branchLayoutPanel);
