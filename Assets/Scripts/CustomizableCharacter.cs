@@ -28,5 +28,17 @@ public class CustomizableCharacter : MonoBehaviour
         {
             animator.SetInteger("skinNumber", 2);
         }
+        if (playerController.GetIsHipsterOn())
+        {
+            animator.SetInteger("skinNumber", 3);
+        }
+        if (playerController.GetIsNakedOn())
+        {
+            animator.SetInteger("skinNumber", 4);
+        }
+        if (playerController.GetIsWomanOn())
+        {
+            animator.SetInteger("skinNumber", 5);
+        }
     }
 }

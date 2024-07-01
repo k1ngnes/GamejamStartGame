@@ -11,6 +11,10 @@ public class PlayerController : MonoBehaviour
     private bool isFacingRight = true;
     [SerializeField] private bool isTankOn = false;
     [SerializeField] private bool isCostumeOn = false;
+    [SerializeField] private bool isNakedOn = false;
+    [SerializeField] private bool isWomanOn = false;
+    [SerializeField] private bool isRichOn = false;
+    [SerializeField] private bool isHipsterOn = false;
     private bool isGrounded;
 
     [SerializeField] private Rigidbody2D rb;
@@ -83,6 +87,47 @@ public class PlayerController : MonoBehaviour
     {
         return isCostumeOn;
     }
+
+    public void SetIsNakedOn(bool value)
+    {
+        isNakedOn = value;
+    }
+
+    public bool GetIsNakedOn()
+    {
+        return isNakedOn;
+    }
+
+    public void SetIsRichOn(bool value)
+    {
+        isRichOn = value;
+    }
+    public bool GetIsRichOn()
+    {
+        return isRichOn;
+    }
+
+    public bool GetIsWomanOn()
+    {
+        return isWomanOn;
+    }
+
+    public void SetIsWomanOn(bool value)
+    {
+        isWomanOn = value;
+    }
+
+    public void SetIsHipsterOn(bool value)
+    {
+        isHipsterOn = value;
+    }
+
+    public bool GetIsHipsterOn()
+    {
+        return isHipsterOn;
+    }
+
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
