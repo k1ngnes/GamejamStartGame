@@ -55,6 +55,7 @@ namespace Articy.Jam.GlobalVariables
             variableNames.Add("GameState.room_6_done");
             variableNames.Add("GameState.room_7_done");
             variableNames.Add("GameState.room_8_done");
+            variableNames.Add("GameState.move_to_the_next_location");
         }
         #endregion
         

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using Articy.Jam.GlobalVariables;
 
 public class RespawnMenuUI : MonoBehaviour
 {
@@ -15,7 +16,8 @@ public class RespawnMenuUI : MonoBehaviour
     {
         resetButton.onClick.AddListener(() =>
         {
-            Loader.Load(Loader.Scene.Testing);
+            ArticyGlobalVariables.Default.ResetVariables();
+            Loader.Load(Loader.Scene.StartLevelScene);
         });
         toMenuButton.onClick.AddListener(() =>
         {
