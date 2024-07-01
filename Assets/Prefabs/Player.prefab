@@ -50,6 +50,10 @@ GameObject:
   - component: {fileID: 1218736868743331968}
   - component: {fileID: 96742258087394912}
   - component: {fileID: 7400293528850618839}
+  - component: {fileID: 6888200610380102954}
+  - component: {fileID: 7074199745865631215}
+  - component: {fileID: 5468316834862794123}
+  - component: {fileID: 6573812936023937852}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -66,7 +70,7 @@ Transform:
   m_GameObject: {fileID: 2702401809392796200}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -3.79, z: 0}
+  m_LocalPosition: {x: -0.01, y: -3.79, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -87,8 +91,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxSpeed: 5
   jumpPower: 8
-  isTankOn: 0
-  isCostumeOn: 0
+  isTankOn: 1
+  isCostumeOn: 1
+  isNakedOn: 0
+  isWomanOn: 0
+  isRichOn: 0
+  isHipsterOn: 0
+  isOldOn: 0
   rb: {fileID: 222977164197075017}
   groundCheck: {fileID: 0}
   groundLayer:
@@ -254,7 +263,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1451796991, guid: 6e76403aeb6a4b64f9bb342ef5f40a8e, type: 3}
+  m_Sprite: {fileID: 1213666231, guid: 8fd220dc86d875b488eedb985bf8d14b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -334,7 +343,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerController: {fileID: 205884642880391884}
-  buttonHint: {fileID: 7926937915018441554, guid: 95c972f3ae8bfbb47a52876489284b3e, type: 3}
   pickUpMask:
     serializedVersion: 2
     m_Bits: 512
@@ -342,6 +350,86 @@ MonoBehaviour:
   dialogueManager: {fileID: 0}
   hint: {fileID: 0}
   burningLog: {fileID: 0}
+--- !u!114 &6888200610380102954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2702401809392796200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fce3f111abd2dd44291e9c6636613dec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerController: {fileID: 205884642880391884}
+  pickUpMask:
+    serializedVersion: 2
+    m_Bits: 0
+  pickUpRadius: 0.4
+  rich: {fileID: 0}
+  hint: {fileID: 0}
+  dialogueManager: {fileID: 0}
+--- !u!114 &7074199745865631215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2702401809392796200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1473cc3ece766394fb10a63cffe15d52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerController: {fileID: 205884642880391884}
+  pickUpMask:
+    serializedVersion: 2
+    m_Bits: 0
+  pickUpRadius: 0.4
+  naked: {fileID: 0}
+  hint: {fileID: 0}
+  dialogueManager: {fileID: 0}
+--- !u!114 &5468316834862794123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2702401809392796200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6a89bcb656407c419b18f2cfca86d9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerController: {fileID: 205884642880391884}
+  pickUpMask:
+    serializedVersion: 2
+    m_Bits: 0
+  pickUpRadius: 0.4
+  woman: {fileID: 0}
+  hint: {fileID: 0}
+  dialogueManager: {fileID: 0}
+--- !u!114 &6573812936023937852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2702401809392796200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c8bda71ecaf6c0498c723f821a8ca12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerController: {fileID: 205884642880391884}
+  pickUpMask:
+    serializedVersion: 2
+    m_Bits: 0
+  pickUpRadius: 0.4
+  hipster: {fileID: 0}
+  hint: {fileID: 0}
+  dialogueManager: {fileID: 0}
 --- !u!1 &4531647167545987903
 GameObject:
   m_ObjectHideFlags: 0
