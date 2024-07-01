@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c1fcf57862d1a0b45816f58a4149eba6
+guid: fc3cd7d8008e7ef4ab57988658cfbb09
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,12 +97,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: stand rich_0
+      name: gasmask rich_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 26
+        width: 34
         height: 34
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -111,19 +111,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c640c3691bc640240b991455a9556fb9
-      internalID: 1826960031
+      spriteID: 0e1f88abcb5b02c47a58d6fe1ece876c
+      internalID: 1649105518
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: stand rich_1
+      name: gasmask rich_1
       rect:
         serializedVersion: 2
-        x: 32
+        x: 35
         y: 0
-        width: 26
+        width: 33
         height: 34
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -132,8 +132,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 11fa79763609eb54a8f0e948c6f7b6f5
-      internalID: -1676294192
+      spriteID: d2ef8ab80f89c3c4da0cd77a9b3e4a13
+      internalID: -1244857711
       vertices: []
       indices: 
       edges: []
@@ -149,8 +149,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      stand rich_0: 1826960031
-      stand rich_1: -1676294192
+      gasmask rich_0: 1649105518
+      gasmask rich_1: -1244857711
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
