@@ -264,6 +264,11 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
                 ifLastDialogLine = false;
                 ArticyGlobalVariables.Default.GameState.move_to_the_next_location = false;
             }
+
+            if (item == "npc" && ArticyGlobalVariables.Default.GameState.gas_mask)
+            {
+                //player.SetIsGasmaskOn(true);
+            }
             // Dialogue is finished, instantiate a close button
             GameObject btn = Instantiate(closePrefab, branchLayoutPanel);
             // Clicking this button will close the Dialogue UI
