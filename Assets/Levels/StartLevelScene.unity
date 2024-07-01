@@ -2418,6 +2418,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7325651378325482367, guid: 9914d42958cc6924e93dc0a36921f7fb, type: 3}
+      propertyPath: firePutOutEffect
+      value: 
+      objectReference: {fileID: 2194680008724284509, guid: ce38a12e201c60247864ec106c158bce, type: 3}
     - target: {fileID: 8824930116599281127, guid: 9914d42958cc6924e93dc0a36921f7fb, type: 3}
       propertyPath: m_Name
       value: wood
