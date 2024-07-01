@@ -7006,7 +7006,11 @@
 						"Text": "У меня на руках и баллоны с пожарным шлангом, и огнеупорный костюм",
 						"ExternalId": "",
 						"Position": {
+<<<<<<< HEAD
 							"x": 600.0,
+=======
+							"x": 575.0,
+>>>>>>> 99fa5df6301244b5671739cc57ff997c6e9a3507
 							"y": 225.0
 						},
 						"ZIndex": 0.0,
@@ -7230,7 +7234,11 @@
 						"Text": "Думаю все приготовления закончены.",
 						"ExternalId": "",
 						"Position": {
+<<<<<<< HEAD
 							"x": 600.0,
+=======
+							"x": 575.0,
+>>>>>>> 99fa5df6301244b5671739cc57ff997c6e9a3507
 							"y": 1025.0
 						},
 						"ZIndex": 4.0,
@@ -12916,7 +12924,11 @@
 						"Text": "Перед тем как отправиться мне нужно поговорить с коллегой",
 						"ExternalId": "",
 						"Position": {
+<<<<<<< HEAD
 							"x": 875.0,
+=======
+							"x": 900.0,
+>>>>>>> 99fa5df6301244b5671739cc57ff997c6e9a3507
 							"y": 225.0
 						},
 						"ZIndex": 16.0,
@@ -13011,6 +13023,7 @@
 					}
 				},
 				{
+<<<<<<< HEAD
 					"Type": "DialogueFragment",
 					"Properties": {
 						"TechnicalName": "DFr_E33F7228",
@@ -13123,6 +13136,8 @@
 					}
 				},
 				{
+=======
+>>>>>>> 99fa5df6301244b5671739cc57ff997c6e9a3507
 					"Type": "Jump",
 					"Properties": {
 						"TechnicalName": "Jmp_56CBCFA1",
@@ -15399,6 +15414,19 @@
 											{
 												"Id": "0x01000000000001CA",
 												"TechnicalName": "DFr_563F6C9D",
+<<<<<<< HEAD
+=======
+												"Type": "DialogueFragment"
+											},
+											{
+												"Id": "0x01000000000001DE",
+												"TechnicalName": "DFr_1D5A5BBD",
+												"Type": "DialogueFragment"
+											},
+											{
+												"Id": "0x01000000000001D4",
+												"TechnicalName": "DFr_9A8ACAA1",
+>>>>>>> 99fa5df6301244b5671739cc57ff997c6e9a3507
 												"Type": "DialogueFragment"
 											},
 											{
@@ -15417,11 +15445,12 @@
 												"Type": "DialogueFragment"
 											},
 											{
-												"Id": "0x01000000000001DE",
-												"TechnicalName": "DFr_1D5A5BBD",
+												"Id": "0x01000000000001F0",
+												"TechnicalName": "DFr_802E451F",
 												"Type": "DialogueFragment"
 											},
 											{
+<<<<<<< HEAD
 												"Id": "0x01000000000009C2",
 												"TechnicalName": "DFr_E40B4216",
 												"Type": "DialogueFragment"
@@ -15434,6 +15463,15 @@
 											{
 												"Id": "0x01000000000001F0",
 												"TechnicalName": "DFr_802E451F",
+=======
+												"Id": "0x01000000000009D9",
+												"TechnicalName": "DFr_51B4F9C1",
+												"Type": "DialogueFragment"
+											},
+											{
+												"Id": "0x01000000000009C2",
+												"TechnicalName": "DFr_E40B4216",
+>>>>>>> 99fa5df6301244b5671739cc57ff997c6e9a3507
 												"Type": "DialogueFragment"
 											},
 											{

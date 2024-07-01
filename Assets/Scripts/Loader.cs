@@ -9,7 +9,7 @@ public static class Loader
     public enum Scene // names of Scene must match actual scenes
     {
         MainMenuScene,
-        Testing,
+        StartLevelScene,
         LoadingScene,
         RespawnScene
     }

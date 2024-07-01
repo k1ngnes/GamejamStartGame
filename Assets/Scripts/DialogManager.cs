@@ -210,6 +210,12 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
             {
                 animator.SetInteger("state", 1);
             }
+            if (item == "none" && ArticyGlobalVariables.Default.GameState.move_to_the_next_location)
+            {
+                Loader.Load(Loader.Scene.MainMenuScene);
+                ifLastDialogLine = false;
+                ArticyGlobalVariables.Default.GameState.move_to_the_next_location = false;
+            }
             // Dialogue is finished, instantiate a close button
             GameObject btn = Instantiate(closePrefab, branchLayoutPanel);
             // Clicking this button will close the Dialogue UI

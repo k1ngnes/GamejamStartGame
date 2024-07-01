@@ -20,7 +20,11 @@ MonoBehaviour:
   mLastUsedPackagesHash: 282370559
   mLastUsedPackagesCount: 1
   mLastBuildCode: 1
+<<<<<<< HEAD
   mLastEditorStartupTimeTicks: 638553818679234977
+=======
+  mLastEditorStartupTimeTicks: 638553854966337140
+>>>>>>> 99fa5df6301244b5671739cc57ff997c6e9a3507
   mNewVersionAvailable: 0
   mLastSelectedCustomGvPath: 
   mLastAttachedFlowPlayerValue: 0
