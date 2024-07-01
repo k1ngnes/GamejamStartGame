@@ -5,8 +5,8 @@
 		"set_IncludedNodes": "Settings, Project, GlobalVariables, ObjectDefinitions, Packages, ScriptMethods, Hierarchy, Assets",
 		"set_UseScriptSupport": "True",
 		"ExportVersion": "1.2",
-		"ObjectDefinitionsHash": "37E878C8BE8E1371A178629DC08FEF20A95A9E7AD28EBE7626BA88D5D98CBAB9",
-		"ScriptFragmentsHash": "1722215849"
+		"ObjectDefinitionsHash": "C52570CD29680AFD35FBF7BF261C9A0AB5AAEBC7CECC33F2BEB50D2D62C6621E",
+		"ScriptFragmentsHash": "2503273846"
 	},
 	"Project": {
 		"Name": "Jam",
@@ -159,6 +159,12 @@
 				},
 				{
 					"Variable": "room_8_done",
+					"Type": "Boolean",
+					"Value": "False",
+					"Description": ""
+				},
+				{
+					"Variable": "move_to_the_next_location",
 					"Type": "Boolean",
 					"Value": "False",
 					"Description": ""
@@ -2413,20 +2419,7 @@
 							{
 								"Text": "",
 								"Id": "0x0100000000000113",
-								"Owner": "0x010000000000010F",
-								"Connections": [
-									{
-										"Color": {
-											"a": 1.0,
-											"r": 0.5764706,
-											"g": 0.75686276,
-											"b": 0.8
-										},
-										"Label": "",
-										"TargetPin": "0x010000000000062B",
-										"Target": "0x0100000000000628"
-									}
-								]
+								"Owner": "0x010000000000010F"
 							}
 						]
 					}
@@ -2527,20 +2520,7 @@
 							{
 								"Text": "",
 								"Id": "0x010000000000062C",
-								"Owner": "0x0100000000000628",
-								"Connections": [
-									{
-										"Color": {
-											"a": 1.0,
-											"r": 0.5764706,
-											"g": 0.75686276,
-											"b": 0.8
-										},
-										"Label": "",
-										"TargetPin": "0x0100000000000882",
-										"Target": "0x010000000000087F"
-									}
-								]
+								"Owner": "0x0100000000000628"
 							}
 						]
 					}
@@ -2639,74 +2619,22 @@
 							{
 								"Text": "",
 								"Id": "0x0100000000000883",
-								"Owner": "0x010000000000087F",
-								"Connections": [
-									{
-										"Color": {
-											"a": 1.0,
-											"r": 0.5764706,
-											"g": 0.75686276,
-											"b": 0.8
-										},
-										"Label": "",
-										"TargetPin": "0x010000000000062B",
-										"Target": "0x0100000000000628"
-									}
-								]
+								"Owner": "0x010000000000087F"
 							},
 							{
 								"Text": "",
 								"Id": "0x01000000000008D3",
-								"Owner": "0x010000000000087F",
-								"Connections": [
-									{
-										"Color": {
-											"a": 1.0,
-											"r": 0.5764706,
-											"g": 0.75686276,
-											"b": 0.8
-										},
-										"Label": "",
-										"TargetPin": "0x0100000000000919",
-										"Target": "0x0100000000000916"
-									}
-								]
+								"Owner": "0x010000000000087F"
 							},
 							{
 								"Text": "",
 								"Id": "0x010000000000092C",
-								"Owner": "0x010000000000087F",
-								"Connections": [
-									{
-										"Color": {
-											"a": 1.0,
-											"r": 0.5764706,
-											"g": 0.75686276,
-											"b": 0.8
-										},
-										"Label": "",
-										"TargetPin": "0x010000000000091F",
-										"Target": "0x010000000000091C"
-									}
-								]
+								"Owner": "0x010000000000087F"
 							},
 							{
 								"Text": "",
 								"Id": "0x010000000000092D",
-								"Owner": "0x010000000000087F",
-								"Connections": [
-									{
-										"Color": {
-											"a": 1.0,
-											"r": 0.5764706,
-											"g": 0.75686276,
-											"b": 0.8
-										},
-										"Label": "",
-										"TargetPin": "0x0100000000000925",
-										"Target": "0x0100000000000922"
-									}
-								]
+								"Owner": "0x010000000000087F"
 							}
 						]
 					}
@@ -2759,20 +2687,7 @@
 							{
 								"Text": "",
 								"Id": "0x010000000000091A",
-								"Owner": "0x0100000000000916",
-								"Connections": [
-									{
-										"Color": {
-											"a": 1.0,
-											"r": 0.5764706,
-											"g": 0.75686276,
-											"b": 0.8
-										},
-										"Label": "",
-										"TargetPin": "0x0100000000000882",
-										"Target": "0x010000000000087F"
-									}
-								]
+								"Owner": "0x0100000000000916"
 							}
 						]
 					}
@@ -2825,20 +2740,7 @@
 							{
 								"Text": "",
 								"Id": "0x0100000000000920",
-								"Owner": "0x010000000000091C",
-								"Connections": [
-									{
-										"Color": {
-											"a": 1.0,
-											"r": 0.5764706,
-											"g": 0.75686276,
-											"b": 0.8
-										},
-										"Label": "",
-										"TargetPin": "0x0100000000000882",
-										"Target": "0x010000000000087F"
-									}
-								]
+								"Owner": "0x010000000000091C"
 							}
 						]
 					}
@@ -2891,20 +2793,7 @@
 							{
 								"Text": "",
 								"Id": "0x0100000000000926",
-								"Owner": "0x0100000000000922",
-								"Connections": [
-									{
-										"Color": {
-											"a": 1.0,
-											"r": 0.5764706,
-											"g": 0.75686276,
-											"b": 0.8
-										},
-										"Label": "",
-										"TargetPin": "0x0100000000000882",
-										"Target": "0x010000000000087F"
-									}
-								]
+								"Owner": "0x0100000000000922"
 							}
 						]
 					}
@@ -3362,20 +3251,7 @@
 							{
 								"Text": "//Переход в след локу\n",
 								"Id": "0x010000000000050C",
-								"Owner": "0x01000000000004F6",
-								"Connections": [
-									{
-										"Color": {
-											"a": 1.0,
-											"r": 0.577580452,
-											"g": 0.7605245,
-											"b": 0.7991027
-										},
-										"Label": "",
-										"TargetPin": "0x0100000000000113",
-										"Target": "0x010000000000010F"
-									}
-								]
+								"Owner": "0x01000000000004F6"
 							}
 						]
 					}
@@ -3531,20 +3407,7 @@
 							{
 								"Text": "",
 								"Id": "0x0100000000000195",
-								"Owner": "0x0100000000000132",
-								"Connections": [
-									{
-										"Color": {
-											"a": 1.0,
-											"r": 0.577580452,
-											"g": 0.7605245,
-											"b": 0.7991027
-										},
-										"Label": "",
-										"TargetPin": "0x010000000000050C",
-										"Target": "0x01000000000004F6"
-									}
-								]
+								"Owner": "0x0100000000000132"
 							}
 						]
 					}
@@ -4754,6 +4617,112 @@
 								"Text": "",
 								"Id": "0x0100000000000965",
 								"Owner": "0x010000000000095C"
+							}
+						]
+					}
+				},
+				{
+					"Type": "Dialogue",
+					"Properties": {
+						"TechnicalName": "Dlg_F9322F25",
+						"Id": "0x01000000000009CB",
+						"Parent": "0x0100000000000916",
+						"Attachments": [
+							"0x010000000000011E"
+						],
+						"DisplayName": "Дверь",
+						"PreviewImage": {
+							"ViewBox": {
+								"x": 0.0,
+								"y": 0.0,
+								"w": 0.0,
+								"h": 0.0
+							},
+							"Mode": "FromAsset",
+							"Asset": "0x0000000000000000"
+						},
+						"Color": {
+							"r": 0.5764706,
+							"g": 0.75686276,
+							"b": 0.8
+						},
+						"Text": "",
+						"ExternalId": "",
+						"Position": {
+							"x": 542.0,
+							"y": 350.0
+						},
+						"ZIndex": 0.0,
+						"Size": {
+							"w": 291.0,
+							"h": 200.0
+						},
+						"ShortId": 4180815653,
+						"InputPins": [
+							{
+								"Text": "",
+								"Id": "0x01000000000009CE",
+								"Owner": "0x01000000000009CB"
+							}
+						],
+						"OutputPins": [
+							{
+								"Text": "",
+								"Id": "0x01000000000009CF",
+								"Owner": "0x01000000000009CB"
+							}
+						]
+					}
+				},
+				{
+					"Type": "Dialogue",
+					"Properties": {
+						"TechnicalName": "Dlg_FA2E48E2",
+						"Id": "0x01000000000009D1",
+						"Parent": "0x0100000000000916",
+						"Attachments": [
+							"0x010000000000011E"
+						],
+						"DisplayName": "Хипстер",
+						"PreviewImage": {
+							"ViewBox": {
+								"x": 0.0,
+								"y": 0.0,
+								"w": 0.0,
+								"h": 0.0
+							},
+							"Mode": "FromAsset",
+							"Asset": "0x0000000000000000"
+						},
+						"Color": {
+							"r": 0.5764706,
+							"g": 0.75686276,
+							"b": 0.8
+						},
+						"Text": "",
+						"ExternalId": "",
+						"Position": {
+							"x": 542.0,
+							"y": 650.0
+						},
+						"ZIndex": 1.0,
+						"Size": {
+							"w": 291.0,
+							"h": 200.0
+						},
+						"ShortId": 4197337314,
+						"InputPins": [
+							{
+								"Text": "",
+								"Id": "0x01000000000009D4",
+								"Owner": "0x01000000000009D1"
+							}
+						],
+						"OutputPins": [
+							{
+								"Text": "",
+								"Id": "0x01000000000009D5",
+								"Owner": "0x01000000000009D1"
 							}
 						]
 					}
@@ -7037,7 +7006,7 @@
 						"Text": "У меня на руках и баллоны с пожарным шлангом, и огнеупорный костюм",
 						"ExternalId": "",
 						"Position": {
-							"x": 725.0,
+							"x": 600.0,
 							"y": 225.0
 						},
 						"ZIndex": 0.0,
@@ -7062,13 +7031,13 @@
 									{
 										"Color": {
 											"a": 1.0,
-											"r": 0.577580452,
-											"g": 0.7605245,
-											"b": 0.7991027
+											"r": 0.5764706,
+											"g": 0.75686276,
+											"b": 0.8
 										},
 										"Label": "",
-										"TargetPin": "0x0100000000000136",
-										"Target": "0x0100000000000132"
+										"TargetPin": "0x01000000000009C5",
+										"Target": "0x01000000000009C2"
 									}
 								]
 							}
@@ -7090,10 +7059,10 @@
 							"g": 0.7605245,
 							"b": 0.7991027
 						},
-						"Text": "У меня есть баллон с пожарным шлангом, но я все еще в гражданской одежде. Надо бы где-то раздобыть огнеупорный костюм",
+						"Text": "У меня есть баллон с пожарным шлангом, но я все еще в гражданской одежде.",
 						"ExternalId": "",
 						"Position": {
-							"x": 725.0,
+							"x": 600.0,
 							"y": 425.0
 						},
 						"ZIndex": 1.0,
@@ -7118,13 +7087,13 @@
 									{
 										"Color": {
 											"a": 1.0,
-											"r": 0.577580452,
-											"g": 0.7605245,
-											"b": 0.7991027
+											"r": 0.5764706,
+											"g": 0.75686276,
+											"b": 0.8
 										},
 										"Label": "",
-										"TargetPin": "0x0100000000000136",
-										"Target": "0x0100000000000132"
+										"TargetPin": "0x01000000000009E4",
+										"Target": "0x01000000000009E1"
 									}
 								]
 							}
@@ -7202,10 +7171,10 @@
 							"g": 0.7605245,
 							"b": 0.7991027
 						},
-						"Text": "Не думаю что стоит ехать на задание неподготовленным. Перед этим стоит поговорить с моим старшим коллегой",
+						"Text": "Не думаю что стоит ехать на задание неподготовленным.",
 						"ExternalId": "",
 						"Position": {
-							"x": 725.0,
+							"x": 600.0,
 							"y": 825.0
 						},
 						"ZIndex": 3.0,
@@ -7230,13 +7199,13 @@
 									{
 										"Color": {
 											"a": 1.0,
-											"r": 0.577580452,
-											"g": 0.7605245,
-											"b": 0.7991027
+											"r": 0.5764706,
+											"g": 0.75686276,
+											"b": 0.8
 										},
 										"Label": "",
-										"TargetPin": "0x0100000000000136",
-										"Target": "0x0100000000000132"
+										"TargetPin": "0x01000000000009EC",
+										"Target": "0x01000000000009E9"
 									}
 								]
 							}
@@ -7251,17 +7220,17 @@
 						"Parent": "0x0100000000000132",
 						"MenuText": "",
 						"StageDirections": "",
-						"Speaker": "0x010000000000011E",
+						"Speaker": "0x0100000000000676",
 						"SplitHeight": 64.0,
 						"Color": {
 							"r": 0.577580452,
 							"g": 0.7605245,
 							"b": 0.7991027
 						},
-						"Text": "Думаю все приготовления закончены. Пора в путь!",
+						"Text": "Думаю все приготовления закончены.",
 						"ExternalId": "",
 						"Position": {
-							"x": 725.0,
+							"x": 600.0,
 							"y": 1025.0
 						},
 						"ZIndex": 4.0,
@@ -7279,20 +7248,20 @@
 						],
 						"OutputPins": [
 							{
-								"Text": "",
+								"Text": "GameState.move_to_the_next_location = true",
 								"Id": "0x01000000000001E2",
 								"Owner": "0x01000000000001DE",
 								"Connections": [
 									{
 										"Color": {
 											"a": 1.0,
-											"r": 0.577580452,
-											"g": 0.7605245,
-											"b": 0.7991027
+											"r": 0.5764706,
+											"g": 0.75686276,
+											"b": 0.8
 										},
 										"Label": "",
-										"TargetPin": "0x0100000000000195",
-										"Target": "0x0100000000000132"
+										"TargetPin": "0x01000000000009DC",
+										"Target": "0x01000000000009D9"
 									}
 								]
 							}
@@ -12930,6 +12899,230 @@
 					}
 				},
 				{
+					"Type": "DialogueFragment",
+					"Properties": {
+						"TechnicalName": "DFr_E40B4216",
+						"Id": "0x01000000000009C2",
+						"Parent": "0x0100000000000132",
+						"MenuText": "",
+						"StageDirections": "",
+						"Speaker": "0x0100000000000676",
+						"SplitHeight": 64.0,
+						"Color": {
+							"r": 0.5764706,
+							"g": 0.75686276,
+							"b": 0.8
+						},
+						"Text": "Перед тем как отправиться мне нужно поговорить с коллегой",
+						"ExternalId": "",
+						"Position": {
+							"x": 875.0,
+							"y": 225.0
+						},
+						"ZIndex": 16.0,
+						"Size": {
+							"w": 225.0,
+							"h": 200.0
+						},
+						"ShortId": 3825943062,
+						"InputPins": [
+							{
+								"Text": "",
+								"Id": "0x01000000000009C5",
+								"Owner": "0x01000000000009C2"
+							}
+						],
+						"OutputPins": [
+							{
+								"Text": "",
+								"Id": "0x01000000000009C6",
+								"Owner": "0x01000000000009C2",
+								"Connections": [
+									{
+										"Color": {
+											"a": 1.0,
+											"r": 0.5764706,
+											"g": 0.75686276,
+											"b": 0.8
+										},
+										"Label": "",
+										"TargetPin": "0x0100000000000136",
+										"Target": "0x0100000000000132"
+									}
+								]
+							}
+						]
+					}
+				},
+				{
+					"Type": "DialogueFragment",
+					"Properties": {
+						"TechnicalName": "DFr_51B4F9C1",
+						"Id": "0x01000000000009D9",
+						"Parent": "0x0100000000000132",
+						"MenuText": "",
+						"StageDirections": "",
+						"Speaker": "0x010000000000011E",
+						"SplitHeight": 64.0,
+						"Color": {
+							"r": 0.5764706,
+							"g": 0.75686276,
+							"b": 0.8
+						},
+						"Text": "Пора в путь!",
+						"ExternalId": "",
+						"Position": {
+							"x": 875.0,
+							"y": 1025.0
+						},
+						"ZIndex": 19.0,
+						"Size": {
+							"w": 225.0,
+							"h": 200.0
+						},
+						"ShortId": 1370814913,
+						"InputPins": [
+							{
+								"Text": "",
+								"Id": "0x01000000000009DC",
+								"Owner": "0x01000000000009D9"
+							}
+						],
+						"OutputPins": [
+							{
+								"Text": "",
+								"Id": "0x01000000000009DD",
+								"Owner": "0x01000000000009D9",
+								"Connections": [
+									{
+										"Color": {
+											"a": 1.0,
+											"r": 0.5764706,
+											"g": 0.75686276,
+											"b": 0.8
+										},
+										"Label": "",
+										"TargetPin": "0x0100000000000195",
+										"Target": "0x0100000000000132"
+									}
+								]
+							}
+						]
+					}
+				},
+				{
+					"Type": "DialogueFragment",
+					"Properties": {
+						"TechnicalName": "DFr_E33F7228",
+						"Id": "0x01000000000009E1",
+						"Parent": "0x0100000000000132",
+						"MenuText": "",
+						"StageDirections": "",
+						"Speaker": "0x0100000000000676",
+						"SplitHeight": 64.0,
+						"Color": {
+							"r": 0.5764706,
+							"g": 0.75686276,
+							"b": 0.8
+						},
+						"Text": "Надо бы где-то раздобыть огнеупорный костюм",
+						"ExternalId": "",
+						"Position": {
+							"x": 875.0,
+							"y": 425.0
+						},
+						"ZIndex": 21.0,
+						"Size": {
+							"w": 225.0,
+							"h": 200.0
+						},
+						"ShortId": 3812586024,
+						"InputPins": [
+							{
+								"Text": "",
+								"Id": "0x01000000000009E4",
+								"Owner": "0x01000000000009E1"
+							}
+						],
+						"OutputPins": [
+							{
+								"Text": "",
+								"Id": "0x01000000000009E5",
+								"Owner": "0x01000000000009E1",
+								"Connections": [
+									{
+										"Color": {
+											"a": 1.0,
+											"r": 0.5764706,
+											"g": 0.75686276,
+											"b": 0.8
+										},
+										"Label": "",
+										"TargetPin": "0x0100000000000136",
+										"Target": "0x0100000000000132"
+									}
+								]
+							}
+						]
+					}
+				},
+				{
+					"Type": "DialogueFragment",
+					"Properties": {
+						"TechnicalName": "DFr_7940E460",
+						"Id": "0x01000000000009E9",
+						"Parent": "0x0100000000000132",
+						"MenuText": "",
+						"StageDirections": "",
+						"Speaker": "0x0100000000000676",
+						"SplitHeight": 64.0,
+						"Color": {
+							"r": 0.5764706,
+							"g": 0.75686276,
+							"b": 0.8
+						},
+						"Text": "Перед этим стоит поговорить с моим старшим коллегой",
+						"ExternalId": "",
+						"Position": {
+							"x": 875.0,
+							"y": 825.0
+						},
+						"ZIndex": 22.0,
+						"Size": {
+							"w": 225.0,
+							"h": 200.0
+						},
+						"ShortId": 2034295904,
+						"InputPins": [
+							{
+								"Text": "",
+								"Id": "0x01000000000009EC",
+								"Owner": "0x01000000000009E9"
+							}
+						],
+						"OutputPins": [
+							{
+								"Text": "",
+								"Id": "0x01000000000009ED",
+								"Owner": "0x01000000000009E9",
+								"Connections": [
+									{
+										"Color": {
+											"a": 1.0,
+											"r": 0.5764706,
+											"g": 0.75686276,
+											"b": 0.8
+										},
+										"Label": "",
+										"TargetPin": "0x0100000000000136",
+										"Target": "0x0100000000000132"
+									}
+								]
+							}
+						]
+					}
+				},
+				{
 					"Type": "Jump",
 					"Properties": {
 						"TechnicalName": "Jmp_56CBCFA1",
@@ -15204,11 +15397,6 @@
 										"Type": "Dialogue",
 										"Children": [
 											{
-												"Id": "0x01000000000001D4",
-												"TechnicalName": "DFr_9A8ACAA1",
-												"Type": "DialogueFragment"
-											},
-											{
 												"Id": "0x01000000000001CA",
 												"TechnicalName": "DFr_563F6C9D",
 												"Type": "DialogueFragment"
@@ -15216,6 +15404,11 @@
 											{
 												"Id": "0x01000000000001CF",
 												"TechnicalName": "DFr_BB099F4B",
+												"Type": "DialogueFragment"
+											},
+											{
+												"Id": "0x01000000000001D4",
+												"TechnicalName": "DFr_9A8ACAA1",
 												"Type": "DialogueFragment"
 											},
 											{
@@ -15229,8 +15422,28 @@
 												"Type": "DialogueFragment"
 											},
 											{
+												"Id": "0x01000000000009C2",
+												"TechnicalName": "DFr_E40B4216",
+												"Type": "DialogueFragment"
+											},
+											{
+												"Id": "0x01000000000009E1",
+												"TechnicalName": "DFr_E33F7228",
+												"Type": "DialogueFragment"
+											},
+											{
 												"Id": "0x01000000000001F0",
 												"TechnicalName": "DFr_802E451F",
+												"Type": "DialogueFragment"
+											},
+											{
+												"Id": "0x01000000000009E9",
+												"TechnicalName": "DFr_7940E460",
+												"Type": "DialogueFragment"
+											},
+											{
+												"Id": "0x01000000000009D9",
+												"TechnicalName": "DFr_51B4F9C1",
 												"Type": "DialogueFragment"
 											}
 										]
@@ -15835,7 +16048,19 @@
 					{
 						"Id": "0x0100000000000916",
 						"TechnicalName": "FFr_A51774ED",
-						"Type": "FlowFragment"
+						"Type": "FlowFragment",
+						"Children": [
+							{
+								"Id": "0x01000000000009CB",
+								"TechnicalName": "Dlg_F9322F25",
+								"Type": "Dialogue"
+							},
+							{
+								"Id": "0x01000000000009D1",
+								"TechnicalName": "Dlg_FA2E48E2",
+								"Type": "Dialogue"
+							}
+						]
 					},
 					{
 						"Id": "0x010000000000091C",
