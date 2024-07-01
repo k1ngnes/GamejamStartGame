@@ -260,7 +260,7 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
             }
             if (item == "npc" && ArticyGlobalVariables.Default.GameState.move_to_the_next_location)
             {
-                Loader.Load(Loader.Scene.Level1Scene);
+                Loader.Load(Loader.Scene.MainMenuScene);
                 ifLastDialogLine = false;
                 ArticyGlobalVariables.Default.GameState.move_to_the_next_location = false;
             }
