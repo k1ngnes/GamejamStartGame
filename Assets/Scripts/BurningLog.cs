@@ -42,7 +42,7 @@ public class BurningLog : MonoBehaviour
     {
         if (animator.GetInteger("state") == 1 && collision.CompareTag("Player"))
         {
-            SceneManager.LoadScene(3);
+            Loader.Load(Loader.Scene.RespawnScene);
         }
     }
 }

@@ -212,7 +212,7 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
             }
             if (item == "none" && ArticyGlobalVariables.Default.GameState.move_to_the_next_location)
             {
-                Loader.Load(Loader.Scene.MainMenuScene);
+                Loader.Load(Loader.Scene.Level1Scene);
                 ifLastDialogLine = false;
                 ArticyGlobalVariables.Default.GameState.move_to_the_next_location = false;
             }

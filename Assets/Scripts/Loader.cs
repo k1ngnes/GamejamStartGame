@@ -10,6 +10,11 @@ public static class Loader
     {
         MainMenuScene,
         StartLevelScene,
+        Level1Scene,
+        Level1Hallway,
+        Level1Room6,
+        Level1Room7,
+        Level1Room8,
         LoadingScene,
         RespawnScene
     }
