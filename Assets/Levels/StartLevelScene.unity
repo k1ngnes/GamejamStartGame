@@ -456,7 +456,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7295628914491739183, guid: b0c9cea5a79861142ad60b152f3440c9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -47
+      value: -110
       objectReference: {fileID: 0}
     - target: {fileID: 8493525297258046729, guid: b0c9cea5a79861142ad60b152f3440c9, type: 3}
       propertyPath: m_SortingOrder
@@ -1149,7 +1149,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.9897126, g: 1, b: 0.9858491, a: 1}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1199,7 +1199,7 @@ Transform:
   m_GameObject: {fileID: 658127189}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.576, y: -0.1, z: -10}
+  m_LocalPosition: {x: -3.78, y: -0.1, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -1382,7 +1382,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1106258055585712930, guid: 8a849ee25b359704782ad691db8df91f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.576
+      value: -3.78
       objectReference: {fileID: 0}
     - target: {fileID: 1106258055585712930, guid: 8a849ee25b359704782ad691db8df91f, type: 3}
       propertyPath: m_LocalPosition.y
