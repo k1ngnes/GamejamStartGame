@@ -1438,8 +1438,16 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 205884642880391884, guid: 8a849ee25b359704782ad691db8df91f, type: 3}
+      propertyPath: isWomanOn
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 205884642880391884, guid: 8a849ee25b359704782ad691db8df91f, type: 3}
       propertyPath: jumpPower
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 205884642880391884, guid: 8a849ee25b359704782ad691db8df91f, type: 3}
+      propertyPath: isCostumeOn
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 205884642880391884, guid: 8a849ee25b359704782ad691db8df91f, type: 3}
       propertyPath: dialogManager

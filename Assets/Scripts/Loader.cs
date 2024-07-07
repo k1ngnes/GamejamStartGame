@@ -16,7 +16,8 @@ public static class Loader
         Level1Room7,
         Level1Room8,
         LoadingScene,
-        RespawnScene
+        RespawnScene,
+        EndScene
     }
 
     private static Scene targetScene;
